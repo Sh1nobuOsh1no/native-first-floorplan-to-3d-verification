@@ -1,0 +1,18 @@
+{
+  "argv": [
+    "/Users/shinobu/\u573a\u666f\u751f\u6210/.venv/bin/python",
+    "src/genrecon/prepare_sage_gt.py",
+    "--scene",
+    "fixtures/multiroom/synthetic_building.json",
+    "--render",
+    "evidence/cpu/render_B",
+    "--dest",
+    "evidence/cpu/sage_gt_B"
+  ],
+  "cwd": "/Users/shinobu/\u573a\u666f\u751f\u6210/work/new_mainline_cpu",
+  "start_utc": "20261118T075733Z",
+  "elapsed_seconds": 0.03552195802330971,
+  "exit_code": 0,
+  "stdout": "evidence/cpu/logs/20261118T075733Z_sage_B.stdout.log",
+  "stderr": "evidence/cpu/logs/20261118T075733Z_sage_B.stderr.log"
+}

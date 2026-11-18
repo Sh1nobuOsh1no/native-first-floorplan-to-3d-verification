@@ -1,0 +1,15 @@
+{
+  "argv": [
+    "/Users/shinobu/\u573a\u666f\u751f\u6210/.venv/bin/python",
+    "-m",
+    "src.scene_graph.plot_layout",
+    "fixtures/multiroom/synthetic_building.json",
+    "evidence/cpu/layout_camera_map.png"
+  ],
+  "cwd": "/Users/shinobu/\u573a\u666f\u751f\u6210/work/new_mainline_cpu",
+  "start_utc": "20261118T075109Z",
+  "elapsed_seconds": 0.07992108294274658,
+  "exit_code": 0,
+  "stdout": "evidence/cpu/logs/20261118T075109Z_layout_map.stdout.log",
+  "stderr": "evidence/cpu/logs/20261118T075109Z_layout_map.stderr.log"
+}

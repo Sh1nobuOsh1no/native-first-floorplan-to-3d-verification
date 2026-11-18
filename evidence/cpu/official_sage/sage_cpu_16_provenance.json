@@ -1,0 +1,102 @@
+{
+  "status": "PASS_CPU_SAGE_PROVENANCE",
+  "source_zip": "work/official_samples/SAGE/zips/20251213_020526_layout_84b703fb.zip",
+  "raw_scene": "work/official_samples/SAGE/rooms_raw/84b703fb",
+  "renders": "work/official_samples/SAGE/renders_room_16/84b703fb",
+  "errors": [],
+  "source_files_checked": 67,
+  "source_crc_mismatches": [],
+  "output_files": [
+    {
+      "path": "work/official_samples/SAGE/renders_room_16/84b703fb/000.png",
+      "size_bytes": 382856,
+      "sha256": "511a5cb91778de89638750cd7890cb3d83e031b14facd8abad71387ac6b842ed"
+    },
+    {
+      "path": "work/official_samples/SAGE/renders_room_16/84b703fb/001.png",
+      "size_bytes": 314369,
+      "sha256": "6ce39cd96726ce7ef3f904719ff5cc30d3ee7db67aa4597eedd474a980bf88b6"
+    },
+    {
+      "path": "work/official_samples/SAGE/renders_room_16/84b703fb/002.png",
+      "size_bytes": 361333,
+      "sha256": "7773214146d87f7413aaee46b9f1f57f74801808885270534d0b88bd467f8be1"
+    },
+    {
+      "path": "work/official_samples/SAGE/renders_room_16/84b703fb/003.png",
+      "size_bytes": 414889,
+      "sha256": "be501d811d97bb1f583a94ffe4e3f97e8669e1d6102a67af01291c05328ba041"
+    },
+    {
+      "path": "work/official_samples/SAGE/renders_room_16/84b703fb/004.png",
+      "size_bytes": 404721,
+      "sha256": "327316399803dd0599a2d50d4d9ee4e60cb397f9c01d2e15d6c589c87559a3e6"
+    },
+    {
+      "path": "work/official_samples/SAGE/renders_room_16/84b703fb/005.png",
+      "size_bytes": 318375,
+      "sha256": "707225adb2c89fa397ababded3ba9e73447f020d09702d5a51c0f15652ccb2f5"
+    },
+    {
+      "path": "work/official_samples/SAGE/renders_room_16/84b703fb/006.png",
+      "size_bytes": 402035,
+      "sha256": "0c717d888741c1a7c220ac7245be5b110fa11ca828e870256fcd2f8e291baf3b"
+    },
+    {
+      "path": "work/official_samples/SAGE/renders_room_16/84b703fb/007.png",
+      "size_bytes": 416691,
+      "sha256": "af4a9df61ff5e523394e843440747acd527b26a1bbf5227404f097cf4ad7ec77"
+    },
+    {
+      "path": "work/official_samples/SAGE/renders_room_16/84b703fb/008.png",
+      "size_bytes": 366427,
+      "sha256": "757893eecc14de4cfd90a56d8d08d80f171b8ea05e47d6e62328c1567d4e24cf"
+    },
+    {
+      "path": "work/official_samples/SAGE/renders_room_16/84b703fb/009.png",
+      "size_bytes": 348131,
+      "sha256": "862b4ee46db09ad1be8074235912a6c424ebf15866d582301751fafa75b035de"
+    },
+    {
+      "path": "work/official_samples/SAGE/renders_room_16/84b703fb/010.png",
+      "size_bytes": 410833,
+      "sha256": "d123bc41c39a1a0a31cf6719d33b985fb90bbca90606319ea3613c1261449b2e"
+    },
+    {
+      "path": "work/official_samples/SAGE/renders_room_16/84b703fb/011.png",
+      "size_bytes": 483274,
+      "sha256": "ed7c31880bd0fa98be49b7b10b3663608734a45cb4616f55d812f1ec59714969"
+    },
+    {
+      "path": "work/official_samples/SAGE/renders_room_16/84b703fb/012.png",
+      "size_bytes": 405594,
+      "sha256": "a7d3eadc0bd35ee08bb72a7d398d5b0fb5bc62958ed7c952e47253fe2d4c5988"
+    },
+    {
+      "path": "work/official_samples/SAGE/renders_room_16/84b703fb/013.png",
+      "size_bytes": 388518,
+      "sha256": "025501f23d00ca5aa257fc2c412c7c09f5680001a0da33b417f7c5c90fdd9ff9"
+    },
+    {
+      "path": "work/official_samples/SAGE/renders_room_16/84b703fb/014.png",
+      "size_bytes": 407142,
+      "sha256": "0322a4bd99993a410fd3bfd0243b854db207486dc4d0f80db2e431aeaffb371b"
+    },
+    {
+      "path": "work/official_samples/SAGE/renders_room_16/84b703fb/015.png",
+      "size_bytes": 449237,
+      "sha256": "74746f97652f85cbe2a5a049f1b63496d4d94bb968a5e765e3c760264ca35032"
+    },
+    {
+      "path": "work/official_samples/SAGE/rooms_processed/84b703fb.blend",
+      "size_bytes": 21216317,
+      "sha256": "f6a4cdf228963c5810bbd444434ffdec2fce988f2f9a57396966d0a774343143"
+    },
+    {
+      "path": "work/official_samples/SAGE/renders_room_16/84b703fb/transforms.json",
+      "size_bytes": 14327,
+      "sha256": "b03dcb6664d3f8a03b7f1befd43af09889d8a83ce641663f5e25f81db7dea99b"
+    }
+  ],
+  "n_frames": 16
+}

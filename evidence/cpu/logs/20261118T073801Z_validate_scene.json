@@ -1,0 +1,13 @@
+{
+  "argv": [
+    "python3",
+    "-c",
+    "from src.scene_graph.metric_scene import load_scene,components; s=load_scene(\"fixtures/multiroom/synthetic_building.json\"); print(s[\"scene_id\"],len(components(s,False)),len(components(s,True)))"
+  ],
+  "cwd": "/Users/shinobu/\u573a\u666f\u751f\u6210/work/new_mainline_cpu",
+  "start_utc": "20261118T073801Z",
+  "elapsed_seconds": 0.023995750001631677,
+  "exit_code": 0,
+  "stdout": "evidence/cpu/logs/20261118T073801Z_validate_scene.stdout.log",
+  "stderr": "evidence/cpu/logs/20261118T073801Z_validate_scene.stderr.log"
+}

@@ -1,0 +1,13 @@
+{
+  "argv": [
+    "/Users/shinobu/\u573a\u666f\u751f\u6210/.venv/bin/python",
+    "src/blender/decode_passes.py",
+    "evidence/cpu/render_B"
+  ],
+  "cwd": "/Users/shinobu/\u573a\u666f\u751f\u6210/work/new_mainline_cpu",
+  "start_utc": "20261118T075732Z",
+  "elapsed_seconds": 0.3071147500304505,
+  "exit_code": 0,
+  "stdout": "evidence/cpu/logs/20261118T075732Z_decode_B.stdout.log",
+  "stderr": "evidence/cpu/logs/20261118T075732Z_decode_B.stderr.log"
+}

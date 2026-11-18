@@ -1,0 +1,24 @@
+{
+  "argv": [
+    "/Users/shinobu/\u573a\u666f\u751f\u6210/.venv/bin/python",
+    "src/genrecon/probe_native_reader.py",
+    "--repo",
+    "/Users/shinobu/\u573a\u666f\u751f\u6210/work/upstream/GenRecon",
+    "--render-dir",
+    "evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c",
+    "--out-dir",
+    "evidence/cpu/native_B",
+    "--out-json",
+    "evidence/cpu/native_B_report.json",
+    "--scene",
+    "fixtures/multiroom/synthetic_building.json",
+    "--n-views",
+    "16"
+  ],
+  "cwd": "/Users/shinobu/\u573a\u666f\u751f\u6210/work/new_mainline_cpu",
+  "start_utc": "20261118T075736Z",
+  "elapsed_seconds": 2.02545704098884,
+  "exit_code": 0,
+  "stdout": "evidence/cpu/logs/20261118T075736Z_native_B.stdout.log",
+  "stderr": "evidence/cpu/logs/20261118T075736Z_native_B.stderr.log"
+}

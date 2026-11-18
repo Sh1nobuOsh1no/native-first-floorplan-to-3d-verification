@@ -1,0 +1,29 @@
+{
+  "argv": [
+    "/opt/homebrew/bin/blender",
+    "-b",
+    "-t",
+    "4",
+    "--python-exit-code",
+    "2",
+    "--python",
+    "src/blender/render_global.py",
+    "--",
+    "--scene",
+    "fixtures/multiroom/synthetic_building.json",
+    "--variant",
+    "B",
+    "--out",
+    "evidence/cpu/render_B",
+    "--size",
+    "256",
+    "--samples",
+    "8"
+  ],
+  "cwd": "/Users/shinobu/\u573a\u666f\u751f\u6210/work/new_mainline_cpu",
+  "start_utc": "20261118T075654Z",
+  "elapsed_seconds": 11.08038866694551,
+  "exit_code": 0,
+  "stdout": "evidence/cpu/logs/20261118T075654Z_blender_B_unified_final.stdout.log",
+  "stderr": "evidence/cpu/logs/20261118T075654Z_blender_B_unified_final.stderr.log"
+}

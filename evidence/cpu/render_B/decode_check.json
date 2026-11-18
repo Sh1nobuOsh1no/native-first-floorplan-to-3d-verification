@@ -1,0 +1,376 @@
+{
+  "variant": "B",
+  "frame_count": 16,
+  "frames": [
+    {
+      "camera_id": "c00_corridor_to_bed",
+      "shape": [
+        256,
+        256
+      ],
+      "finite_depth_pixels": 63597,
+      "depth_range_m": [
+        1.0207451581954956,
+        4.93978214263916
+      ],
+      "visible_object_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        25,
+        26,
+        27,
+        37
+      ]
+    },
+    {
+      "camera_id": "c01_bed_to_bed",
+      "shape": [
+        256,
+        256
+      ],
+      "finite_depth_pixels": 63992,
+      "depth_range_m": [
+        1.018794298171997,
+        4.440886497497559
+      ],
+      "visible_object_indices": [
+        0,
+        1,
+        4,
+        6,
+        35,
+        37
+      ]
+    },
+    {
+      "camera_id": "c02_bed_side",
+      "shape": [
+        256,
+        256
+      ],
+      "finite_depth_pixels": 65536,
+      "depth_range_m": [
+        1.283896803855896,
+        5.108922958374023
+      ],
+      "visible_object_indices": [
+        1,
+        4,
+        6,
+        27,
+        32,
+        35,
+        37
+      ]
+    },
+    {
+      "camera_id": "c03_bed_to_corridor",
+      "shape": [
+        256,
+        256
+      ],
+      "finite_depth_pixels": 65261,
+      "depth_range_m": [
+        1.0190949440002441,
+        7.973731517791748
+      ],
+      "visible_object_indices": [
+        0,
+        1,
+        2,
+        11,
+        12,
+        13,
+        25,
+        26,
+        27,
+        30,
+        31,
+        32,
+        37,
+        39
+      ]
+    },
+    {
+      "camera_id": "c04_corridor_oblique_bed",
+      "shape": [
+        256,
+        256
+      ],
+      "finite_depth_pixels": 65536,
+      "depth_range_m": [
+        0.635475754737854,
+        6.244128227233887
+      ],
+      "visible_object_indices": [
+        1,
+        2,
+        25,
+        26,
+        27,
+        35
+      ]
+    },
+    {
+      "camera_id": "c05_corridor_to_office",
+      "shape": [
+        256,
+        256
+      ],
+      "finite_depth_pixels": 63585,
+      "depth_range_m": [
+        1.0348063707351685,
+        4.925301551818848
+      ],
+      "visible_object_indices": [
+        0,
+        1,
+        2,
+        6,
+        7,
+        8,
+        9,
+        27,
+        28,
+        29,
+        38
+      ]
+    },
+    {
+      "camera_id": "c06_office_to_desk",
+      "shape": [
+        256,
+        256
+      ],
+      "finite_depth_pixels": 61477,
+      "depth_range_m": [
+        1.015586495399475,
+        4.139109134674072
+      ],
+      "visible_object_indices": [
+        0,
+        1,
+        6,
+        7,
+        9,
+        21,
+        22,
+        38
+      ]
+    },
+    {
+      "camera_id": "c07_office_side",
+      "shape": [
+        256,
+        256
+      ],
+      "finite_depth_pixels": 65126,
+      "depth_range_m": [
+        1.2429447174072266,
+        4.67759370803833
+      ],
+      "visible_object_indices": [
+        0,
+        1,
+        6,
+        7,
+        9,
+        27,
+        35,
+        38
+      ]
+    },
+    {
+      "camera_id": "c08_corridor_to_living",
+      "shape": [
+        256,
+        256
+      ],
+      "finite_depth_pixels": 63649,
+      "depth_range_m": [
+        1.0330249071121216,
+        4.929912567138672
+      ],
+      "visible_object_indices": [
+        0,
+        1,
+        2,
+        10,
+        11,
+        12,
+        13,
+        30,
+        31,
+        32,
+        39
+      ]
+    },
+    {
+      "camera_id": "c09_living_to_sofa",
+      "shape": [
+        256,
+        256
+      ],
+      "finite_depth_pixels": 63626,
+      "depth_range_m": [
+        0.9477972388267517,
+        4.366393566131592
+      ],
+      "visible_object_indices": [
+        0,
+        1,
+        11,
+        13,
+        36,
+        39
+      ]
+    },
+    {
+      "camera_id": "c10_living_side",
+      "shape": [
+        256,
+        256
+      ],
+      "finite_depth_pixels": 65536,
+      "depth_range_m": [
+        1.2843945026397705,
+        5.139029502868652
+      ],
+      "visible_object_indices": [
+        1,
+        11,
+        13,
+        27,
+        32,
+        36,
+        39
+      ]
+    },
+    {
+      "camera_id": "c11_living_to_corridor",
+      "shape": [
+        256,
+        256
+      ],
+      "finite_depth_pixels": 65283,
+      "depth_range_m": [
+        0.8992015719413757,
+        8.126690864562988
+      ],
+      "visible_object_indices": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        25,
+        26,
+        27,
+        30,
+        31,
+        32,
+        37,
+        39
+      ]
+    },
+    {
+      "camera_id": "c12_corridor_to_kitchen",
+      "shape": [
+        256,
+        256
+      ],
+      "finite_depth_pixels": 63626,
+      "depth_range_m": [
+        1.0330249071121216,
+        4.929912567138672
+      ],
+      "visible_object_indices": [
+        0,
+        1,
+        2,
+        13,
+        14,
+        15,
+        16,
+        32,
+        33,
+        34,
+        40
+      ]
+    },
+    {
+      "camera_id": "c13_kitchen_to_counter",
+      "shape": [
+        256,
+        256
+      ],
+      "finite_depth_pixels": 61632,
+      "depth_range_m": [
+        0.9030560851097107,
+        4.170626640319824
+      ],
+      "visible_object_indices": [
+        0,
+        1,
+        13,
+        14,
+        16,
+        24,
+        40
+      ]
+    },
+    {
+      "camera_id": "c14_kitchen_side",
+      "shape": [
+        256,
+        256
+      ],
+      "finite_depth_pixels": 65428,
+      "depth_range_m": [
+        1.1734471321105957,
+        4.937748908996582
+      ],
+      "visible_object_indices": [
+        0,
+        1,
+        13,
+        14,
+        16,
+        27,
+        32,
+        36,
+        40
+      ]
+    },
+    {
+      "camera_id": "c15_corridor_axis",
+      "shape": [
+        256,
+        256
+      ],
+      "finite_depth_pixels": 65536,
+      "depth_range_m": [
+        1.115760326385498,
+        5.9167914390563965
+      ],
+      "visible_object_indices": [
+        1,
+        2,
+        24,
+        27,
+        28,
+        29,
+        32,
+        33,
+        34
+      ]
+    }
+  ],
+  "provenance": "SYNTHETIC_BLENDER_CPU"
+}

@@ -1,0 +1,86 @@
+{
+  "status": "PASS_STATIC_CPU_ONLY",
+  "official_repo_sha256_of_original_json": "222c359ab1ed9bc6735a640a34f95d47f8681b9bc4aaa101bfb80274676253c6",
+  "source_checks": {
+    "pipeline_config_cli": {
+      "path": "reconstruct_scene.py",
+      "line": 174,
+      "sha256": "de52fe9547e67672c139f567a46c639a71285c2e855b3251e165a5e465f415bf"
+    },
+    "cond_2D": {
+      "path": "genrecon/pipelines/images_to_3d.py",
+      "line": 284,
+      "sha256": "4c6c6db418e8c58c1193af0ba2a65279aa587a6b096fc19ee9d11e957cd1e4e1"
+    },
+    "cond_3D_projection": {
+      "path": "genrecon/pipelines/images_to_3d.py",
+      "line": 310,
+      "sha256": "4c6c6db418e8c58c1193af0ba2a65279aa587a6b096fc19ee9d11e957cd1e4e1"
+    },
+    "dino_v3": {
+      "path": "configs/pipelines/original.json",
+      "line": 82,
+      "sha256": "222c359ab1ed9bc6735a640a34f95d47f8681b9bc4aaa101bfb80274676253c6"
+    },
+    "sparse_structure": {
+      "path": "genrecon/pipelines/full_scene_images_to_3d.py",
+      "line": 266,
+      "sha256": "44f4505ca060404f7837e9958abf52db60fc1aaa0fcf9f7bb195b543dcb13efc"
+    },
+    "shape_slat": {
+      "path": "genrecon/pipelines/full_scene_images_to_3d.py",
+      "line": 329,
+      "sha256": "44f4505ca060404f7837e9958abf52db60fc1aaa0fcf9f7bb195b543dcb13efc"
+    },
+    "texture_slat": {
+      "path": "genrecon/pipelines/full_scene_images_to_3d.py",
+      "line": 366,
+      "sha256": "44f4505ca060404f7837e9958abf52db60fc1aaa0fcf9f7bb195b543dcb13efc"
+    },
+    "classifier_free_guidance": {
+      "path": "genrecon/pipelines/samplers/flow_euler.py",
+      "line": 154,
+      "sha256": "ee2fbf609306c105e25fbd4a1a894f2df3602705c629ad99eadaecefeab7df6d"
+    }
+  },
+  "variants": {
+    "official_baseline": {
+      "path": "configs/genrecon_cfg/official_baseline.json",
+      "cfg": [
+        7.5,
+        7.5,
+        1.0
+      ],
+      "sha256": "8b3b0f478e1fe1d545216f602eab1a490f4a74b943cfe35f0019d96e071dc1c7"
+    },
+    "geometry_cfg_3": {
+      "path": "configs/genrecon_cfg/geometry_cfg_3.json",
+      "cfg": [
+        3.0,
+        3.0,
+        1.0
+      ],
+      "sha256": "0f8eac4847bb3367666468ff61005eb708fd1c6c9ce49f5cbcd74582933101dc"
+    },
+    "no_extra_cfg": {
+      "path": "configs/genrecon_cfg/no_extra_cfg.json",
+      "cfg": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sha256": "b154ae16683896affb6bcc02e347b730d5d206d42cc748ad7387ae47890de1ec"
+    },
+    "texture_cfg_0_5": {
+      "path": "configs/genrecon_cfg/texture_cfg_0_5.json",
+      "cfg": [
+        7.5,
+        7.5,
+        0.5
+      ],
+      "sha256": "afd52061e797bc2714599a38e3341b25da82b12f80ebc7a9491f26129ee0ecb6"
+    }
+  },
+  "inference_executed": false,
+  "cfg_effect_measured": false
+}

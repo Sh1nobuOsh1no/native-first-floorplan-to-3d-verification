@@ -1,0 +1,8 @@
+/Users/shinobu/场景生成/work/new_mainline_cpu/src/blender/render_global.py:97: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  scene.world.use_nodes = True
+/Users/shinobu/场景生成/work/new_mainline_cpu/src/blender/render_global.py:35: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m.use_nodes = True
+/Users/shinobu/场景生成/work/new_mainline_cpu/src/blender/render_global.py:132: DeprecationWarning: 'Scene.use_nodes' is expected to be removed in Blender 6.0
+  scene.use_nodes = True
+/Users/shinobu/场景生成/work/new_mainline_cpu/src/blender/render_global.py:134: DeprecationWarning: 'Scene.compositing_node_group' is expected to be removed in Blender 6.0
+  scene.compositing_node_group = tree

@@ -1,0 +1,119 @@
+{
+  "status": "PASS_CPU_NATIVE_READER",
+  "repo": "/Users/shinobu/场景生成/work/upstream/GenRecon",
+  "render_dir": "/Users/shinobu/场景生成/work/official_samples/SAGE/renders_room_16/84b703fb",
+  "chunk_centers": [
+    [
+      0.7187499999999997,
+      0.5609374999999993,
+      1.425
+    ],
+    [
+      2.4999999999999996,
+      0.5609374999999993,
+      1.425
+    ],
+    [
+      4.28125,
+      0.5609374999999993,
+      1.425
+    ],
+    [
+      0.7187499999999997,
+      2.5203124999999993,
+      1.425
+    ],
+    [
+      2.4999999999999996,
+      2.5203124999999993,
+      1.425
+    ],
+    [
+      4.28125,
+      2.5203124999999993,
+      1.425
+    ],
+    [
+      0.7187499999999997,
+      4.4796875,
+      1.425
+    ],
+    [
+      2.4999999999999996,
+      4.4796875,
+      1.425
+    ],
+    [
+      4.28125,
+      4.4796875,
+      1.425
+    ],
+    [
+      0.7187499999999997,
+      6.4390625,
+      1.425
+    ],
+    [
+      2.4999999999999996,
+      6.4390625,
+      1.425
+    ],
+    [
+      4.28125,
+      6.4390625,
+      1.425
+    ]
+  ],
+  "n_chunk_transforms": 12,
+  "n_inverse_transforms": 12,
+  "n_relative_translations": 12,
+  "scene_images_512_shape": [
+    16,
+    3,
+    512,
+    512
+  ],
+  "scene_images_1024_shape": [
+    16,
+    3,
+    1024,
+    1024
+  ],
+  "scene_intrinsics_shape": [
+    16,
+    3,
+    3
+  ],
+  "scene_extrinsics_c0_shape": [
+    16,
+    4,
+    4
+  ],
+  "n_cond2d_images": 12,
+  "chunk_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "images_finite": true,
+  "extrinsics_finite": true,
+  "image_min_max": [
+    0.0,
+    1.0
+  ],
+  "native_output_files": [
+    "reports/cpu_pregpu/genrecon_native_reader_16/chunks/chunk_layout.png",
+    "reports/cpu_pregpu/genrecon_native_reader_16/chunks/chunk_transforms.json",
+    "reports/cpu_pregpu/genrecon_native_reader_16/images/cameras.json"
+  ],
+  "disclaimer": "Only original CPU input readers ran; no GenRecon model inference or training."
+}

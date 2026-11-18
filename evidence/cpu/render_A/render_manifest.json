@@ -1,0 +1,14 @@
+{
+  "scene_id": "synthetic_multiroom_4r1c",
+  "provenance": "SYNTHETIC",
+  "variant": "A",
+  "engine": "CYCLES_CPU",
+  "samples": 8,
+  "resolution": [
+    256,
+    256
+  ],
+  "frame_count": 16,
+  "object_count": 36,
+  "global_scene": true
+}

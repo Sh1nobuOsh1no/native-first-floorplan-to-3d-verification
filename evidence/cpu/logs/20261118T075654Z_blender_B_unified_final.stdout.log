@@ -1,0 +1,126 @@
+Info: Saved as "building.blend"
+INFO Draco is available, use library at /Applications/Blender.app/Contents/Resources/lib/libbf_intern_draco_bridge.dylib
+INFO MeshOptimizer is available, use library at /Applications/Blender.app/Contents/Resources/lib/libbf_intern_meshopt_bridge.dylib
+15:56:54 | INFO: Starting glTF 2.0 export
+15:56:54 | INFO: Extracting primitive: Cube.037
+15:56:54 | INFO: Primitives created: 1
+15:56:54 | INFO: Extracting primitive: Cube.002
+15:56:54 | INFO: Primitives created: 1
+15:56:54 | INFO: Extracting primitive: Cube.040
+15:56:54 | INFO: Primitives created: 1
+15:56:54 | INFO: Extracting primitive: Cube.038
+15:56:54 | INFO: Primitives created: 1
+15:56:54 | INFO: Extracting primitive: Cube.021
+15:56:54 | INFO: Primitives created: 1
+15:56:54 | INFO: Extracting primitive: Cube.022
+15:56:54 | INFO: Primitives created: 1
+15:56:54 | INFO: Extracting primitive: Cube.023
+15:56:54 | INFO: Primitives created: 1
+15:56:54 | INFO: Extracting primitive: Cube.024
+15:56:54 | INFO: Primitives created: 1
+15:56:54 | INFO: Extracting primitive: Cube.001
+15:56:54 | INFO: Primitives created: 1
+15:56:54 | INFO: Extracting primitive: Cube.010
+15:56:54 | INFO: Primitives created: 1
+15:56:54 | INFO: Extracting primitive: Cube.011
+15:56:54 | INFO: Primitives created: 1
+15:56:54 | INFO: Extracting primitive: Cube.012
+15:56:54 | INFO: Primitives created: 1
+15:56:54 | INFO: Extracting primitive: Cube.013
+15:56:54 | INFO: Primitives created: 1
+15:56:54 | INFO: Extracting primitive: Cube.014
+15:56:54 | INFO: Primitives created: 1
+15:56:54 | INFO: Extracting primitive: Cube.015
+15:56:54 | INFO: Primitives created: 1
+15:56:54 | INFO: Extracting primitive: Cube.016
+15:56:54 | INFO: Primitives created: 1
+15:56:54 | INFO: Extracting primitive: Cube.036
+15:56:54 | INFO: Primitives created: 1
+15:56:54 | INFO: Extracting primitive: Cube.030
+15:56:54 | INFO: Primitives created: 1
+15:56:54 | INFO: Extracting primitive: Cube.031
+15:56:54 | INFO: Primitives created: 1
+15:56:54 | INFO: Extracting primitive: Cube.032
+15:56:54 | INFO: Primitives created: 1
+15:56:54 | INFO: Extracting primitive: Cube.033
+15:56:54 | INFO: Primitives created: 1
+15:56:54 | INFO: Extracting primitive: Cube.034
+15:56:54 | INFO: Primitives created: 1
+15:56:54 | INFO: Extracting primitive: Cube.039
+15:56:54 | INFO: Primitives created: 1
+15:56:54 | INFO: Extracting primitive: Cube.003
+15:56:54 | INFO: Primitives created: 1
+15:56:54 | INFO: Extracting primitive: Cube.004
+15:56:54 | INFO: Primitives created: 1
+15:56:54 | INFO: Extracting primitive: Cube.005
+15:56:54 | INFO: Primitives created: 1
+15:56:54 | INFO: Extracting primitive: Cube.006
+15:56:54 | INFO: Primitives created: 1
+15:56:54 | INFO: Extracting primitive: Cube.007
+15:56:54 | INFO: Primitives created: 1
+15:56:54 | INFO: Extracting primitive: Cube.008
+15:56:54 | INFO: Primitives created: 1
+15:56:54 | INFO: Extracting primitive: Cube.009
+15:56:54 | INFO: Primitives created: 1
+15:56:54 | INFO: Extracting primitive: Cube.035
+15:56:54 | INFO: Primitives created: 1
+15:56:54 | INFO: Extracting primitive: Cube.025
+15:56:54 | INFO: Primitives created: 1
+15:56:54 | INFO: Extracting primitive: Cube.026
+15:56:54 | INFO: Primitives created: 1
+15:56:54 | INFO: Extracting primitive: Cube.027
+15:56:54 | INFO: Primitives created: 1
+15:56:54 | INFO: Extracting primitive: Cube.028
+15:56:54 | INFO: Primitives created: 1
+15:56:54 | INFO: Extracting primitive: Cube.029
+15:56:54 | INFO: Primitives created: 1
+15:56:54 | INFO: Extracting primitive: Cube.017
+15:56:54 | INFO: Primitives created: 1
+15:56:54 | INFO: Extracting primitive: Cube.018
+15:56:54 | INFO: Primitives created: 1
+15:56:54 | INFO: Extracting primitive: Cube.019
+15:56:54 | INFO: Primitives created: 1
+15:56:54 | INFO: Extracting primitive: Cube.020
+15:56:54 | INFO: Primitives created: 1
+15:56:54 | INFO: Finished glTF 2.0 export in 0.023527145385742188 s
+
+15:56:54 | INFO: Starting glTF 2.0 export
+15:56:54 | INFO: Extracting primitive: Cube.041
+15:56:54 | INFO: Primitives created: 4
+15:56:54 | INFO: Finished glTF 2.0 export in 0.0041429996490478516 s
+00:01.164  render           | Saved: '/tmp/passes/c00_corridor_to_bed_.exr'
+
+RENDERED B 1/16 c00_corridor_to_bed
+00:01.731  render           | Saved: '/tmp/passes/c01_bed_to_bed_.exr'
+RENDERED B 2/16 c01_bed_to_bed
+00:02.317  render           | Saved: '/tmp/passes/c02_bed_side_.exr'
+RENDERED B 3/16 c02_bed_side
+00:02.890  render           | Saved: '/tmp/passes/c03_bed_to_corridor_.exr'
+RENDERED B 4/16 c03_bed_to_corridor
+00:03.466  render           | Saved: '/tmp/passes/c04_corridor_oblique_bed_.exr'
+RENDERED B 5/16 c04_corridor_oblique_bed
+00:04.033  render           | Saved: '/tmp/passes/c05_corridor_to_office_.exr'
+RENDERED B 6/16 c05_corridor_to_office
+00:04.591  render           | Saved: '/tmp/passes/c06_office_to_desk_.exr'
+RENDERED B 7/16 c06_office_to_desk
+00:05.161  render           | Saved: '/tmp/passes/c07_office_side_.exr'
+RENDERED B 8/16 c07_office_side
+00:05.954  render           | Saved: '/tmp/passes/c08_corridor_to_living_.exr'
+RENDERED B 9/16 c08_corridor_to_living
+00:06.539  render           | Saved: '/tmp/passes/c09_living_to_sofa_.exr'
+RENDERED B 10/16 c09_living_to_sofa
+00:07.152  render           | Saved: '/tmp/passes/c10_living_side_.exr'
+RENDERED B 11/16 c10_living_side
+00:07.728  render           | Saved: '/tmp/passes/c11_living_to_corridor_.exr'
+RENDERED B 12/16 c11_living_to_corridor
+00:08.621  render           | Saved: '/tmp/passes/c12_corridor_to_kitchen_.exr'
+RENDERED B 13/16 c12_corridor_to_kitchen
+00:09.291  render           | Saved: '/tmp/passes/c13_kitchen_to_counter_.exr'
+RENDERED B 14/16 c13_kitchen_to_counter
+00:09.968  render           | Saved: '/tmp/passes/c14_kitchen_side_.exr'
+RENDERED B 15/16 c14_kitchen_side
+00:10.707  render           | Saved: '/tmp/passes/c15_corridor_axis_.exr'
+RENDERED B 16/16 c15_corridor_axis
+Blender 5.3.0 (hash 02f0899d78e3 built 2026-11-10 01:31:21)
+
+Blender quit

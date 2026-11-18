@@ -1,0 +1,1 @@
+{"status": "PASS_STATIC_CPU_ONLY", "variants": ["official_baseline", "geometry_cfg_3", "no_extra_cfg", "texture_cfg_0_5"]}

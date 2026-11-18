@@ -1,0 +1,3 @@
+# Prior official SAGE single-room CPU interface evidence
+
+Scene `84b703fb` came from official SAGE-10k. The earlier local run verified 67 raw ZIP members by CRC32, used the author's Blender scripts on CPU to build/render 16 512×512 frames, and ran unmodified GenRecon `Sage_gt` CPU Chunker/Reader. It produced 12 chunks and no fallback at 16 views. The three retained files are the original provenance JSON, original native reader JSON and actual render contact sheet. Full raw data, `.blend`, frames and command logs remain outside Git in the local engineering workspace and its backup. This evidence concerns one official **room**, not the new synthetic multiroom building and not a GenRecon model forward.

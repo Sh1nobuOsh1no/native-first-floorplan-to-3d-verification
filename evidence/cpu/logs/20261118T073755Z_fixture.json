@@ -1,0 +1,13 @@
+{
+  "argv": [
+    "python3",
+    "src/floorplan/make_fixture.py",
+    "fixtures/multiroom/synthetic_building.json"
+  ],
+  "cwd": "/Users/shinobu/\u573a\u666f\u751f\u6210/work/new_mainline_cpu",
+  "start_utc": "20261118T073755Z",
+  "elapsed_seconds": 0.023635042016394436,
+  "exit_code": 0,
+  "stdout": "evidence/cpu/logs/20261118T073755Z_fixture.stdout.log",
+  "stderr": "evidence/cpu/logs/20261118T073755Z_fixture.stderr.log"
+}

@@ -1,0 +1,26 @@
+test_aligned_real_render_passes (integration.test_cpu_evidence.CPUEvidenceTests.test_aligned_real_render_passes) ... ok
+test_cfg_preflight_only (integration.test_cpu_evidence.CPUEvidenceTests.test_cfg_preflight_only) ... ok
+test_corrupt_camera_pose_rejected (integration.test_cpu_evidence.CPUEvidenceTests.test_corrupt_camera_pose_rejected) ... ok
+test_depth_reprojection_crosses_bedroom_door (integration.test_cpu_evidence.CPUEvidenceTests.test_depth_reprojection_crosses_bedroom_door) ... ok
+test_door_jamb_occludes_deeper_furniture (integration.test_cpu_evidence.CPUEvidenceTests.test_door_jamb_occludes_deeper_furniture) ... ok
+test_global_unified_mesh_extent (integration.test_cpu_evidence.CPUEvidenceTests.test_global_unified_mesh_extent) ... ok
+test_native_reader_and_fallbacks_labeled (integration.test_cpu_evidence.CPUEvidenceTests.test_native_reader_and_fallbacks_labeled) ... ok
+test_same_global_cameras_A_B (integration.test_cpu_evidence.CPUEvidenceTests.test_same_global_cameras_A_B) ... ok
+test_same_object_visible_across_each_door (integration.test_cpu_evidence.CPUEvidenceTests.test_same_object_visible_across_each_door) ... ok
+test_calibration_rejects_missing_scale_evidence (unit.test_metric_scene.MetricSceneTests.test_calibration_rejects_missing_scale_evidence) ... ok
+test_camera_outside_declared_space (unit.test_metric_scene.MetricSceneTests.test_camera_outside_declared_space) ... ok
+test_closed_wall_blocks_ray (unit.test_metric_scene.MetricSceneTests.test_closed_wall_blocks_ray) ... ok
+test_degenerate_camera (unit.test_metric_scene.MetricSceneTests.test_degenerate_camera) ... ok
+test_disconnected_room (unit.test_metric_scene.MetricSceneTests.test_disconnected_room) ... ok
+test_every_corridor_door_has_unblocked_ray (unit.test_metric_scene.MetricSceneTests.test_every_corridor_door_has_unblocked_ray) ... ok
+test_global_affine_calibration_keeps_negative_coordinates (unit.test_metric_scene.MetricSceneTests.test_global_affine_calibration_keeps_negative_coordinates) ... ok
+test_global_topology_and_units (unit.test_metric_scene.MetricSceneTests.test_global_topology_and_units) ... ok
+test_invalid_door_links (unit.test_metric_scene.MetricSceneTests.test_invalid_door_links) ... ok
+test_invalid_door_width (unit.test_metric_scene.MetricSceneTests.test_invalid_door_width) ... ok
+test_synthetic_cannot_claim_real_drawing (unit.test_metric_scene.MetricSceneTests.test_synthetic_cannot_claim_real_drawing) ... ok
+test_wrong_unit (unit.test_metric_scene.MetricSceneTests.test_wrong_unit) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 0.065s
+
+OK

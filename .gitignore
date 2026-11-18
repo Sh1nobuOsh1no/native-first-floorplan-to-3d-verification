@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.DS_Store
+.venv/
+*.pt
+*.ckpt
+*.safetensors
+*.zip
+evidence/cpu/render_*/passes/
+evidence/cpu/render_*/depth/*.npy
+evidence/cpu/render_*/object_id/*.npy
+evidence/cpu/render_*/building.blend1
+evidence/cpu/sage_gt_*/

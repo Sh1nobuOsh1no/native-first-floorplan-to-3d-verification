@@ -1,0 +1,13 @@
+{
+  "argv": [
+    "/Users/shinobu/\u573a\u666f\u751f\u6210/.venv/bin/python",
+    "-m",
+    "src.runner.summarize_cpu"
+  ],
+  "cwd": "/Users/shinobu/\u573a\u666f\u751f\u6210/work/new_mainline_cpu",
+  "start_utc": "20261118T075927Z",
+  "elapsed_seconds": 0.10324508300982416,
+  "exit_code": 0,
+  "stdout": "evidence/cpu/logs/20261118T075927Z_summarize_cpu.stdout.log",
+  "stderr": "evidence/cpu/logs/20261118T075927Z_summarize_cpu.stderr.log"
+}

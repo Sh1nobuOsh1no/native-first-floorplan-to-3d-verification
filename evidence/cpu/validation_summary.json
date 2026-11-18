@@ -1,0 +1,201 @@
+{
+  "status": "PASS_SYNTHETIC_CPU_WITH_NATIVE_COVERAGE_GAPS",
+  "source_provenance": "SYNTHETIC",
+  "real_floorplan_validated": false,
+  "gpu_inference_executed": false,
+  "scene": "12 x 9 x 2.7 m; 4 rooms + one corridor; 4 doors; 6 windows",
+  "rendered_frames_per_variant": 16,
+  "same_camera_poses_A_B": true,
+  "objects_across_doors": [
+    {
+      "object_id": "bed_01",
+      "corridor_camera": "c00_corridor_to_bed",
+      "room_camera": "c01_bed_to_bed",
+      "corridor_pixels": 3134,
+      "room_pixels": 12320,
+      "projected_pixels": 3134,
+      "reprojection_depth_and_id_match_0_1m": 3123,
+      "match_fraction": 0.9964901084875558
+    },
+    {
+      "object_id": "desk_01",
+      "corridor_camera": "c05_corridor_to_office",
+      "room_camera": "c06_office_to_desk",
+      "corridor_pixels": 3118,
+      "room_pixels": 12203,
+      "projected_pixels": 3118,
+      "reprojection_depth_and_id_match_0_1m": 3111,
+      "match_fraction": 0.9977549711353432
+    },
+    {
+      "object_id": "sofa_01",
+      "corridor_camera": "c08_corridor_to_living",
+      "room_camera": "c09_living_to_sofa",
+      "corridor_pixels": 3876,
+      "room_pixels": 14291,
+      "projected_pixels": 3876,
+      "reprojection_depth_and_id_match_0_1m": 3847,
+      "match_fraction": 0.9925180598555211
+    },
+    {
+      "object_id": "counter_01",
+      "corridor_camera": "c12_corridor_to_kitchen",
+      "room_camera": "c13_kitchen_to_counter",
+      "corridor_pixels": 3970,
+      "room_pixels": 15056,
+      "projected_pixels": 3970,
+      "reprojection_depth_and_id_match_0_1m": 3948,
+      "match_fraction": 0.9944584382871536
+    }
+  ],
+  "native_reader": {
+    "A": {
+      "status": "PASS_CPU_NATIVE_READER",
+      "chunks": 30,
+      "fallback_chunks": [
+        3,
+        5,
+        17,
+        27
+      ],
+      "zero_visible_chunks": [
+        3,
+        5,
+        17,
+        27
+      ],
+      "door_visibility": [
+        {
+          "door_id": "door_bedroom",
+          "connects": [
+            "corridor",
+            "bedroom"
+          ],
+          "near_chunk_count": 2,
+          "chunks_with_both_side_cameras": [
+            7,
+            13
+          ]
+        },
+        {
+          "door_id": "door_office",
+          "connects": [
+            "corridor",
+            "office"
+          ],
+          "near_chunk_count": 2,
+          "chunks_with_both_side_cameras": [
+            10
+          ]
+        },
+        {
+          "door_id": "door_living",
+          "connects": [
+            "corridor",
+            "living"
+          ],
+          "near_chunk_count": 2,
+          "chunks_with_both_side_cameras": [
+            13,
+            19
+          ]
+        },
+        {
+          "door_id": "door_kitchen",
+          "connects": [
+            "corridor",
+            "kitchen"
+          ],
+          "near_chunk_count": 2,
+          "chunks_with_both_side_cameras": [
+            22
+          ]
+        }
+      ]
+    },
+    "B": {
+      "status": "PASS_CPU_NATIVE_READER",
+      "chunks": 30,
+      "fallback_chunks": [
+        3,
+        5,
+        17,
+        27
+      ],
+      "zero_visible_chunks": [
+        3,
+        5,
+        17,
+        27
+      ],
+      "door_visibility": [
+        {
+          "door_id": "door_bedroom",
+          "connects": [
+            "corridor",
+            "bedroom"
+          ],
+          "near_chunk_count": 2,
+          "chunks_with_both_side_cameras": [
+            7,
+            13
+          ]
+        },
+        {
+          "door_id": "door_office",
+          "connects": [
+            "corridor",
+            "office"
+          ],
+          "near_chunk_count": 2,
+          "chunks_with_both_side_cameras": [
+            10
+          ]
+        },
+        {
+          "door_id": "door_living",
+          "connects": [
+            "corridor",
+            "living"
+          ],
+          "near_chunk_count": 2,
+          "chunks_with_both_side_cameras": [
+            13,
+            19
+          ]
+        },
+        {
+          "door_id": "door_kitchen",
+          "connects": [
+            "corridor",
+            "kitchen"
+          ],
+          "near_chunk_count": 2,
+          "chunks_with_both_side_cameras": [
+            22
+          ]
+        }
+      ]
+    }
+  },
+  "all_commands_logged": 58,
+  "nonzero_command_records": [
+    "evidence/cpu/logs/20261118T073746Z_fixture.json",
+    "evidence/cpu/logs/20261118T073746Z_validate_scene.json",
+    "evidence/cpu/logs/20261118T073956Z_blender_smoke_A_retry.json",
+    "evidence/cpu/logs/20261118T074015Z_blender_file_node_probe2.json",
+    "evidence/cpu/logs/20261118T074048Z_blender_smoke_A_node_retry.json",
+    "evidence/cpu/logs/20261118T074130Z_blender_smoke_A_exr.json",
+    "evidence/cpu/logs/20261118T074203Z_blender_smoke_A_passes.json",
+    "evidence/cpu/logs/20261118T074345Z_blender_smoke_A_passes_fixed.json",
+    "evidence/cpu/logs/20261118T074415Z_blender_smoke_A_passes_fixed2.json",
+    "evidence/cpu/logs/20261118T074446Z_blender_smoke_A_passes_fixed3.json",
+    "evidence/cpu/logs/20261118T075427Z_cpu_tests_first.json",
+    "evidence/cpu/logs/20261118T080517Z_make_metadata_portable.json"
+  ],
+  "limitations": [
+    "Sage_gt layout uses only outer width/length and fixed 2.7m height",
+    "4/30 chunks have no accepted camera and use native closest-camera fallback",
+    "GenRecon network forward and structural preservation were not tested"
+  ]
+}

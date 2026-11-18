@@ -1,0 +1,202 @@
+{
+  "1": {
+    "id": "floor",
+    "kind": "floor",
+    "source_id": "floor"
+  },
+  "2": {
+    "id": "ceiling",
+    "kind": "ceiling",
+    "source_id": "ceiling"
+  },
+  "3": {
+    "id": "south__0_0",
+    "kind": "wall",
+    "source_id": "south"
+  },
+  "4": {
+    "id": "south__1_0",
+    "kind": "wall",
+    "source_id": "south"
+  },
+  "5": {
+    "id": "south__1_1",
+    "kind": "wall",
+    "source_id": "south"
+  },
+  "6": {
+    "id": "south__2_0",
+    "kind": "wall",
+    "source_id": "south"
+  },
+  "7": {
+    "id": "south__3_0",
+    "kind": "wall",
+    "source_id": "south"
+  },
+  "8": {
+    "id": "south__3_1",
+    "kind": "wall",
+    "source_id": "south"
+  },
+  "9": {
+    "id": "south__4_0",
+    "kind": "wall",
+    "source_id": "south"
+  },
+  "10": {
+    "id": "north__0_0",
+    "kind": "wall",
+    "source_id": "north"
+  },
+  "11": {
+    "id": "north__1_0",
+    "kind": "wall",
+    "source_id": "north"
+  },
+  "12": {
+    "id": "north__1_1",
+    "kind": "wall",
+    "source_id": "north"
+  },
+  "13": {
+    "id": "north__2_0",
+    "kind": "wall",
+    "source_id": "north"
+  },
+  "14": {
+    "id": "north__3_0",
+    "kind": "wall",
+    "source_id": "north"
+  },
+  "15": {
+    "id": "north__3_1",
+    "kind": "wall",
+    "source_id": "north"
+  },
+  "16": {
+    "id": "north__4_0",
+    "kind": "wall",
+    "source_id": "north"
+  },
+  "17": {
+    "id": "west__0_0",
+    "kind": "wall",
+    "source_id": "west"
+  },
+  "18": {
+    "id": "west__1_0",
+    "kind": "wall",
+    "source_id": "west"
+  },
+  "19": {
+    "id": "west__1_1",
+    "kind": "wall",
+    "source_id": "west"
+  },
+  "20": {
+    "id": "west__2_0",
+    "kind": "wall",
+    "source_id": "west"
+  },
+  "21": {
+    "id": "east__0_0",
+    "kind": "wall",
+    "source_id": "east"
+  },
+  "22": {
+    "id": "east__1_0",
+    "kind": "wall",
+    "source_id": "east"
+  },
+  "23": {
+    "id": "east__1_1",
+    "kind": "wall",
+    "source_id": "east"
+  },
+  "24": {
+    "id": "east__2_0",
+    "kind": "wall",
+    "source_id": "east"
+  },
+  "25": {
+    "id": "south_rooms__0_0",
+    "kind": "wall",
+    "source_id": "south_rooms"
+  },
+  "26": {
+    "id": "south_rooms__1_1",
+    "kind": "wall",
+    "source_id": "south_rooms"
+  },
+  "27": {
+    "id": "south_rooms__2_0",
+    "kind": "wall",
+    "source_id": "south_rooms"
+  },
+  "28": {
+    "id": "south_rooms__3_1",
+    "kind": "wall",
+    "source_id": "south_rooms"
+  },
+  "29": {
+    "id": "south_rooms__4_0",
+    "kind": "wall",
+    "source_id": "south_rooms"
+  },
+  "30": {
+    "id": "north_rooms__0_0",
+    "kind": "wall",
+    "source_id": "north_rooms"
+  },
+  "31": {
+    "id": "north_rooms__1_1",
+    "kind": "wall",
+    "source_id": "north_rooms"
+  },
+  "32": {
+    "id": "north_rooms__2_0",
+    "kind": "wall",
+    "source_id": "north_rooms"
+  },
+  "33": {
+    "id": "north_rooms__3_1",
+    "kind": "wall",
+    "source_id": "north_rooms"
+  },
+  "34": {
+    "id": "north_rooms__4_0",
+    "kind": "wall",
+    "source_id": "north_rooms"
+  },
+  "35": {
+    "id": "south_divider__0_0",
+    "kind": "wall",
+    "source_id": "south_divider"
+  },
+  "36": {
+    "id": "north_divider__0_0",
+    "kind": "wall",
+    "source_id": "north_divider"
+  },
+  "37": {
+    "id": "bed_01",
+    "kind": "furniture",
+    "source_id": "bed_01"
+  },
+  "38": {
+    "id": "desk_01",
+    "kind": "furniture",
+    "source_id": "desk_01"
+  },
+  "39": {
+    "id": "sofa_01",
+    "kind": "furniture",
+    "source_id": "sofa_01"
+  },
+  "40": {
+    "id": "counter_01",
+    "kind": "furniture",
+    "source_id": "counter_01"
+  }
+}

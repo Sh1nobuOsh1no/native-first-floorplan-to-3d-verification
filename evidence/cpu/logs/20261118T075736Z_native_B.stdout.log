@@ -1,0 +1,5 @@
+[get_images] chunk 3: no visible camera in scene_picks; falling back to closest camera (c06_office_to_desk.png).
+[get_images] chunk 5: no visible camera in scene_picks; falling back to closest camera (c07_office_side.png).
+[get_images] chunk 17: no visible camera in scene_picks; falling back to closest camera (c05_corridor_to_office.png).
+[get_images] chunk 27: no visible camera in scene_picks; falling back to closest camera (c13_kitchen_to_counter.png).
+{"status": "PASS_CPU_NATIVE_READER", "n_chunks": 30, "scene_images_512_shape": [16, 3, 512, 512], "n_cond2d_images": 30}
