@@ -1,0 +1,43 @@
+test_aligned_real_render_passes (integration.test_cpu_evidence.CPUEvidenceTests.test_aligned_real_render_passes) ... ok
+test_alternate_rgb_depth_id_and_camera_alignment (integration.test_cpu_evidence.CPUEvidenceTests.test_alternate_rgb_depth_id_and_camera_alignment) ... ok
+test_camera_plan_and_all_door_reprojections (integration.test_cpu_evidence.CPUEvidenceTests.test_camera_plan_and_all_door_reprojections) ... ok
+test_cfg_preflight_only (integration.test_cpu_evidence.CPUEvidenceTests.test_cfg_preflight_only) ... ok
+test_corrupt_camera_pose_rejected (integration.test_cpu_evidence.CPUEvidenceTests.test_corrupt_camera_pose_rejected) ... ok
+test_depth_reprojection_crosses_bedroom_door (integration.test_cpu_evidence.CPUEvidenceTests.test_depth_reprojection_crosses_bedroom_door) ... ok
+test_different_topology_and_offset_origin (integration.test_cpu_evidence.CPUEvidenceTests.test_different_topology_and_offset_origin) ... ok
+test_door_jamb_occludes_deeper_furniture (integration.test_cpu_evidence.CPUEvidenceTests.test_door_jamb_occludes_deeper_furniture) ... ok
+test_global_unified_mesh_extent (integration.test_cpu_evidence.CPUEvidenceTests.test_global_unified_mesh_extent) ... ok
+test_native_image_cap_can_reintroduce_fallbacks (integration.test_cpu_evidence.CPUEvidenceTests.test_native_image_cap_can_reintroduce_fallbacks) ... ok
+test_native_reader_and_fallbacks_labeled (integration.test_cpu_evidence.CPUEvidenceTests.test_native_reader_and_fallbacks_labeled) ... ok
+test_sage_gt_rejects_nonstandard_height (integration.test_cpu_evidence.CPUEvidenceTests.test_sage_gt_rejects_nonstandard_height) ... ok
+test_same_global_cameras_A_B (integration.test_cpu_evidence.CPUEvidenceTests.test_same_global_cameras_A_B) ... ok
+test_same_object_visible_across_each_door (integration.test_cpu_evidence.CPUEvidenceTests.test_same_object_visible_across_each_door) ... ok
+test_batch_discovers_five_distinct_source_drawings (integration.test_real_floorplan_cpu.RealFloorplanCPU.test_batch_discovers_five_distinct_source_drawings) ... ok
+test_nonrectangular_real_annotation_is_rejected (integration.test_real_floorplan_cpu.RealFloorplanCPU.test_nonrectangular_real_annotation_is_rejected) ... ok
+test_raster_baseline_preserves_uncertainty_and_reference_is_separate (integration.test_real_floorplan_cpu.RealFloorplanCPU.test_raster_baseline_preserves_uncertainty_and_reference_is_separate) ... ok
+test_single_page_pdf_contract_and_multi_page_rejection (integration.test_real_floorplan_cpu.RealFloorplanCPU.test_single_page_pdf_contract_and_multi_page_rejection) ... <frozen importlib._bootstrap>:491: DeprecationWarning: builtin type SwigPyPacked has no __module__ attribute
+<frozen importlib._bootstrap>:491: DeprecationWarning: builtin type SwigPyObject has no __module__ attribute
+<frozen importlib._bootstrap>:491: DeprecationWarning: builtin type swigvarlink has no __module__ attribute
+ok
+test_vector_control_yields_one_global_structural_scene (integration.test_real_floorplan_cpu.RealFloorplanCPU.test_vector_control_yields_one_global_structural_scene) ... ok
+test_alternate_layout_has_global_offset_and_two_links (unit.test_metric_scene.MetricSceneTests.test_alternate_layout_has_global_offset_and_two_links) ... ok
+test_calibration_rejects_missing_scale_evidence (unit.test_metric_scene.MetricSceneTests.test_calibration_rejects_missing_scale_evidence) ... ok
+test_camera_outside_declared_space (unit.test_metric_scene.MetricSceneTests.test_camera_outside_declared_space) ... ok
+test_closed_wall_blocks_ray (unit.test_metric_scene.MetricSceneTests.test_closed_wall_blocks_ray) ... ok
+test_degenerate_camera (unit.test_metric_scene.MetricSceneTests.test_degenerate_camera) ... ok
+test_disconnected_room (unit.test_metric_scene.MetricSceneTests.test_disconnected_room) ... ok
+test_every_corridor_door_has_unblocked_ray (unit.test_metric_scene.MetricSceneTests.test_every_corridor_door_has_unblocked_ray) ... ok
+test_global_affine_calibration_keeps_negative_coordinates (unit.test_metric_scene.MetricSceneTests.test_global_affine_calibration_keeps_negative_coordinates) ... ok
+test_global_topology_and_units (unit.test_metric_scene.MetricSceneTests.test_global_topology_and_units) ... ok
+test_invalid_door_links (unit.test_metric_scene.MetricSceneTests.test_invalid_door_links) ... ok
+test_invalid_door_width (unit.test_metric_scene.MetricSceneTests.test_invalid_door_width) ... ok
+test_source_drawing_hash_and_component_evidence_required (unit.test_metric_scene.MetricSceneTests.test_source_drawing_hash_and_component_evidence_required) ... ok
+test_synthetic_cannot_claim_real_drawing (unit.test_metric_scene.MetricSceneTests.test_synthetic_cannot_claim_real_drawing) ... ok
+test_topology_generates_missing_door_side_cameras (unit.test_metric_scene.MetricSceneTests.test_topology_generates_missing_door_side_cameras) ... ok
+test_wrong_unit (unit.test_metric_scene.MetricSceneTests.test_wrong_unit) ... ok
+
+----------------------------------------------------------------------
+Ran 34 tests in 0.354s
+
+OK
+<sys>:0: DeprecationWarning: builtin type swigvarlink has no __module__ attribute

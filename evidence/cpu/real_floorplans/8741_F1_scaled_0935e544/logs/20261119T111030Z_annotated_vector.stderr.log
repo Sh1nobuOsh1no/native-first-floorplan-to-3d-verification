@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/shinobu/场景生成_real_floorplan_2026-11-19/src/floorplan/cubicasa_vector_adapter.py", line 218, in <module>
+    scene = convert(a.image, a.svg, a.out)
+  File "/Users/shinobu/场景生成_real_floorplan_2026-11-19/src/floorplan/cubicasa_vector_adapter.py", line 51, in convert
+    raise ValueError(f"UNSUPPORTED_GEOMETRY: nonrectangular room {cls} {group.attrib.get('id')}")
+ValueError: UNSUPPORTED_GEOMETRY: nonrectangular room Space LivingRoom fba7a5a8-557b-44c6-a642-dd9d15ba0f53

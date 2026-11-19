@@ -25,6 +25,12 @@ def load_scene(path: str | Path) -> dict:
         source = source if source.is_absolute() else path.parent / source
         if not source.is_file() or hashlib.sha256(source.read_bytes()).hexdigest() != scene["provenance"]["source_sha256"]:
             raise ValueError("SOURCE_DRAWING source file missing or SHA256 mismatch")
+        annotation_name = scene["provenance"].get("annotation_file")
+        if annotation_name:
+            annotation = Path(annotation_name)
+            annotation = annotation if annotation.is_absolute() else path.parent / annotation
+            if not annotation.is_file() or hashlib.sha256(annotation.read_bytes()).hexdigest() != scene["provenance"].get("annotation_sha256"):
+                raise ValueError("SOURCE_DRAWING annotation file missing or SHA256 mismatch")
     return scene
 
 
@@ -70,6 +76,8 @@ def validate_scene(scene: dict) -> None:
         raise ValueError("Expected metric_scene_v1 and nonempty scene_id")
     if scene.get("units") != "m" or scene.get("world_frame") != "RH_Z_UP":
         raise ValueError("Expected metres and RH_Z_UP global frame")
+    if scene.get("footprint_mode", "BOUNDS_RECT") not in {"BOUNDS_RECT", "SPACE_UNION"}:
+        raise ValueError("Unsupported footprint_mode")
     if float(scene.get("floor_z_m", 0)) != 0:
         raise ValueError("metric_scene_v1 fixes floor_z_m=0; nonzero vertical origin is unsupported")
     if scene.get("provenance", {}).get("kind") not in {"SYNTHETIC", "SOURCE_DRAWING"}:
@@ -132,6 +140,20 @@ def validate_scene(scene: dict) -> None:
                 if not declared <= space_ids or declared != _side_spaces(scene, wall, op):
                     raise ValueError(f"{op['id']}: door links disagree with physical wall sides")
                 doors.append(op)
+            elif op["kind"] == "exterior_door":
+                if abs(z0) > EPS or z1 < 1.8 or len(op.get("connects", [])) != 1:
+                    raise ValueError(f"{op['id']}: invalid exterior door")
+                if op["connects"][0] not in space_ids:
+                    raise ValueError(f"{op['id']}: invalid interior endpoint")
+                # The second side must be outside all declared interior spaces.
+                length_, tangent, normal = _wall_frame(wall)
+                mid = (u0 + u1) / 2
+                center = (wall["p0_m"][0] + mid * tangent[0], wall["p0_m"][1] + mid * tangent[1])
+                offset = wall["thickness_m"] / 2 + .12
+                sides = [(center[0] + s * offset * normal[0], center[1] + s * offset * normal[1]) for s in (-1, 1)]
+                found = [[r["id"] for r in spaces if _inside(r, p)] for p in sides]
+                if sorted(map(len, found)) != [0, 1] or op["connects"][0] not in found[0] + found[1]:
+                    raise ValueError(f"{op['id']}: exterior door side mismatch")
             elif op["kind"] != "window" or op.get("connects"):
                 raise ValueError(f"{op['id']}: invalid window")
     if len(doors) < len(spaces) - 1:
@@ -176,10 +198,19 @@ def components(scene: dict, with_furniture: bool) -> list[dict]:
     validate_scene(scene)
     bx0, by0, bx1, by1 = scene["bounds_m"]
     h = scene["height_m"]
-    result = [
-        _box("floor", "floor", [(bx0 + bx1) / 2, (by0 + by1) / 2, -0.06], [bx1 - bx0, by1 - by0, 0.12], "floor"),
-        _box("ceiling", "ceiling", [(bx0 + bx1) / 2, (by0 + by1) / 2, h + 0.06], [bx1 - bx0, by1 - by0, 0.12], "ceiling"),
-    ]
+    if scene.get("footprint_mode") == "SPACE_UNION":
+        result = []
+        for space in scene["spaces"]:
+            x0, y0, x1, y1 = space["bounds_m"]
+            for kind, z in (("floor", -.06), ("ceiling", h + .06)):
+                result.append(_box(f"{kind}_{space['id']}", kind,
+                                   [(x0 + x1) / 2, (y0 + y1) / 2, z],
+                                   [x1 - x0, y1 - y0, .12], space["id"]))
+    else:
+        result = [
+            _box("floor", "floor", [(bx0 + bx1) / 2, (by0 + by1) / 2, -0.06], [bx1 - bx0, by1 - by0, 0.12], "floor"),
+            _box("ceiling", "ceiling", [(bx0 + bx1) / 2, (by0 + by1) / 2, h + 0.06], [bx1 - bx0, by1 - by0, 0.12], "ceiling"),
+        ]
     for wall in scene["walls"]:
         length, tangent, _ = _wall_frame(wall)
         breaks = sorted({0.0, length, *(float(v) for op in wall.get("openings", []) for v in (op["u0_m"], op["u1_m"]))})

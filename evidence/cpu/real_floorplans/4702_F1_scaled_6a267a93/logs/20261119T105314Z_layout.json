@@ -1,0 +1,29 @@
+{
+  "argv": [
+    "/Users/shinobu/\u573a\u666f\u751f\u6210/.venv/bin/python",
+    "-m",
+    "src.runner.run_cpu",
+    "--scene",
+    "/Users/shinobu/\u573a\u666f\u751f\u6210_real_floorplan_2026-11-19/outputs/batch_real/4702_F1_scaled_6a267a93/metric_scene.json",
+    "--repo",
+    "/Users/shinobu/\u573a\u666f\u751f\u6210/work/upstream/GenRecon",
+    "--output-root",
+    "/Users/shinobu/\u573a\u666f\u751f\u6210_real_floorplan_2026-11-19/outputs/batch_real/4702_F1_scaled_6a267a93",
+    "--blender",
+    "/opt/homebrew/bin/blender",
+    "--steps",
+    "layout",
+    "--size",
+    "128",
+    "--samples",
+    "4",
+    "--n-views",
+    "32"
+  ],
+  "cwd": "/Users/shinobu/\u573a\u666f\u751f\u6210_real_floorplan_2026-11-19",
+  "start_utc": "20261119T105314Z",
+  "elapsed_seconds": 0.1188776670023799,
+  "exit_code": 0,
+  "stdout": "/Users/shinobu/\u573a\u666f\u751f\u6210_real_floorplan_2026-11-19/outputs/batch_real/4702_F1_scaled_6a267a93/logs/20261119T105314Z_layout.stdout.log",
+  "stderr": "/Users/shinobu/\u573a\u666f\u751f\u6210_real_floorplan_2026-11-19/outputs/batch_real/4702_F1_scaled_6a267a93/logs/20261119T105314Z_layout.stderr.log"
+}

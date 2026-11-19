@@ -1,0 +1,496 @@
+{
+  "scene_id": "cubicasa5k_4702",
+  "native_rule": "GenRecon chunk_visible_in_camera, projected clipped area >= 0.4",
+  "chunk_size_m": 2.85,
+  "chunk_centers_sage_m": [
+    [
+      0.6709499999999992,
+      0.7345699999999998,
+      1.425
+    ],
+    [
+      2.630324999999999,
+      0.7345699999999998,
+      1.425
+    ],
+    [
+      4.5897,
+      0.7345699999999998,
+      1.425
+    ],
+    [
+      6.549075,
+      0.7345699999999998,
+      1.425
+    ],
+    [
+      8.50845,
+      0.7345699999999998,
+      1.425
+    ],
+    [
+      0.6709499999999992,
+      2.87207,
+      1.425
+    ],
+    [
+      2.630324999999999,
+      2.87207,
+      1.425
+    ],
+    [
+      4.5897,
+      2.87207,
+      1.425
+    ],
+    [
+      6.549075,
+      2.87207,
+      1.425
+    ],
+    [
+      8.50845,
+      2.87207,
+      1.425
+    ],
+    [
+      0.6709499999999992,
+      5.00957,
+      1.425
+    ],
+    [
+      2.630324999999999,
+      5.00957,
+      1.425
+    ],
+    [
+      4.5897,
+      5.00957,
+      1.425
+    ],
+    [
+      6.549075,
+      5.00957,
+      1.425
+    ],
+    [
+      8.50845,
+      5.00957,
+      1.425
+    ],
+    [
+      0.6709499999999992,
+      7.147070000000001,
+      1.425
+    ],
+    [
+      2.630324999999999,
+      7.147070000000001,
+      1.425
+    ],
+    [
+      4.5897,
+      7.147070000000001,
+      1.425
+    ],
+    [
+      6.549075,
+      7.147070000000001,
+      1.425
+    ],
+    [
+      8.50845,
+      7.147070000000001,
+      1.425
+    ]
+  ],
+  "global_to_sage_translation_m": [
+    -0.0,
+    -0.0,
+    0
+  ],
+  "original_camera_count": 0,
+  "planned_camera_count": 13,
+  "topology_door_camera_ids": [
+    "door_opening_006_Door_space_00",
+    "door_opening_006_Door_space_03",
+    "door_opening_007_Door_space_00",
+    "door_opening_007_Door_space_04",
+    "door_opening_008_Door_space_01",
+    "door_opening_008_Door_space_02",
+    "door_opening_009_Door_space_02",
+    "door_opening_009_Door_space_05",
+    "door_opening_010_Door_space_03",
+    "door_opening_010_Door_space_05"
+  ],
+  "num_imgs_per_scene": 32,
+  "missing_before": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "missing_after": [
+    0,
+    5
+  ],
+  "original_accepted_counts": {
+    "0": 0,
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 0,
+    "6": 0,
+    "7": 0,
+    "8": 0,
+    "9": 0,
+    "10": 0,
+    "11": 0,
+    "12": 0,
+    "13": 0,
+    "14": 0,
+    "15": 0,
+    "16": 0,
+    "17": 0,
+    "18": 0,
+    "19": 0
+  },
+  "failure_diagnostics": {
+    "0": {
+      "center_sage_m": [
+        0.6709499999999992,
+        0.7345699999999998,
+        1.425
+      ],
+      "center_world_m": [
+        0.6709499999999992,
+        0.7345699999999998,
+        1.425
+      ],
+      "best_original_cameras": [],
+      "all_original_rejected": true
+    },
+    "1": {
+      "center_sage_m": [
+        2.630324999999999,
+        0.7345699999999998,
+        1.425
+      ],
+      "center_world_m": [
+        2.630324999999999,
+        0.7345699999999998,
+        1.425
+      ],
+      "best_original_cameras": [],
+      "all_original_rejected": true
+    },
+    "2": {
+      "center_sage_m": [
+        4.5897,
+        0.7345699999999998,
+        1.425
+      ],
+      "center_world_m": [
+        4.5897,
+        0.7345699999999998,
+        1.425
+      ],
+      "best_original_cameras": [],
+      "all_original_rejected": true
+    },
+    "3": {
+      "center_sage_m": [
+        6.549075,
+        0.7345699999999998,
+        1.425
+      ],
+      "center_world_m": [
+        6.549075,
+        0.7345699999999998,
+        1.425
+      ],
+      "best_original_cameras": [],
+      "all_original_rejected": true
+    },
+    "4": {
+      "center_sage_m": [
+        8.50845,
+        0.7345699999999998,
+        1.425
+      ],
+      "center_world_m": [
+        8.50845,
+        0.7345699999999998,
+        1.425
+      ],
+      "best_original_cameras": [],
+      "all_original_rejected": true
+    },
+    "5": {
+      "center_sage_m": [
+        0.6709499999999992,
+        2.87207,
+        1.425
+      ],
+      "center_world_m": [
+        0.6709499999999992,
+        2.87207,
+        1.425
+      ],
+      "best_original_cameras": [],
+      "all_original_rejected": true
+    },
+    "6": {
+      "center_sage_m": [
+        2.630324999999999,
+        2.87207,
+        1.425
+      ],
+      "center_world_m": [
+        2.630324999999999,
+        2.87207,
+        1.425
+      ],
+      "best_original_cameras": [],
+      "all_original_rejected": true
+    },
+    "7": {
+      "center_sage_m": [
+        4.5897,
+        2.87207,
+        1.425
+      ],
+      "center_world_m": [
+        4.5897,
+        2.87207,
+        1.425
+      ],
+      "best_original_cameras": [],
+      "all_original_rejected": true
+    },
+    "8": {
+      "center_sage_m": [
+        6.549075,
+        2.87207,
+        1.425
+      ],
+      "center_world_m": [
+        6.549075,
+        2.87207,
+        1.425
+      ],
+      "best_original_cameras": [],
+      "all_original_rejected": true
+    },
+    "9": {
+      "center_sage_m": [
+        8.50845,
+        2.87207,
+        1.425
+      ],
+      "center_world_m": [
+        8.50845,
+        2.87207,
+        1.425
+      ],
+      "best_original_cameras": [],
+      "all_original_rejected": true
+    },
+    "10": {
+      "center_sage_m": [
+        0.6709499999999992,
+        5.00957,
+        1.425
+      ],
+      "center_world_m": [
+        0.6709499999999992,
+        5.00957,
+        1.425
+      ],
+      "best_original_cameras": [],
+      "all_original_rejected": true
+    },
+    "11": {
+      "center_sage_m": [
+        2.630324999999999,
+        5.00957,
+        1.425
+      ],
+      "center_world_m": [
+        2.630324999999999,
+        5.00957,
+        1.425
+      ],
+      "best_original_cameras": [],
+      "all_original_rejected": true
+    },
+    "12": {
+      "center_sage_m": [
+        4.5897,
+        5.00957,
+        1.425
+      ],
+      "center_world_m": [
+        4.5897,
+        5.00957,
+        1.425
+      ],
+      "best_original_cameras": [],
+      "all_original_rejected": true
+    },
+    "13": {
+      "center_sage_m": [
+        6.549075,
+        5.00957,
+        1.425
+      ],
+      "center_world_m": [
+        6.549075,
+        5.00957,
+        1.425
+      ],
+      "best_original_cameras": [],
+      "all_original_rejected": true
+    },
+    "14": {
+      "center_sage_m": [
+        8.50845,
+        5.00957,
+        1.425
+      ],
+      "center_world_m": [
+        8.50845,
+        5.00957,
+        1.425
+      ],
+      "best_original_cameras": [],
+      "all_original_rejected": true
+    },
+    "15": {
+      "center_sage_m": [
+        0.6709499999999992,
+        7.147070000000001,
+        1.425
+      ],
+      "center_world_m": [
+        0.6709499999999992,
+        7.147070000000001,
+        1.425
+      ],
+      "best_original_cameras": [],
+      "all_original_rejected": true
+    },
+    "16": {
+      "center_sage_m": [
+        2.630324999999999,
+        7.147070000000001,
+        1.425
+      ],
+      "center_world_m": [
+        2.630324999999999,
+        7.147070000000001,
+        1.425
+      ],
+      "best_original_cameras": [],
+      "all_original_rejected": true
+    },
+    "17": {
+      "center_sage_m": [
+        4.5897,
+        7.147070000000001,
+        1.425
+      ],
+      "center_world_m": [
+        4.5897,
+        7.147070000000001,
+        1.425
+      ],
+      "best_original_cameras": [],
+      "all_original_rejected": true
+    },
+    "18": {
+      "center_sage_m": [
+        6.549075,
+        7.147070000000001,
+        1.425
+      ],
+      "center_world_m": [
+        6.549075,
+        7.147070000000001,
+        1.425
+      ],
+      "best_original_cameras": [],
+      "all_original_rejected": true
+    },
+    "19": {
+      "center_sage_m": [
+        8.50845,
+        7.147070000000001,
+        1.425
+      ],
+      "center_world_m": [
+        8.50845,
+        7.147070000000001,
+        1.425
+      ],
+      "best_original_cameras": [],
+      "all_original_rejected": true
+    }
+  },
+  "planned_camera_ids": [
+    "door_opening_006_Door_space_00",
+    "door_opening_006_Door_space_03",
+    "door_opening_007_Door_space_00",
+    "door_opening_007_Door_space_04",
+    "door_opening_008_Door_space_01",
+    "door_opening_008_Door_space_02",
+    "door_opening_009_Door_space_02",
+    "door_opening_009_Door_space_05",
+    "door_opening_010_Door_space_03",
+    "door_opening_010_Door_space_05",
+    "auto_00_space_01_3",
+    "auto_02_space_02_4",
+    "auto_00_space_01_4"
+  ],
+  "auto_camera_coverage": {
+    "auto_00_space_01_3": [
+      10,
+      11,
+      15,
+      16
+    ],
+    "auto_02_space_02_4": [
+      13,
+      14,
+      18,
+      19
+    ],
+    "auto_00_space_01_4": [
+      10,
+      11,
+      12,
+      16,
+      17
+    ]
+  },
+  "auto_camera_requires_unblocked_ray_to_chunk_center": true,
+  "official_source_sha": "unmodified",
+  "model_forward_executed": false
+}

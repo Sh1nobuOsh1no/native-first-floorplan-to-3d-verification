@@ -1,0 +1,3478 @@
+{
+  "parser": "opencv_morphology_cpu_v1",
+  "source_file": "/Users/shinobu/\u573a\u666f\u751f\u6210_real_floorplan_2026-11-19/fixtures/real_floorplans/8741/F1_scaled.png",
+  "source_sha256": "0935e544b87c1026b26bbc7ce31b5d0f47380caffa9e06edeaa2e1dcad59d529",
+  "image_size_px": [
+    1236,
+    2570
+  ],
+  "wall_traces": [
+    {
+      "id": "trace_0000",
+      "axis": "H",
+      "pixel_span": [
+        0,
+        1127
+      ],
+      "pixel_center": 290.0,
+      "pixel_thickness": 2,
+      "bbox_px": [
+        0,
+        289,
+        1127,
+        291
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          0,
+          289,
+          1127,
+          291
+        ]
+      }
+    },
+    {
+      "id": "trace_0001",
+      "axis": "H",
+      "pixel_span": [
+        0,
+        1128
+      ],
+      "pixel_center": 332.0,
+      "pixel_thickness": 2,
+      "bbox_px": [
+        0,
+        331,
+        1128,
+        333
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          0,
+          331,
+          1128,
+          333
+        ]
+      }
+    },
+    {
+      "id": "trace_0002",
+      "axis": "H",
+      "pixel_span": [
+        0,
+        1106
+      ],
+      "pixel_center": 604.0,
+      "pixel_thickness": 2,
+      "bbox_px": [
+        0,
+        603,
+        1106,
+        605
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          0,
+          603,
+          1106,
+          605
+        ]
+      }
+    },
+    {
+      "id": "trace_0003",
+      "axis": "H",
+      "pixel_span": [
+        0,
+        1134
+      ],
+      "pixel_center": 675.5,
+      "pixel_thickness": 45,
+      "bbox_px": [
+        0,
+        653,
+        1134,
+        698
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          0,
+          653,
+          1134,
+          698
+        ]
+      }
+    },
+    {
+      "id": "trace_0004",
+      "axis": "H",
+      "pixel_span": [
+        0,
+        70
+      ],
+      "pixel_center": 682.5,
+      "pixel_thickness": 3,
+      "bbox_px": [
+        0,
+        681,
+        70,
+        684
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          0,
+          681,
+          70,
+          684
+        ]
+      }
+    },
+    {
+      "id": "trace_0005",
+      "axis": "H",
+      "pixel_span": [
+        227,
+        363
+      ],
+      "pixel_center": 682.5,
+      "pixel_thickness": 3,
+      "bbox_px": [
+        227,
+        681,
+        363,
+        684
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          227,
+          681,
+          363,
+          684
+        ]
+      }
+    },
+    {
+      "id": "trace_0006",
+      "axis": "H",
+      "pixel_span": [
+        427,
+        626
+      ],
+      "pixel_center": 682.5,
+      "pixel_thickness": 3,
+      "bbox_px": [
+        427,
+        681,
+        626,
+        684
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          427,
+          681,
+          626,
+          684
+        ]
+      }
+    },
+    {
+      "id": "trace_0007",
+      "axis": "H",
+      "pixel_span": [
+        817,
+        951
+      ],
+      "pixel_center": 682.5,
+      "pixel_thickness": 3,
+      "bbox_px": [
+        817,
+        681,
+        951,
+        684
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          817,
+          681,
+          951,
+          684
+        ]
+      }
+    },
+    {
+      "id": "trace_0008",
+      "axis": "H",
+      "pixel_span": [
+        1034,
+        1134
+      ],
+      "pixel_center": 760.5,
+      "pixel_thickness": 3,
+      "bbox_px": [
+        1034,
+        759,
+        1134,
+        762
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          1034,
+          759,
+          1134,
+          762
+        ]
+      }
+    },
+    {
+      "id": "trace_0009",
+      "axis": "H",
+      "pixel_span": [
+        307,
+        408
+      ],
+      "pixel_center": 770.5,
+      "pixel_thickness": 3,
+      "bbox_px": [
+        307,
+        769,
+        408,
+        772
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          307,
+          769,
+          408,
+          772
+        ]
+      }
+    },
+    {
+      "id": "trace_0010",
+      "axis": "H",
+      "pixel_span": [
+        1034,
+        1099
+      ],
+      "pixel_center": 823.5,
+      "pixel_thickness": 3,
+      "bbox_px": [
+        1034,
+        822,
+        1099,
+        825
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          1034,
+          822,
+          1099,
+          825
+        ]
+      }
+    },
+    {
+      "id": "trace_0011",
+      "axis": "H",
+      "pixel_span": [
+        1034,
+        1099
+      ],
+      "pixel_center": 890.5,
+      "pixel_thickness": 3,
+      "bbox_px": [
+        1034,
+        889,
+        1099,
+        892
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          1034,
+          889,
+          1099,
+          892
+        ]
+      }
+    },
+    {
+      "id": "trace_0012",
+      "axis": "H",
+      "pixel_span": [
+        1034,
+        1099
+      ],
+      "pixel_center": 952.5,
+      "pixel_thickness": 3,
+      "bbox_px": [
+        1034,
+        951,
+        1099,
+        954
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          1034,
+          951,
+          1099,
+          954
+        ]
+      }
+    },
+    {
+      "id": "trace_0013",
+      "axis": "H",
+      "pixel_span": [
+        792,
+        1037
+      ],
+      "pixel_center": 1017.0,
+      "pixel_thickness": 6,
+      "bbox_px": [
+        792,
+        1014,
+        1037,
+        1020
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          792,
+          1014,
+          1037,
+          1020
+        ]
+      }
+    },
+    {
+      "id": "trace_0014",
+      "axis": "H",
+      "pixel_span": [
+        933,
+        980
+      ],
+      "pixel_center": 1024.5,
+      "pixel_thickness": 3,
+      "bbox_px": [
+        933,
+        1023,
+        980,
+        1026
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          933,
+          1023,
+          980,
+          1026
+        ]
+      }
+    },
+    {
+      "id": "trace_0015",
+      "axis": "H",
+      "pixel_span": [
+        791,
+        1134
+      ],
+      "pixel_center": 1083.5,
+      "pixel_thickness": 17,
+      "bbox_px": [
+        791,
+        1075,
+        1134,
+        1092
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          791,
+          1075,
+          1134,
+          1092
+        ]
+      }
+    },
+    {
+      "id": "trace_0016",
+      "axis": "H",
+      "pixel_span": [
+        817,
+        863
+      ],
+      "pixel_center": 1099.5,
+      "pixel_thickness": 3,
+      "bbox_px": [
+        817,
+        1098,
+        863,
+        1101
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          817,
+          1098,
+          863,
+          1101
+        ]
+      }
+    },
+    {
+      "id": "trace_0017",
+      "axis": "H",
+      "pixel_span": [
+        815,
+        859
+      ],
+      "pixel_center": 1124.5,
+      "pixel_thickness": 3,
+      "bbox_px": [
+        815,
+        1123,
+        859,
+        1126
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          815,
+          1123,
+          859,
+          1126
+        ]
+      }
+    },
+    {
+      "id": "trace_0018",
+      "axis": "H",
+      "pixel_span": [
+        98,
+        409
+      ],
+      "pixel_center": 1131.0,
+      "pixel_thickness": 4,
+      "bbox_px": [
+        98,
+        1129,
+        409,
+        1133
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          98,
+          1129,
+          409,
+          1133
+        ]
+      }
+    },
+    {
+      "id": "trace_0019",
+      "axis": "H",
+      "pixel_span": [
+        706,
+        805
+      ],
+      "pixel_center": 1130.5,
+      "pixel_thickness": 3,
+      "bbox_px": [
+        706,
+        1129,
+        805,
+        1132
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          706,
+          1129,
+          805,
+          1132
+        ]
+      }
+    },
+    {
+      "id": "trace_0020",
+      "axis": "H",
+      "pixel_span": [
+        938,
+        1134
+      ],
+      "pixel_center": 1141.5,
+      "pixel_thickness": 3,
+      "bbox_px": [
+        938,
+        1140,
+        1134,
+        1143
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          938,
+          1140,
+          1134,
+          1143
+        ]
+      }
+    },
+    {
+      "id": "trace_0021",
+      "axis": "H",
+      "pixel_span": [
+        0,
+        135
+      ],
+      "pixel_center": 1168.0,
+      "pixel_thickness": 18,
+      "bbox_px": [
+        0,
+        1159,
+        135,
+        1177
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          0,
+          1159,
+          135,
+          1177
+        ]
+      }
+    },
+    {
+      "id": "trace_0022",
+      "axis": "H",
+      "pixel_span": [
+        876,
+        936
+      ],
+      "pixel_center": 1165.5,
+      "pixel_thickness": 3,
+      "bbox_px": [
+        876,
+        1164,
+        936,
+        1167
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          876,
+          1164,
+          936,
+          1167
+        ]
+      }
+    },
+    {
+      "id": "trace_0023",
+      "axis": "H",
+      "pixel_span": [
+        98,
+        659
+      ],
+      "pixel_center": 1201.0,
+      "pixel_thickness": 22,
+      "bbox_px": [
+        98,
+        1190,
+        659,
+        1212
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          98,
+          1190,
+          659,
+          1212
+        ]
+      }
+    },
+    {
+      "id": "trace_0024",
+      "axis": "H",
+      "pixel_span": [
+        876,
+        936
+      ],
+      "pixel_center": 1201.5,
+      "pixel_thickness": 3,
+      "bbox_px": [
+        876,
+        1200,
+        936,
+        1203
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          876,
+          1200,
+          936,
+          1203
+        ]
+      }
+    },
+    {
+      "id": "trace_0025",
+      "axis": "H",
+      "pixel_span": [
+        504,
+        559
+      ],
+      "pixel_center": 1214.5,
+      "pixel_thickness": 3,
+      "bbox_px": [
+        504,
+        1213,
+        559,
+        1216
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          504,
+          1213,
+          559,
+          1216
+        ]
+      }
+    },
+    {
+      "id": "trace_0026",
+      "axis": "H",
+      "pixel_span": [
+        791,
+        1134
+      ],
+      "pixel_center": 1230.5,
+      "pixel_thickness": 17,
+      "bbox_px": [
+        791,
+        1222,
+        1134,
+        1239
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          791,
+          1222,
+          1134,
+          1239
+        ]
+      }
+    },
+    {
+      "id": "trace_0027",
+      "axis": "H",
+      "pixel_span": [
+        792,
+        891
+      ],
+      "pixel_center": 1245.5,
+      "pixel_thickness": 3,
+      "bbox_px": [
+        792,
+        1244,
+        891,
+        1247
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          792,
+          1244,
+          891,
+          1247
+        ]
+      }
+    },
+    {
+      "id": "trace_0028",
+      "axis": "H",
+      "pixel_span": [
+        508,
+        555
+      ],
+      "pixel_center": 1251.5,
+      "pixel_thickness": 3,
+      "bbox_px": [
+        508,
+        1250,
+        555,
+        1253
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          508,
+          1250,
+          555,
+          1253
+        ]
+      }
+    },
+    {
+      "id": "trace_0029",
+      "axis": "H",
+      "pixel_span": [
+        45,
+        135
+      ],
+      "pixel_center": 1268.5,
+      "pixel_thickness": 3,
+      "bbox_px": [
+        45,
+        1267,
+        135,
+        1270
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          45,
+          1267,
+          135,
+          1270
+        ]
+      }
+    },
+    {
+      "id": "trace_0030",
+      "axis": "H",
+      "pixel_span": [
+        96,
+        335
+      ],
+      "pixel_center": 1272.5,
+      "pixel_thickness": 3,
+      "bbox_px": [
+        96,
+        1271,
+        335,
+        1274
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          96,
+          1271,
+          335,
+          1274
+        ]
+      }
+    },
+    {
+      "id": "trace_0031",
+      "axis": "H",
+      "pixel_span": [
+        319,
+        383
+      ],
+      "pixel_center": 1298.0,
+      "pixel_thickness": 6,
+      "bbox_px": [
+        319,
+        1295,
+        383,
+        1301
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          319,
+          1295,
+          383,
+          1301
+        ]
+      }
+    },
+    {
+      "id": "trace_0032",
+      "axis": "H",
+      "pixel_span": [
+        137,
+        335
+      ],
+      "pixel_center": 1315.5,
+      "pixel_thickness": 3,
+      "bbox_px": [
+        137,
+        1314,
+        335,
+        1317
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          137,
+          1314,
+          335,
+          1317
+        ]
+      }
+    },
+    {
+      "id": "trace_0033",
+      "axis": "H",
+      "pixel_span": [
+        137,
+        227
+      ],
+      "pixel_center": 1322.5,
+      "pixel_thickness": 3,
+      "bbox_px": [
+        137,
+        1321,
+        227,
+        1324
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          137,
+          1321,
+          227,
+          1324
+        ]
+      }
+    },
+    {
+      "id": "trace_0034",
+      "axis": "H",
+      "pixel_span": [
+        44,
+        135
+      ],
+      "pixel_center": 1342.0,
+      "pixel_thickness": 10,
+      "bbox_px": [
+        44,
+        1337,
+        135,
+        1347
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          44,
+          1337,
+          135,
+          1347
+        ]
+      }
+    },
+    {
+      "id": "trace_0035",
+      "axis": "H",
+      "pixel_span": [
+        146,
+        199
+      ],
+      "pixel_center": 1348.5,
+      "pixel_thickness": 3,
+      "bbox_px": [
+        146,
+        1347,
+        199,
+        1350
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          146,
+          1347,
+          199,
+          1350
+        ]
+      }
+    },
+    {
+      "id": "trace_0036",
+      "axis": "H",
+      "pixel_span": [
+        229,
+        296
+      ],
+      "pixel_center": 1356.5,
+      "pixel_thickness": 5,
+      "bbox_px": [
+        229,
+        1354,
+        296,
+        1359
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          229,
+          1354,
+          296,
+          1359
+        ]
+      }
+    },
+    {
+      "id": "trace_0037",
+      "axis": "H",
+      "pixel_span": [
+        320,
+        399
+      ],
+      "pixel_center": 1383.5,
+      "pixel_thickness": 3,
+      "bbox_px": [
+        320,
+        1382,
+        399,
+        1385
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          320,
+          1382,
+          399,
+          1385
+        ]
+      }
+    },
+    {
+      "id": "trace_0038",
+      "axis": "H",
+      "pixel_span": [
+        635,
+        734
+      ],
+      "pixel_center": 1383.5,
+      "pixel_thickness": 3,
+      "bbox_px": [
+        635,
+        1382,
+        734,
+        1385
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          635,
+          1382,
+          734,
+          1385
+        ]
+      }
+    },
+    {
+      "id": "trace_0039",
+      "axis": "H",
+      "pixel_span": [
+        90,
+        807
+      ],
+      "pixel_center": 1406.0,
+      "pixel_thickness": 42,
+      "bbox_px": [
+        90,
+        1385,
+        807,
+        1427
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          90,
+          1385,
+          807,
+          1427
+        ]
+      }
+    },
+    {
+      "id": "trace_0040",
+      "axis": "H",
+      "pixel_span": [
+        1085,
+        1134
+      ],
+      "pixel_center": 1398.5,
+      "pixel_thickness": 3,
+      "bbox_px": [
+        1085,
+        1397,
+        1134,
+        1400
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          1085,
+          1397,
+          1134,
+          1400
+        ]
+      }
+    },
+    {
+      "id": "trace_0041",
+      "axis": "H",
+      "pixel_span": [
+        544,
+        600
+      ],
+      "pixel_center": 1435.0,
+      "pixel_thickness": 2,
+      "bbox_px": [
+        544,
+        1434,
+        600,
+        1436
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          544,
+          1434,
+          600,
+          1436
+        ]
+      }
+    },
+    {
+      "id": "trace_0042",
+      "axis": "H",
+      "pixel_span": [
+        0,
+        58
+      ],
+      "pixel_center": 1457.5,
+      "pixel_thickness": 3,
+      "bbox_px": [
+        0,
+        1456,
+        58,
+        1459
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          0,
+          1456,
+          58,
+          1459
+        ]
+      }
+    },
+    {
+      "id": "trace_0043",
+      "axis": "H",
+      "pixel_span": [
+        1085,
+        1134
+      ],
+      "pixel_center": 1565.5,
+      "pixel_thickness": 3,
+      "bbox_px": [
+        1085,
+        1564,
+        1134,
+        1567
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          1085,
+          1564,
+          1134,
+          1567
+        ]
+      }
+    },
+    {
+      "id": "trace_0044",
+      "axis": "H",
+      "pixel_span": [
+        0,
+        1134
+      ],
+      "pixel_center": 1650.0,
+      "pixel_thickness": 44,
+      "bbox_px": [
+        0,
+        1628,
+        1134,
+        1672
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          0,
+          1628,
+          1134,
+          1672
+        ]
+      }
+    },
+    {
+      "id": "trace_0045",
+      "axis": "H",
+      "pixel_span": [
+        0,
+        1115
+      ],
+      "pixel_center": 1825.0,
+      "pixel_thickness": 2,
+      "bbox_px": [
+        0,
+        1824,
+        1115,
+        1826
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          0,
+          1824,
+          1115,
+          1826
+        ]
+      }
+    },
+    {
+      "id": "trace_0046",
+      "axis": "H",
+      "pixel_span": [
+        807,
+        1117
+      ],
+      "pixel_center": 1866.5,
+      "pixel_thickness": 3,
+      "bbox_px": [
+        807,
+        1865,
+        1117,
+        1868
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          807,
+          1865,
+          1117,
+          1868
+        ]
+      }
+    },
+    {
+      "id": "trace_0047",
+      "axis": "H",
+      "pixel_span": [
+        118,
+        230
+      ],
+      "pixel_center": 1880.0,
+      "pixel_thickness": 12,
+      "bbox_px": [
+        118,
+        1874,
+        230,
+        1886
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          118,
+          1874,
+          230,
+          1886
+        ]
+      }
+    },
+    {
+      "id": "trace_0048",
+      "axis": "H",
+      "pixel_span": [
+        466,
+        578
+      ],
+      "pixel_center": 1880.0,
+      "pixel_thickness": 12,
+      "bbox_px": [
+        466,
+        1874,
+        578,
+        1886
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          466,
+          1874,
+          578,
+          1886
+        ]
+      }
+    },
+    {
+      "id": "trace_0049",
+      "axis": "H",
+      "pixel_span": [
+        807,
+        1117
+      ],
+      "pixel_center": 1908.5,
+      "pixel_thickness": 3,
+      "bbox_px": [
+        807,
+        1907,
+        1117,
+        1910
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          807,
+          1907,
+          1117,
+          1910
+        ]
+      }
+    },
+    {
+      "id": "trace_0050",
+      "axis": "H",
+      "pixel_span": [
+        134,
+        214
+      ],
+      "pixel_center": 2000.0,
+      "pixel_thickness": 2,
+      "bbox_px": [
+        134,
+        1999,
+        214,
+        2001
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          134,
+          1999,
+          214,
+          2001
+        ]
+      }
+    },
+    {
+      "id": "trace_0051",
+      "axis": "H",
+      "pixel_span": [
+        482,
+        562
+      ],
+      "pixel_center": 2000.0,
+      "pixel_thickness": 2,
+      "bbox_px": [
+        482,
+        1999,
+        562,
+        2001
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          482,
+          1999,
+          562,
+          2001
+        ]
+      }
+    },
+    {
+      "id": "trace_0052",
+      "axis": "H",
+      "pixel_span": [
+        99,
+        247
+      ],
+      "pixel_center": 2080.0,
+      "pixel_thickness": 4,
+      "bbox_px": [
+        99,
+        2078,
+        247,
+        2082
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          99,
+          2078,
+          247,
+          2082
+        ]
+      }
+    },
+    {
+      "id": "trace_0053",
+      "axis": "H",
+      "pixel_span": [
+        448,
+        595
+      ],
+      "pixel_center": 2080.0,
+      "pixel_thickness": 4,
+      "bbox_px": [
+        448,
+        2078,
+        595,
+        2082
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          448,
+          2078,
+          595,
+          2082
+        ]
+      }
+    },
+    {
+      "id": "trace_0054",
+      "axis": "H",
+      "pixel_span": [
+        86,
+        262
+      ],
+      "pixel_center": 2356.0,
+      "pixel_thickness": 10,
+      "bbox_px": [
+        86,
+        2351,
+        262,
+        2361
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          86,
+          2351,
+          262,
+          2361
+        ]
+      }
+    },
+    {
+      "id": "trace_0055",
+      "axis": "H",
+      "pixel_span": [
+        434,
+        610
+      ],
+      "pixel_center": 2356.0,
+      "pixel_thickness": 10,
+      "bbox_px": [
+        434,
+        2351,
+        610,
+        2361
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          434,
+          2351,
+          610,
+          2361
+        ]
+      }
+    },
+    {
+      "id": "trace_0056",
+      "axis": "H",
+      "pixel_span": [
+        696,
+        761
+      ],
+      "pixel_center": 2400.5,
+      "pixel_thickness": 3,
+      "bbox_px": [
+        696,
+        2399,
+        761,
+        2402
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          696,
+          2399,
+          761,
+          2402
+        ]
+      }
+    },
+    {
+      "id": "trace_0057",
+      "axis": "V",
+      "pixel_span": [
+        176,
+        1690
+      ],
+      "pixel_center": 89.5,
+      "pixel_thickness": 93,
+      "bbox_px": [
+        43,
+        176,
+        136,
+        1690
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          43,
+          176,
+          136,
+          1690
+        ]
+      }
+    },
+    {
+      "id": "trace_0058",
+      "axis": "V",
+      "pixel_span": [
+        288,
+        377
+      ],
+      "pixel_center": 596.0,
+      "pixel_thickness": 4,
+      "bbox_px": [
+        594,
+        288,
+        598,
+        377
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          594,
+          288,
+          598,
+          377
+        ]
+      }
+    },
+    {
+      "id": "trace_0059",
+      "axis": "V",
+      "pixel_span": [
+        288,
+        1952
+      ],
+      "pixel_center": 1113.0,
+      "pixel_thickness": 44,
+      "bbox_px": [
+        1091,
+        288,
+        1135,
+        1952
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          1091,
+          288,
+          1135,
+          1952
+        ]
+      }
+    },
+    {
+      "id": "trace_0060",
+      "axis": "V",
+      "pixel_span": [
+        575,
+        685
+      ],
+      "pixel_center": 667.5,
+      "pixel_thickness": 3,
+      "bbox_px": [
+        666,
+        575,
+        669,
+        685
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          666,
+          575,
+          669,
+          685
+        ]
+      }
+    },
+    {
+      "id": "trace_0061",
+      "axis": "V",
+      "pixel_span": [
+        651,
+        694
+      ],
+      "pixel_center": 763.0,
+      "pixel_thickness": 2,
+      "bbox_px": [
+        762,
+        651,
+        764,
+        694
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          762,
+          651,
+          764,
+          694
+        ]
+      }
+    },
+    {
+      "id": "trace_0062",
+      "axis": "V",
+      "pixel_span": [
+        653,
+        1206
+      ],
+      "pixel_center": 401.5,
+      "pixel_thickness": 17,
+      "bbox_px": [
+        393,
+        653,
+        410,
+        1206
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          393,
+          653,
+          410,
+          1206
+        ]
+      }
+    },
+    {
+      "id": "trace_0063",
+      "axis": "V",
+      "pixel_span": [
+        653,
+        1016
+      ],
+      "pixel_center": 1036.5,
+      "pixel_thickness": 3,
+      "bbox_px": [
+        1035,
+        653,
+        1038,
+        1016
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          1035,
+          653,
+          1038,
+          1016
+        ]
+      }
+    },
+    {
+      "id": "trace_0064",
+      "axis": "V",
+      "pixel_span": [
+        776,
+        908
+      ],
+      "pixel_center": 1107.5,
+      "pixel_thickness": 3,
+      "bbox_px": [
+        1106,
+        776,
+        1109,
+        908
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          1106,
+          776,
+          1109,
+          908
+        ]
+      }
+    },
+    {
+      "id": "trace_0065",
+      "axis": "V",
+      "pixel_span": [
+        933,
+        1065
+      ],
+      "pixel_center": 1107.5,
+      "pixel_thickness": 3,
+      "bbox_px": [
+        1106,
+        933,
+        1109,
+        1065
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          1106,
+          933,
+          1109,
+          1065
+        ]
+      }
+    },
+    {
+      "id": "trace_0066",
+      "axis": "V",
+      "pixel_span": [
+        1013,
+        1671
+      ],
+      "pixel_center": 800.0,
+      "pixel_thickness": 16,
+      "bbox_px": [
+        792,
+        1013,
+        808,
+        1671
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          792,
+          1013,
+          808,
+          1671
+        ]
+      }
+    },
+    {
+      "id": "trace_0067",
+      "axis": "V",
+      "pixel_span": [
+        1013,
+        1091
+      ],
+      "pixel_center": 857.0,
+      "pixel_thickness": 2,
+      "bbox_px": [
+        856,
+        1013,
+        858,
+        1091
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          856,
+          1013,
+          858,
+          1091
+        ]
+      }
+    },
+    {
+      "id": "trace_0068",
+      "axis": "V",
+      "pixel_span": [
+        1013,
+        1091
+      ],
+      "pixel_center": 931.5,
+      "pixel_thickness": 3,
+      "bbox_px": [
+        930,
+        1013,
+        933,
+        1091
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          930,
+          1013,
+          933,
+          1091
+        ]
+      }
+    },
+    {
+      "id": "trace_0069",
+      "axis": "V",
+      "pixel_span": [
+        1013,
+        1091
+      ],
+      "pixel_center": 1015.0,
+      "pixel_thickness": 4,
+      "bbox_px": [
+        1013,
+        1013,
+        1017,
+        1091
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          1013,
+          1013,
+          1017,
+          1091
+        ]
+      }
+    },
+    {
+      "id": "trace_0070",
+      "axis": "V",
+      "pixel_span": [
+        1022,
+        1067
+      ],
+      "pixel_center": 935.5,
+      "pixel_thickness": 3,
+      "bbox_px": [
+        934,
+        1022,
+        937,
+        1067
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          934,
+          1022,
+          937,
+          1067
+        ]
+      }
+    },
+    {
+      "id": "trace_0071",
+      "axis": "V",
+      "pixel_span": [
+        1022,
+        1065
+      ],
+      "pixel_center": 964.0,
+      "pixel_thickness": 4,
+      "bbox_px": [
+        962,
+        1022,
+        966,
+        1065
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          962,
+          1022,
+          966,
+          1065
+        ]
+      }
+    },
+    {
+      "id": "trace_0072",
+      "axis": "V",
+      "pixel_span": [
+        1074,
+        1121
+      ],
+      "pixel_center": 814.5,
+      "pixel_thickness": 3,
+      "bbox_px": [
+        813,
+        1074,
+        816,
+        1121
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          813,
+          1074,
+          816,
+          1121
+        ]
+      }
+    },
+    {
+      "id": "trace_0073",
+      "axis": "V",
+      "pixel_span": [
+        1074,
+        1119
+      ],
+      "pixel_center": 867.5,
+      "pixel_thickness": 3,
+      "bbox_px": [
+        866,
+        1074,
+        869,
+        1119
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          866,
+          1074,
+          869,
+          1119
+        ]
+      }
+    },
+    {
+      "id": "trace_0074",
+      "axis": "V",
+      "pixel_span": [
+        1074,
+        1238
+      ],
+      "pixel_center": 947.0,
+      "pixel_thickness": 16,
+      "bbox_px": [
+        939,
+        1074,
+        955,
+        1238
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          939,
+          1074,
+          955,
+          1238
+        ]
+      }
+    },
+    {
+      "id": "trace_0075",
+      "axis": "V",
+      "pixel_span": [
+        1158,
+        1212
+      ],
+      "pixel_center": 18.5,
+      "pixel_thickness": 3,
+      "bbox_px": [
+        17,
+        1158,
+        20,
+        1212
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          17,
+          1158,
+          20,
+          1212
+        ]
+      }
+    },
+    {
+      "id": "trace_0076",
+      "axis": "V",
+      "pixel_span": [
+        1187,
+        1426
+      ],
+      "pixel_center": 139.5,
+      "pixel_thickness": 3,
+      "bbox_px": [
+        138,
+        1187,
+        141,
+        1426
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          138,
+          1187,
+          141,
+          1426
+        ]
+      }
+    },
+    {
+      "id": "trace_0077",
+      "axis": "V",
+      "pixel_span": [
+        1190,
+        1316
+      ],
+      "pixel_center": 316.0,
+      "pixel_thickness": 4,
+      "bbox_px": [
+        314,
+        1190,
+        318,
+        1316
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          314,
+          1190,
+          318,
+          1316
+        ]
+      }
+    },
+    {
+      "id": "trace_0078",
+      "axis": "V",
+      "pixel_span": [
+        1190,
+        1321
+      ],
+      "pixel_center": 328.0,
+      "pixel_thickness": 16,
+      "bbox_px": [
+        320,
+        1190,
+        336,
+        1321
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          320,
+          1190,
+          336,
+          1321
+        ]
+      }
+    },
+    {
+      "id": "trace_0079",
+      "axis": "V",
+      "pixel_span": [
+        1190,
+        1234
+      ],
+      "pixel_center": 370.5,
+      "pixel_thickness": 3,
+      "bbox_px": [
+        369,
+        1190,
+        372,
+        1234
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          369,
+          1190,
+          372,
+          1234
+        ]
+      }
+    },
+    {
+      "id": "trace_0080",
+      "axis": "V",
+      "pixel_span": [
+        1190,
+        1259
+      ],
+      "pixel_center": 426.0,
+      "pixel_thickness": 6,
+      "bbox_px": [
+        423,
+        1190,
+        429,
+        1259
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          423,
+          1190,
+          429,
+          1259
+        ]
+      }
+    },
+    {
+      "id": "trace_0081",
+      "axis": "V",
+      "pixel_span": [
+        1190,
+        1244
+      ],
+      "pixel_center": 500.5,
+      "pixel_thickness": 3,
+      "bbox_px": [
+        499,
+        1190,
+        502,
+        1244
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          499,
+          1190,
+          502,
+          1244
+        ]
+      }
+    },
+    {
+      "id": "trace_0082",
+      "axis": "V",
+      "pixel_span": [
+        1190,
+        1241
+      ],
+      "pixel_center": 564.5,
+      "pixel_thickness": 3,
+      "bbox_px": [
+        563,
+        1190,
+        566,
+        1241
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          563,
+          1190,
+          566,
+          1241
+        ]
+      }
+    },
+    {
+      "id": "trace_0083",
+      "axis": "V",
+      "pixel_span": [
+        1190,
+        1406
+      ],
+      "pixel_center": 642.0,
+      "pixel_thickness": 16,
+      "bbox_px": [
+        634,
+        1190,
+        650,
+        1406
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          634,
+          1190,
+          650,
+          1406
+        ]
+      }
+    },
+    {
+      "id": "trace_0084",
+      "axis": "V",
+      "pixel_span": [
+        1208,
+        1262
+      ],
+      "pixel_center": 450.5,
+      "pixel_thickness": 3,
+      "bbox_px": [
+        449,
+        1208,
+        452,
+        1262
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          449,
+          1208,
+          452,
+          1262
+        ]
+      }
+    },
+    {
+      "id": "trace_0085",
+      "axis": "V",
+      "pixel_span": [
+        1208,
+        1265
+      ],
+      "pixel_center": 487.5,
+      "pixel_thickness": 3,
+      "bbox_px": [
+        486,
+        1208,
+        489,
+        1265
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          486,
+          1208,
+          489,
+          1265
+        ]
+      }
+    },
+    {
+      "id": "trace_0086",
+      "axis": "V",
+      "pixel_span": [
+        1222,
+        1323
+      ],
+      "pixel_center": 1047.5,
+      "pixel_thickness": 3,
+      "bbox_px": [
+        1046,
+        1222,
+        1049,
+        1323
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          1046,
+          1222,
+          1049,
+          1323
+        ]
+      }
+    },
+    {
+      "id": "trace_0087",
+      "axis": "V",
+      "pixel_span": [
+        1311,
+        1426
+      ],
+      "pixel_center": 226.5,
+      "pixel_thickness": 3,
+      "bbox_px": [
+        225,
+        1311,
+        228,
+        1426
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          225,
+          1311,
+          228,
+          1426
+        ]
+      }
+    },
+    {
+      "id": "trace_0088",
+      "axis": "V",
+      "pixel_span": [
+        1311,
+        1358
+      ],
+      "pixel_center": 231.0,
+      "pixel_thickness": 2,
+      "bbox_px": [
+        230,
+        1311,
+        232,
+        1358
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          230,
+          1311,
+          232,
+          1358
+        ]
+      }
+    },
+    {
+      "id": "trace_0089",
+      "axis": "V",
+      "pixel_span": [
+        1311,
+        1358
+      ],
+      "pixel_center": 295.5,
+      "pixel_thickness": 3,
+      "bbox_px": [
+        294,
+        1311,
+        297,
+        1358
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          294,
+          1311,
+          297,
+          1358
+        ]
+      }
+    },
+    {
+      "id": "trace_0090",
+      "axis": "V",
+      "pixel_span": [
+        1320,
+        1426
+      ],
+      "pixel_center": 218.5,
+      "pixel_thickness": 5,
+      "bbox_px": [
+        216,
+        1320,
+        221,
+        1426
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          216,
+          1320,
+          221,
+          1426
+        ]
+      }
+    },
+    {
+      "id": "trace_0091",
+      "axis": "V",
+      "pixel_span": [
+        1346,
+        1426
+      ],
+      "pixel_center": 148.0,
+      "pixel_thickness": 2,
+      "bbox_px": [
+        147,
+        1346,
+        149,
+        1426
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          147,
+          1346,
+          149,
+          1426
+        ]
+      }
+    },
+    {
+      "id": "trace_0092",
+      "axis": "V",
+      "pixel_span": [
+        1346,
+        1426
+      ],
+      "pixel_center": 197.5,
+      "pixel_thickness": 5,
+      "bbox_px": [
+        195,
+        1346,
+        200,
+        1426
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          195,
+          1346,
+          200,
+          1426
+        ]
+      }
+    },
+    {
+      "id": "trace_0093",
+      "axis": "V",
+      "pixel_span": [
+        1377,
+        1454
+      ],
+      "pixel_center": 10.0,
+      "pixel_thickness": 6,
+      "bbox_px": [
+        7,
+        1377,
+        13,
+        1454
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          7,
+          1377,
+          13,
+          1454
+        ]
+      }
+    },
+    {
+      "id": "trace_0094",
+      "axis": "V",
+      "pixel_span": [
+        1381,
+        2413
+      ],
+      "pixel_center": 339.5,
+      "pixel_thickness": 43,
+      "bbox_px": [
+        318,
+        1381,
+        361,
+        2413
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          318,
+          1381,
+          361,
+          2413
+        ]
+      }
+    },
+    {
+      "id": "trace_0095",
+      "axis": "V",
+      "pixel_span": [
+        1390,
+        1671
+      ],
+      "pixel_center": 658.0,
+      "pixel_thickness": 4,
+      "bbox_px": [
+        656,
+        1390,
+        660,
+        1671
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          656,
+          1390,
+          660,
+          1671
+        ]
+      }
+    },
+    {
+      "id": "trace_0096",
+      "axis": "V",
+      "pixel_span": [
+        1391,
+        1500
+      ],
+      "pixel_center": 779.5,
+      "pixel_thickness": 3,
+      "bbox_px": [
+        778,
+        1391,
+        781,
+        1500
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          778,
+          1391,
+          781,
+          1500
+        ]
+      }
+    },
+    {
+      "id": "trace_0097",
+      "axis": "V",
+      "pixel_span": [
+        1403,
+        1451
+      ],
+      "pixel_center": 65.5,
+      "pixel_thickness": 3,
+      "bbox_px": [
+        64,
+        1403,
+        67,
+        1451
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          64,
+          1403,
+          67,
+          1451
+        ]
+      }
+    },
+    {
+      "id": "trace_0098",
+      "axis": "V",
+      "pixel_span": [
+        1431,
+        1634
+      ],
+      "pixel_center": 34.5,
+      "pixel_thickness": 3,
+      "bbox_px": [
+        33,
+        1431,
+        36,
+        1634
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          33,
+          1431,
+          36,
+          1634
+        ]
+      }
+    },
+    {
+      "id": "trace_0099",
+      "axis": "V",
+      "pixel_span": [
+        1649,
+        1759
+      ],
+      "pixel_center": 239.5,
+      "pixel_thickness": 3,
+      "bbox_px": [
+        238,
+        1649,
+        241,
+        1759
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          238,
+          1649,
+          241,
+          1759
+        ]
+      }
+    },
+    {
+      "id": "trace_0100",
+      "axis": "V",
+      "pixel_span": [
+        1649,
+        1759
+      ],
+      "pixel_center": 458.5,
+      "pixel_thickness": 3,
+      "bbox_px": [
+        457,
+        1649,
+        460,
+        1759
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          457,
+          1649,
+          460,
+          1759
+        ]
+      }
+    },
+    {
+      "id": "trace_0101",
+      "axis": "V",
+      "pixel_span": [
+        1649,
+        1759
+      ],
+      "pixel_center": 779.5,
+      "pixel_thickness": 3,
+      "bbox_px": [
+        778,
+        1649,
+        781,
+        1759
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          778,
+          1649,
+          781,
+          1759
+        ]
+      }
+    },
+    {
+      "id": "trace_0102",
+      "axis": "V",
+      "pixel_span": [
+        1662,
+        1823
+      ],
+      "pixel_center": 1116.5,
+      "pixel_thickness": 3,
+      "bbox_px": [
+        1115,
+        1662,
+        1118,
+        1823
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          1115,
+          1662,
+          1118,
+          1823
+        ]
+      }
+    },
+    {
+      "id": "trace_0103",
+      "axis": "V",
+      "pixel_span": [
+        1662,
+        1952
+      ],
+      "pixel_center": 1123.5,
+      "pixel_thickness": 3,
+      "bbox_px": [
+        1122,
+        1662,
+        1125,
+        1952
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          1122,
+          1662,
+          1125,
+          1952
+        ]
+      }
+    },
+    {
+      "id": "trace_0104",
+      "axis": "V",
+      "pixel_span": [
+        1822,
+        1911
+      ],
+      "pixel_center": 945.0,
+      "pixel_thickness": 4,
+      "bbox_px": [
+        943,
+        1822,
+        947,
+        1911
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          943,
+          1822,
+          947,
+          1911
+        ]
+      }
+    },
+    {
+      "id": "trace_0105",
+      "axis": "V",
+      "pixel_span": [
+        1832,
+        1952
+      ],
+      "pixel_center": 800.5,
+      "pixel_thickness": 3,
+      "bbox_px": [
+        799,
+        1832,
+        802,
+        1952
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          799,
+          1832,
+          802,
+          1952
+        ]
+      }
+    },
+    {
+      "id": "trace_0106",
+      "axis": "V",
+      "pixel_span": [
+        1832,
+        1952
+      ],
+      "pixel_center": 809.0,
+      "pixel_thickness": 2,
+      "bbox_px": [
+        808,
+        1832,
+        810,
+        1952
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          808,
+          1832,
+          810,
+          1952
+        ]
+      }
+    },
+    {
+      "id": "trace_0107",
+      "axis": "V",
+      "pixel_span": [
+        1835,
+        1952
+      ],
+      "pixel_center": 1116.5,
+      "pixel_thickness": 3,
+      "bbox_px": [
+        1115,
+        1835,
+        1118,
+        1952
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          1115,
+          1835,
+          1118,
+          1952
+        ]
+      }
+    },
+    {
+      "id": "trace_0108",
+      "axis": "V",
+      "pixel_span": [
+        1906,
+        2359
+      ],
+      "pixel_center": 435.5,
+      "pixel_thickness": 7,
+      "bbox_px": [
+        432,
+        1906,
+        439,
+        2359
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          432,
+          1906,
+          439,
+          2359
+        ]
+      }
+    },
+    {
+      "id": "trace_0109",
+      "axis": "V",
+      "pixel_span": [
+        1906,
+        2359
+      ],
+      "pixel_center": 610.5,
+      "pixel_thickness": 7,
+      "bbox_px": [
+        607,
+        1906,
+        614,
+        2359
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          607,
+          1906,
+          614,
+          2359
+        ]
+      }
+    },
+    {
+      "id": "trace_0110",
+      "axis": "V",
+      "pixel_span": [
+        1909,
+        2359
+      ],
+      "pixel_center": 262.5,
+      "pixel_thickness": 7,
+      "bbox_px": [
+        259,
+        1909,
+        266,
+        2359
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          259,
+          1909,
+          266,
+          2359
+        ]
+      }
+    },
+    {
+      "id": "trace_0111",
+      "axis": "V",
+      "pixel_span": [
+        1933,
+        2359
+      ],
+      "pixel_center": 87.5,
+      "pixel_thickness": 7,
+      "bbox_px": [
+        84,
+        1933,
+        91,
+        2359
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          84,
+          1933,
+          91,
+          2359
+        ]
+      }
+    },
+    {
+      "id": "trace_0112",
+      "axis": "V",
+      "pixel_span": [
+        2080,
+        2138
+      ],
+      "pixel_center": 252.5,
+      "pixel_thickness": 3,
+      "bbox_px": [
+        251,
+        2080,
+        254,
+        2138
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          251,
+          2080,
+          254,
+          2138
+        ]
+      }
+    },
+    {
+      "id": "trace_0113",
+      "axis": "V",
+      "pixel_span": [
+        2081,
+        2138
+      ],
+      "pixel_center": 445.0,
+      "pixel_thickness": 2,
+      "bbox_px": [
+        444,
+        2081,
+        446,
+        2138
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          444,
+          2081,
+          446,
+          2138
+        ]
+      }
+    },
+    {
+      "id": "trace_0114",
+      "axis": "V",
+      "pixel_span": [
+        2081,
+        2138
+      ],
+      "pixel_center": 600.5,
+      "pixel_thickness": 3,
+      "bbox_px": [
+        599,
+        2081,
+        602,
+        2138
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          599,
+          2081,
+          602,
+          2138
+        ]
+      }
+    },
+    {
+      "id": "trace_0115",
+      "axis": "V",
+      "pixel_span": [
+        2082,
+        2138
+      ],
+      "pixel_center": 97.5,
+      "pixel_thickness": 3,
+      "bbox_px": [
+        96,
+        2082,
+        99,
+        2138
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          96,
+          2082,
+          99,
+          2138
+        ]
+      }
+    },
+    {
+      "id": "trace_0116",
+      "axis": "V",
+      "pixel_span": [
+        2141,
+        2196
+      ],
+      "pixel_center": 98.0,
+      "pixel_thickness": 2,
+      "bbox_px": [
+        97,
+        2141,
+        99,
+        2196
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          97,
+          2141,
+          99,
+          2196
+        ]
+      }
+    },
+    {
+      "id": "trace_0117",
+      "axis": "V",
+      "pixel_span": [
+        2141,
+        2199
+      ],
+      "pixel_center": 251.5,
+      "pixel_thickness": 3,
+      "bbox_px": [
+        250,
+        2141,
+        253,
+        2199
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          250,
+          2141,
+          253,
+          2199
+        ]
+      }
+    },
+    {
+      "id": "trace_0118",
+      "axis": "V",
+      "pixel_span": [
+        2141,
+        2193
+      ],
+      "pixel_center": 446.5,
+      "pixel_thickness": 3,
+      "bbox_px": [
+        445,
+        2141,
+        448,
+        2193
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          445,
+          2141,
+          448,
+          2193
+        ]
+      }
+    },
+    {
+      "id": "trace_0119",
+      "axis": "V",
+      "pixel_span": [
+        2141,
+        2197
+      ],
+      "pixel_center": 599.5,
+      "pixel_thickness": 3,
+      "bbox_px": [
+        598,
+        2141,
+        601,
+        2197
+      ],
+      "confidence": 0.55,
+      "source_evidence": {
+        "kind": "dark_line_morphology",
+        "bbox_px": [
+          598,
+          2141,
+          601,
+          2197
+        ]
+      }
+    }
+  ],
+  "room_candidates": [
+    {
+      "id": "region_0000",
+      "bbox_px": [
+        597,
+        290,
+        1125,
+        330
+      ],
+      "area_px2": 20741,
+      "rectangularity": 0.982,
+      "semantic": "UNKNOWN",
+      "confidence": 0.687,
+      "source_evidence": {
+        "kind": "enclosed_light_component",
+        "bbox_px": [
+          597,
+          290,
+          1125,
+          330
+        ]
+      }
+    },
+    {
+      "id": "region_0001",
+      "bbox_px": [
+        597,
+        332,
+        1125,
+        373
+      ],
+      "area_px2": 21324,
+      "rectangularity": 0.985,
+      "semantic": "UNKNOWN",
+      "confidence": 0.69,
+      "source_evidence": {
+        "kind": "enclosed_light_component",
+        "bbox_px": [
+          597,
+          332,
+          1125,
+          373
+        ]
+      }
+    },
+    {
+      "id": "region_0002",
+      "bbox_px": [
+        127,
+        374,
+        1114,
+        655
+      ],
+      "area_px2": 227802,
+      "rectangularity": 0.821,
+      "semantic": "UNKNOWN",
+      "confidence": 0.575,
+      "source_evidence": {
+        "kind": "enclosed_light_component",
+        "bbox_px": [
+          127,
+          374,
+          1114,
+          655
+        ]
+      }
+    },
+    {
+      "id": "region_0003",
+      "bbox_px": [
+        127,
+        604,
+        665,
+        655
+      ],
+      "area_px2": 26209,
+      "rectangularity": 0.955,
+      "semantic": "UNKNOWN",
+      "confidence": 0.669,
+      "source_evidence": {
+        "kind": "enclosed_light_component",
+        "bbox_px": [
+          127,
+          604,
+          665,
+          655
+        ]
+      }
+    },
+    {
+      "id": "region_0004",
+      "bbox_px": [
+        135,
+        691,
+        392,
+        1128
+      ],
+      "area_px2": 103168,
+      "rectangularity": 0.919,
+      "semantic": "UNKNOWN",
+      "confidence": 0.643,
+      "source_evidence": {
+        "kind": "enclosed_light_component",
+        "bbox_px": [
+          135,
+          691,
+          392,
+          1128
+        ]
+      }
+    },
+    {
+      "id": "region_0005",
+      "bbox_px": [
+        406,
+        691,
+        1034,
+        1391
+      ],
+      "area_px2": 277426,
+      "rectangularity": 0.631,
+      "semantic": "UNKNOWN",
+      "confidence": 0.442,
+      "source_evidence": {
+        "kind": "enclosed_light_component",
+        "bbox_px": [
+          406,
+          691,
+          1034,
+          1391
+        ]
+      }
+    },
+    {
+      "id": "region_0006",
+      "bbox_px": [
+        335,
+        1206,
+        635,
+        1390
+      ],
+      "area_px2": 36200,
+      "rectangularity": 0.656,
+      "semantic": "UNKNOWN",
+      "confidence": 0.459,
+      "source_evidence": {
+        "kind": "enclosed_light_component",
+        "bbox_px": [
+          335,
+          1206,
+          635,
+          1390
+        ]
+      }
+    },
+    {
+      "id": "region_0007",
+      "bbox_px": [
+        807,
+        1238,
+        1095,
+        1633
+      ],
+      "area_px2": 97920,
+      "rectangularity": 0.861,
+      "semantic": "UNKNOWN",
+      "confidence": 0.603,
+      "source_evidence": {
+        "kind": "enclosed_light_component",
+        "bbox_px": [
+          807,
+          1238,
+          1095,
+          1633
+        ]
+      }
+    },
+    {
+      "id": "region_0008",
+      "bbox_px": [
+        659,
+        1406,
+        791,
+        1630
+      ],
+      "area_px2": 21682,
+      "rectangularity": 0.733,
+      "semantic": "UNKNOWN",
+      "confidence": 0.513,
+      "source_evidence": {
+        "kind": "enclosed_light_component",
+        "bbox_px": [
+          659,
+          1406,
+          791,
+          1630
+        ]
+      }
+    },
+    {
+      "id": "region_0009",
+      "bbox_px": [
+        135,
+        1426,
+        335,
+        1630
+      ],
+      "area_px2": 39904,
+      "rectangularity": 0.978,
+      "semantic": "UNKNOWN",
+      "confidence": 0.685,
+      "source_evidence": {
+        "kind": "enclosed_light_component",
+        "bbox_px": [
+          135,
+          1426,
+          335,
+          1630
+        ]
+      }
+    },
+    {
+      "id": "region_0010",
+      "bbox_px": [
+        360,
+        1426,
+        559,
+        1630
+      ],
+      "area_px2": 39666,
+      "rectangularity": 0.977,
+      "semantic": "UNKNOWN",
+      "confidence": 0.684,
+      "source_evidence": {
+        "kind": "enclosed_light_component",
+        "bbox_px": [
+          360,
+          1426,
+          559,
+          1630
+        ]
+      }
+    },
+    {
+      "id": "region_0011",
+      "bbox_px": [
+        358,
+        1668,
+        1114,
+        1823
+      ],
+      "area_px2": 101693,
+      "rectangularity": 0.868,
+      "semantic": "UNKNOWN",
+      "confidence": 0.607,
+      "source_evidence": {
+        "kind": "enclosed_light_component",
+        "bbox_px": [
+          358,
+          1668,
+          1114,
+          1823
+        ]
+      }
+    },
+    {
+      "id": "region_0012",
+      "bbox_px": [
+        358,
+        1825,
+        811,
+        2400
+      ],
+      "area_px2": 160415,
+      "rectangularity": 0.616,
+      "semantic": "UNKNOWN",
+      "confidence": 0.431,
+      "source_evidence": {
+        "kind": "enclosed_light_component",
+        "bbox_px": [
+          358,
+          1825,
+          811,
+          2400
+        ]
+      }
+    },
+    {
+      "id": "region_0013",
+      "bbox_px": [
+        434,
+        2075,
+        609,
+        2350
+      ],
+      "area_px2": 32972,
+      "rectangularity": 0.685,
+      "semantic": "UNKNOWN",
+      "confidence": 0.48,
+      "source_evidence": {
+        "kind": "enclosed_light_component",
+        "bbox_px": [
+          434,
+          2075,
+          609,
+          2350
+        ]
+      }
+    },
+    {
+      "id": "region_0014",
+      "bbox_px": [
+        86,
+        2080,
+        261,
+        2350
+      ],
+      "area_px2": 32875,
+      "rectangularity": 0.696,
+      "semantic": "UNKNOWN",
+      "confidence": 0.487,
+      "source_evidence": {
+        "kind": "enclosed_light_component",
+        "bbox_px": [
+          86,
+          2080,
+          261,
+          2350
+        ]
+      }
+    }
+  ],
+  "door_candidates": [],
+  "window_candidates": [],
+  "limitations": [
+    "No verified metric scale",
+    "No reliable door/window classification",
+    "Room candidates may be split by furniture/text or merged through doors"
+  ],
+  "status": "PARSER_ONLY_CANDIDATES",
+  "agent_revision": {
+    "implementation": "deterministic_rules_v1",
+    "model_used": false,
+    "max_rounds": 2,
+    "edits": 0,
+    "history": []
+  }
+}

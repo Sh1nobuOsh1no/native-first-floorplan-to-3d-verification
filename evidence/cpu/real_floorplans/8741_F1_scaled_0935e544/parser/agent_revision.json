@@ -1,0 +1,7 @@
+{
+  "implementation": "deterministic_rules_v1",
+  "model_used": false,
+  "max_rounds": 2,
+  "edits": 0,
+  "history": []
+}

@@ -1,0 +1,19 @@
+{
+  "argv": [
+    "/Users/shinobu/\u573a\u666f\u751f\u6210/.venv/bin/python",
+    "-m",
+    "src.cameras.check_structural_cross_door",
+    "--scene",
+    "outputs/batch_real/4702_F1_scaled_6a267a93/planned_scene.json",
+    "--render",
+    "outputs/batch_real/4702_F1_scaled_6a267a93/render_A",
+    "--out",
+    "outputs/batch_real/4702_F1_scaled_6a267a93/cross_door_structure.json"
+  ],
+  "cwd": "/Users/shinobu/\u573a\u666f\u751f\u6210_real_floorplan_2026-11-19",
+  "start_utc": "20261119T105938Z",
+  "elapsed_seconds": 0.16130104195326567,
+  "exit_code": 2,
+  "stdout": "outputs/batch_real/4702_F1_scaled_6a267a93/logs/20261119T105938Z_cross_door_structure.stdout.log",
+  "stderr": "outputs/batch_real/4702_F1_scaled_6a267a93/logs/20261119T105938Z_cross_door_structure.stderr.log"
+}

@@ -1,0 +1,19 @@
+{
+  "argv": [
+    "/Users/shinobu/\u573a\u666f\u751f\u6210/.venv/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_*.py",
+    "-v"
+  ],
+  "cwd": "/Users/shinobu/\u573a\u666f\u751f\u6210_real_floorplan_2026-11-19",
+  "start_utc": "20261119T110748Z",
+  "elapsed_seconds": 3.263244083034806,
+  "exit_code": 0,
+  "stdout": "outputs/test_logs/20261119T110748Z_cpu_unittest_final.stdout.log",
+  "stderr": "outputs/test_logs/20261119T110748Z_cpu_unittest_final.stderr.log"
+}

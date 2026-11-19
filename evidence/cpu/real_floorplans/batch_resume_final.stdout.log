@@ -1,0 +1,6 @@
+{"input": "/Users/shinobu/\u573a\u666f\u751f\u6210_real_floorplan_2026-11-19/fixtures/real_floorplans/2055/F1_scaled.png", "status": "NEEDS_REVIEW"}
+{"input": "/Users/shinobu/\u573a\u666f\u751f\u6210_real_floorplan_2026-11-19/fixtures/real_floorplans/4702/F1_scaled.png", "status": "GENRECON_INPUT_VALIDATED_ANNOTATION_ASSISTED"}
+{"input": "/Users/shinobu/\u573a\u666f\u751f\u6210_real_floorplan_2026-11-19/fixtures/real_floorplans/4790/F1_scaled.png", "status": "NEEDS_REVIEW"}
+{"input": "/Users/shinobu/\u573a\u666f\u751f\u6210_real_floorplan_2026-11-19/fixtures/real_floorplans/8741/F1_scaled.png", "status": "NEEDS_REVIEW"}
+{"input": "/Users/shinobu/\u573a\u666f\u751f\u6210_real_floorplan_2026-11-19/fixtures/real_floorplans/9557/F1_scaled.png", "status": "NEEDS_REVIEW"}
+{"total": 5, "counts": {"GENRECON_INPUT_VALIDATED_ANNOTATION_ASSISTED": 1, "NEEDS_REVIEW": 4}}

@@ -1,0 +1,607 @@
+{
+  "schema": "metric_scene_v1",
+  "scene_id": "cubicasa5k_4702",
+  "units": "m",
+  "world_frame": "RH_Z_UP",
+  "floor_z_m": 0,
+  "bounds_m": [
+    0.0,
+    0.0,
+    9.1794,
+    7.88164
+  ],
+  "height_m": 2.7,
+  "footprint_mode": "SPACE_UNION",
+  "provenance": {
+    "kind": "SOURCE_DRAWING",
+    "source_file": "source_floorplan.png",
+    "source_sha256": "6a267a932525638ba5d7177d07352f113a10aef45968ce8775c4cb6304ebcd76",
+    "annotation_file": "source_annotation.svg",
+    "annotation_sha256": "d3d42b917f886493d9d2435cd6560ee28b814074c3b8c2fa1c6feea980b02234",
+    "parser_kind": "CUBICASA5K_HUMAN_SVG_ANNOTATION_ADAPTER",
+    "automatic_raster_inference": false,
+    "real_floorplan_parsed": true,
+    "scale_evidence": "SVG room dimension labels, median 0.010000 m/px from 12 measurements",
+    "scale_m_per_px": 0.00999967534575677,
+    "height_evidence": "ASSUMED_2.7_M_FOR_SAGE_GT",
+    "agent_interpretation_used": false
+  },
+  "spaces": [
+    {
+      "id": "space_00",
+      "semantic": "corridor",
+      "bounds_m": [
+        3.69928,
+        0.0,
+        5.27953,
+        4.29876
+      ],
+      "source_evidence": "CUBICASA5K_HUMAN_SVG:model.svg#8f4fdcde-aba4-4f7b-9943-789e0412abd8",
+      "confidence": 1.0,
+      "annotation_class": "Entry Lobby"
+    },
+    {
+      "id": "space_01",
+      "semantic": "livingroom",
+      "bounds_m": [
+        0.0,
+        4.29876,
+        5.27953,
+        7.88164
+      ],
+      "source_evidence": "CUBICASA5K_HUMAN_SVG:model.svg#e13fb034-227b-4c02-9581-e5a9a61f16c5",
+      "confidence": 1.0,
+      "annotation_class": "LivingRoom"
+    },
+    {
+      "id": "space_02",
+      "semantic": "bedroom",
+      "bounds_m": [
+        5.37953,
+        4.30086,
+        9.1794,
+        7.88164
+      ],
+      "source_evidence": "CUBICASA5K_HUMAN_SVG:model.svg#1fd386d5-8424-4cbb-9c23-28262ff51afa",
+      "confidence": 1.0,
+      "annotation_class": "Bedroom"
+    },
+    {
+      "id": "space_03",
+      "semantic": "kitchen",
+      "bounds_m": [
+        5.37953,
+        0.0,
+        9.1794,
+        2.54902
+      ],
+      "source_evidence": "CUBICASA5K_HUMAN_SVG:model.svg#ae91c5a0-7bf8-40b5-b409-b18491ac68a1",
+      "confidence": 1.0,
+      "annotation_class": "Kitchen"
+    },
+    {
+      "id": "space_04",
+      "semantic": "bath",
+      "bounds_m": [
+        5.37953,
+        2.64901,
+        7.42936,
+        4.18086
+      ],
+      "source_evidence": "CUBICASA5K_HUMAN_SVG:model.svg#6072efa4-33ce-49ad-847a-4280d9bd61b5",
+      "confidence": 1.0,
+      "annotation_class": "Bath"
+    },
+    {
+      "id": "space_05",
+      "semantic": "closet_walkin",
+      "bounds_m": [
+        7.63935,
+        2.64901,
+        9.1794,
+        4.18086
+      ],
+      "source_evidence": "CUBICASA5K_HUMAN_SVG:model.svg#0bb946c2-fa5f-44c0-afd0-84aa56d90aa8",
+      "confidence": 1.0,
+      "annotation_class": "Closet WalkIn"
+    }
+  ],
+  "walls": [
+    {
+      "id": "wall_00",
+      "p0_m": [
+        -0.25999,
+        7.94664
+      ],
+      "p1_m": [
+        9.42939,
+        7.94664
+      ],
+      "thickness_m": 0.13,
+      "source_evidence": "CUBICASA5K_HUMAN_SVG:model.svg#Wall",
+      "confidence": 1.0,
+      "openings": []
+    },
+    {
+      "id": "wall_01",
+      "p0_m": [
+        9.3044,
+        -0.1365
+      ],
+      "p1_m": [
+        9.3044,
+        8.01164
+      ],
+      "thickness_m": 0.24999,
+      "source_evidence": "CUBICASA5K_HUMAN_SVG:model.svg#Wall",
+      "confidence": 1.0,
+      "openings": [
+        {
+          "id": "opening_000_Window",
+          "kind": "window",
+          "u0_m": 4.61725,
+          "u1_m": 7.24796,
+          "z0_m": 0.9,
+          "z1_m": 2.1,
+          "source_evidence": "CUBICASA5K_HUMAN_SVG:model.svg#Window",
+          "confidence": 1.0
+        },
+        {
+          "id": "opening_001_Window",
+          "kind": "window",
+          "u0_m": 2.82491,
+          "u1_m": 4.21096,
+          "z0_m": 0.9,
+          "z1_m": 2.1,
+          "source_evidence": "CUBICASA5K_HUMAN_SVG:model.svg#Window",
+          "confidence": 1.0
+        },
+        {
+          "id": "opening_002_Window",
+          "kind": "window",
+          "u0_m": 0.1353,
+          "u1_m": 1.99944,
+          "z0_m": 0.9,
+          "z1_m": 2.1,
+          "source_evidence": "CUBICASA5K_HUMAN_SVG:model.svg#Window",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "wall_02",
+      "p0_m": [
+        3.59928,
+        -0.06825
+      ],
+      "p1_m": [
+        9.42939,
+        -0.06825
+      ],
+      "thickness_m": 0.1365,
+      "source_evidence": "CUBICASA5K_HUMAN_SVG:model.svg#Wall",
+      "confidence": 1.0,
+      "openings": [
+        {
+          "id": "opening_003_Door",
+          "kind": "exterior_door",
+          "u0_m": 0.85927,
+          "u1_m": 1.57385,
+          "z0_m": 0,
+          "z1_m": 2.1,
+          "source_evidence": "CUBICASA5K_HUMAN_SVG:model.svg#Door",
+          "confidence": 1.0,
+          "connects": [
+            "space_00"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wall_03",
+      "p0_m": [
+        3.64928,
+        -0.1365
+      ],
+      "p1_m": [
+        3.64928,
+        4.29876
+      ],
+      "thickness_m": 0.1,
+      "source_evidence": "CUBICASA5K_HUMAN_SVG:model.svg#Wall",
+      "confidence": 1.0,
+      "openings": []
+    },
+    {
+      "id": "wall_04",
+      "p0_m": [
+        -0.25999,
+        4.24876
+      ],
+      "p1_m": [
+        3.69928,
+        4.24876
+      ],
+      "thickness_m": 0.1,
+      "source_evidence": "CUBICASA5K_HUMAN_SVG:model.svg#Wall",
+      "confidence": 1.0,
+      "openings": []
+    },
+    {
+      "id": "wall_05",
+      "p0_m": [
+        -0.13,
+        4.19876
+      ],
+      "p1_m": [
+        -0.13,
+        8.01164
+      ],
+      "thickness_m": 0.25999,
+      "source_evidence": "CUBICASA5K_HUMAN_SVG:model.svg#Wall",
+      "confidence": 1.0,
+      "openings": [
+        {
+          "id": "opening_004_Door",
+          "kind": "exterior_door",
+          "u0_m": 0.34849,
+          "u1_m": 1.07916,
+          "z0_m": 0,
+          "z1_m": 2.1,
+          "source_evidence": "CUBICASA5K_HUMAN_SVG:model.svg#Door",
+          "confidence": 1.0,
+          "connects": [
+            "space_01"
+          ]
+        },
+        {
+          "id": "opening_005_Window",
+          "kind": "window",
+          "u0_m": 1.16956,
+          "u1_m": 3.63298,
+          "z0_m": 0.9,
+          "z1_m": 2.1,
+          "source_evidence": "CUBICASA5K_HUMAN_SVG:model.svg#Window",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "wall_06",
+      "p0_m": [
+        5.32953,
+        -0.1365
+      ],
+      "p1_m": [
+        5.32953,
+        8.01164
+      ],
+      "thickness_m": 0.1,
+      "source_evidence": "CUBICASA5K_HUMAN_SVG:model.svg#Wall",
+      "confidence": 1.0,
+      "openings": [
+        {
+          "id": "opening_006_Door",
+          "kind": "door",
+          "u0_m": 1.30856,
+          "u1_m": 2.05833,
+          "z0_m": 0,
+          "z1_m": 2.1,
+          "source_evidence": "CUBICASA5K_HUMAN_SVG:model.svg#Door",
+          "confidence": 1.0,
+          "connects": [
+            "space_00",
+            "space_03"
+          ]
+        },
+        {
+          "id": "opening_007_Door",
+          "kind": "door",
+          "u0_m": 3.35679,
+          "u1_m": 3.87627,
+          "z0_m": 0,
+          "z1_m": 2.1,
+          "source_evidence": "CUBICASA5K_HUMAN_SVG:model.svg#Door",
+          "confidence": 1.0,
+          "connects": [
+            "space_00",
+            "space_04"
+          ]
+        },
+        {
+          "id": "opening_008_Door",
+          "kind": "door",
+          "u0_m": 4.49855,
+          "u1_m": 5.23353,
+          "z0_m": 0,
+          "z1_m": 2.1,
+          "source_evidence": "CUBICASA5K_HUMAN_SVG:model.svg#Door",
+          "confidence": 1.0,
+          "connects": [
+            "space_01",
+            "space_02"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wall_07",
+      "p0_m": [
+        5.27953,
+        4.24086
+      ],
+      "p1_m": [
+        9.42939,
+        4.24086
+      ],
+      "thickness_m": 0.12,
+      "source_evidence": "CUBICASA5K_HUMAN_SVG:model.svg#Wall",
+      "confidence": 1.0,
+      "openings": [
+        {
+          "id": "opening_009_Door",
+          "kind": "door",
+          "u0_m": 2.77631,
+          "u1_m": 3.27609,
+          "z0_m": 0,
+          "z1_m": 2.1,
+          "source_evidence": "CUBICASA5K_HUMAN_SVG:model.svg#Door",
+          "confidence": 1.0,
+          "connects": [
+            "space_02",
+            "space_05"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wall_08",
+      "p0_m": [
+        5.27953,
+        2.59902
+      ],
+      "p1_m": [
+        9.42939,
+        2.59902
+      ],
+      "thickness_m": 0.1,
+      "source_evidence": "CUBICASA5K_HUMAN_SVG:model.svg#Wall",
+      "confidence": 1.0,
+      "openings": [
+        {
+          "id": "opening_010_Door",
+          "kind": "door",
+          "u0_m": 2.73711,
+          "u1_m": 3.23689,
+          "z0_m": 0,
+          "z1_m": 2.1,
+          "source_evidence": "CUBICASA5K_HUMAN_SVG:model.svg#Door",
+          "confidence": 1.0,
+          "connects": [
+            "space_03",
+            "space_05"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wall_09",
+      "p0_m": [
+        7.53436,
+        2.54902
+      ],
+      "p1_m": [
+        7.53436,
+        4.30086
+      ],
+      "thickness_m": 0.20999,
+      "source_evidence": "CUBICASA5K_HUMAN_SVG:model.svg#Wall",
+      "confidence": 1.0,
+      "openings": []
+    }
+  ],
+  "objects": [],
+  "cameras": [
+    {
+      "id": "door_opening_006_Door_space_00",
+      "space_id": "space_00",
+      "eye_m": [
+        4.4795300000000005,
+        1.546945,
+        1.55
+      ],
+      "target_m": [
+        6.52953,
+        1.546945,
+        1.4
+      ],
+      "fov_deg": 90.0
+    },
+    {
+      "id": "door_opening_006_Door_space_03",
+      "space_id": "space_03",
+      "eye_m": [
+        6.17953,
+        1.546945,
+        1.55
+      ],
+      "target_m": [
+        4.12953,
+        1.546945,
+        1.4
+      ],
+      "fov_deg": 90.0
+    },
+    {
+      "id": "door_opening_007_Door_space_00",
+      "space_id": "space_00",
+      "eye_m": [
+        4.4795300000000005,
+        3.48003,
+        1.55
+      ],
+      "target_m": [
+        6.52953,
+        3.48003,
+        1.4
+      ],
+      "fov_deg": 90.0
+    },
+    {
+      "id": "door_opening_007_Door_space_04",
+      "space_id": "space_04",
+      "eye_m": [
+        6.17953,
+        3.48003,
+        1.55
+      ],
+      "target_m": [
+        4.12953,
+        3.48003,
+        1.4
+      ],
+      "fov_deg": 90.0
+    },
+    {
+      "id": "door_opening_008_Door_space_01",
+      "space_id": "space_01",
+      "eye_m": [
+        4.4795300000000005,
+        4.72954,
+        1.55
+      ],
+      "target_m": [
+        6.52953,
+        4.72954,
+        1.4
+      ],
+      "fov_deg": 90.0
+    },
+    {
+      "id": "door_opening_008_Door_space_02",
+      "space_id": "space_02",
+      "eye_m": [
+        6.17953,
+        4.72954,
+        1.55
+      ],
+      "target_m": [
+        4.12953,
+        4.72954,
+        1.4
+      ],
+      "fov_deg": 90.0
+    },
+    {
+      "id": "door_opening_009_Door_space_02",
+      "space_id": "space_02",
+      "eye_m": [
+        8.30573,
+        5.090859999999999,
+        1.55
+      ],
+      "target_m": [
+        8.30573,
+        3.0408599999999995,
+        1.4
+      ],
+      "fov_deg": 90.0
+    },
+    {
+      "id": "door_opening_009_Door_space_05",
+      "space_id": "space_05",
+      "eye_m": [
+        8.30573,
+        3.3908599999999995,
+        1.55
+      ],
+      "target_m": [
+        8.30573,
+        5.44086,
+        1.4
+      ],
+      "fov_deg": 90.0
+    },
+    {
+      "id": "door_opening_010_Door_space_03",
+      "space_id": "space_03",
+      "eye_m": [
+        8.26653,
+        1.7490199999999998,
+        1.55
+      ],
+      "target_m": [
+        8.26653,
+        3.7990199999999996,
+        1.4
+      ],
+      "fov_deg": 90.0
+    },
+    {
+      "id": "door_opening_010_Door_space_05",
+      "space_id": "space_05",
+      "eye_m": [
+        8.26653,
+        3.44902,
+        1.55
+      ],
+      "target_m": [
+        8.26653,
+        1.39902,
+        1.4
+      ],
+      "fov_deg": 90.0
+    },
+    {
+      "id": "auto_00_space_01_3",
+      "space_id": "space_01",
+      "eye_m": [
+        1.3198825,
+        6.98592,
+        1.55
+      ],
+      "target_m": [
+        0.6709499999999992,
+        0.7345699999999998,
+        1.425
+      ],
+      "fov_deg": 100.0
+    },
+    {
+      "id": "auto_02_space_02_4",
+      "space_id": "space_02",
+      "eye_m": [
+        8.2294325,
+        6.986445,
+        1.55
+      ],
+      "target_m": [
+        4.5897,
+        0.7345699999999998,
+        1.425
+      ],
+      "fov_deg": 100.0
+    },
+    {
+      "id": "auto_00_space_01_4",
+      "space_id": "space_01",
+      "eye_m": [
+        3.9596475,
+        6.98592,
+        1.55
+      ],
+      "target_m": [
+        0.6709499999999992,
+        0.7345699999999998,
+        1.425
+      ],
+      "fov_deg": 100.0
+    }
+  ],
+  "agent_revisions": [],
+  "limitations": [
+    "Human SVG annotations supply geometry; not an image model prediction",
+    "2.7 m height is assumed, not measured from floorplan",
+    "Skipped 2 exterior/outdoor wall annotations"
+  ]
+}

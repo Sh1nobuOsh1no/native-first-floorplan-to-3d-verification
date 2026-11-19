@@ -1,0 +1,40 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/shinobu/场景生成_real_floorplan_2026-11-19/src/floorplan/cubicasa_vector_adapter.py", line 218, in <module>
+    scene = convert(a.image, a.svg, a.out)
+  File "/Users/shinobu/场景生成_real_floorplan_2026-11-19/src/floorplan/cubicasa_vector_adapter.py", line 51, in convert
+    raise ValueError(f"UNSUPPORTED_GEOMETRY: nonrectangular room {cls} {group.attrib.get('id')}")
+ValueError: UNSUPPORTED_GEOMETRY: nonrectangular room Space Kitchen cd964a71-328f-4787-aef8-731797ce48c7
+/Users/shinobu/场景生成_real_floorplan_2026-11-19/src/blender/render_global.py:98: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  scene.world.use_nodes = True
+/Users/shinobu/场景生成_real_floorplan_2026-11-19/src/blender/render_global.py:36: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m.use_nodes = True
+/Users/shinobu/场景生成_real_floorplan_2026-11-19/src/blender/render_global.py:133: DeprecationWarning: 'Scene.use_nodes' is expected to be removed in Blender 6.0
+  scene.use_nodes = True
+/Users/shinobu/场景生成_real_floorplan_2026-11-19/src/blender/render_global.py:135: DeprecationWarning: 'Scene.compositing_node_group' is expected to be removed in Blender 6.0
+  scene.compositing_node_group = tree
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/shinobu/场景生成_real_floorplan_2026-11-19/src/floorplan/cubicasa_vector_adapter.py", line 218, in <module>
+    scene = convert(a.image, a.svg, a.out)
+  File "/Users/shinobu/场景生成_real_floorplan_2026-11-19/src/floorplan/cubicasa_vector_adapter.py", line 51, in convert
+    raise ValueError(f"UNSUPPORTED_GEOMETRY: nonrectangular room {cls} {group.attrib.get('id')}")
+ValueError: UNSUPPORTED_GEOMETRY: nonrectangular room Space Bath 9a94f48f-5956-4191-b16d-88dc997bed17
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/shinobu/场景生成_real_floorplan_2026-11-19/src/floorplan/cubicasa_vector_adapter.py", line 218, in <module>
+    scene = convert(a.image, a.svg, a.out)
+  File "/Users/shinobu/场景生成_real_floorplan_2026-11-19/src/floorplan/cubicasa_vector_adapter.py", line 51, in convert
+    raise ValueError(f"UNSUPPORTED_GEOMETRY: nonrectangular room {cls} {group.attrib.get('id')}")
+ValueError: UNSUPPORTED_GEOMETRY: nonrectangular room Space LivingRoom fba7a5a8-557b-44c6-a642-dd9d15ba0f53
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/shinobu/场景生成_real_floorplan_2026-11-19/src/floorplan/cubicasa_vector_adapter.py", line 218, in <module>
+    scene = convert(a.image, a.svg, a.out)
+  File "/Users/shinobu/场景生成_real_floorplan_2026-11-19/src/floorplan/cubicasa_vector_adapter.py", line 51, in convert
+    raise ValueError(f"UNSUPPORTED_GEOMETRY: nonrectangular room {cls} {group.attrib.get('id')}")
+ValueError: UNSUPPORTED_GEOMETRY: nonrectangular room Space Bedroom ca4a9018-4c1c-4314-bf21-07cc904f4a61

@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "/Users/shinobu/\u573a\u666f\u751f\u6210/.venv/bin/python",
+    "-m",
+    "src.floorplan.revise_bounded",
+    "outputs/batch_real/4790_F1_scaled_2c7495d5/parser/raw_prediction.json",
+    "fixtures/real_floorplans/4790/F1_scaled.png",
+    "outputs/batch_real/4790_F1_scaled_2c7495d5/parser"
+  ],
+  "cwd": "/Users/shinobu/\u573a\u666f\u751f\u6210_real_floorplan_2026-11-19",
+  "start_utc": "20261119T111306Z",
+  "elapsed_seconds": 0.0767347919754684,
+  "exit_code": 0,
+  "stdout": "outputs/batch_real/4790_F1_scaled_2c7495d5/logs/20261119T111306Z_revise_final.stdout.log",
+  "stderr": "outputs/batch_real/4790_F1_scaled_2c7495d5/logs/20261119T111306Z_revise_final.stderr.log"
+}

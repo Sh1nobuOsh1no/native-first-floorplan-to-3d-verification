@@ -1,0 +1,242 @@
+{
+  "1": {
+    "id": "floor_space_00",
+    "kind": "floor",
+    "source_id": "space_00"
+  },
+  "2": {
+    "id": "ceiling_space_00",
+    "kind": "ceiling",
+    "source_id": "space_00"
+  },
+  "3": {
+    "id": "floor_space_01",
+    "kind": "floor",
+    "source_id": "space_01"
+  },
+  "4": {
+    "id": "ceiling_space_01",
+    "kind": "ceiling",
+    "source_id": "space_01"
+  },
+  "5": {
+    "id": "floor_space_02",
+    "kind": "floor",
+    "source_id": "space_02"
+  },
+  "6": {
+    "id": "ceiling_space_02",
+    "kind": "ceiling",
+    "source_id": "space_02"
+  },
+  "7": {
+    "id": "floor_space_03",
+    "kind": "floor",
+    "source_id": "space_03"
+  },
+  "8": {
+    "id": "ceiling_space_03",
+    "kind": "ceiling",
+    "source_id": "space_03"
+  },
+  "9": {
+    "id": "floor_space_04",
+    "kind": "floor",
+    "source_id": "space_04"
+  },
+  "10": {
+    "id": "ceiling_space_04",
+    "kind": "ceiling",
+    "source_id": "space_04"
+  },
+  "11": {
+    "id": "floor_space_05",
+    "kind": "floor",
+    "source_id": "space_05"
+  },
+  "12": {
+    "id": "ceiling_space_05",
+    "kind": "ceiling",
+    "source_id": "space_05"
+  },
+  "13": {
+    "id": "wall_00__0_0",
+    "kind": "wall",
+    "source_id": "wall_00"
+  },
+  "14": {
+    "id": "wall_01__0_0",
+    "kind": "wall",
+    "source_id": "wall_01"
+  },
+  "15": {
+    "id": "wall_01__1_0",
+    "kind": "wall",
+    "source_id": "wall_01"
+  },
+  "16": {
+    "id": "wall_01__1_1",
+    "kind": "wall",
+    "source_id": "wall_01"
+  },
+  "17": {
+    "id": "wall_01__2_0",
+    "kind": "wall",
+    "source_id": "wall_01"
+  },
+  "18": {
+    "id": "wall_01__3_0",
+    "kind": "wall",
+    "source_id": "wall_01"
+  },
+  "19": {
+    "id": "wall_01__3_1",
+    "kind": "wall",
+    "source_id": "wall_01"
+  },
+  "20": {
+    "id": "wall_01__4_0",
+    "kind": "wall",
+    "source_id": "wall_01"
+  },
+  "21": {
+    "id": "wall_01__5_0",
+    "kind": "wall",
+    "source_id": "wall_01"
+  },
+  "22": {
+    "id": "wall_01__5_1",
+    "kind": "wall",
+    "source_id": "wall_01"
+  },
+  "23": {
+    "id": "wall_01__6_0",
+    "kind": "wall",
+    "source_id": "wall_01"
+  },
+  "24": {
+    "id": "wall_02__0_0",
+    "kind": "wall",
+    "source_id": "wall_02"
+  },
+  "25": {
+    "id": "wall_02__1_1",
+    "kind": "wall",
+    "source_id": "wall_02"
+  },
+  "26": {
+    "id": "wall_02__2_0",
+    "kind": "wall",
+    "source_id": "wall_02"
+  },
+  "27": {
+    "id": "wall_03__0_0",
+    "kind": "wall",
+    "source_id": "wall_03"
+  },
+  "28": {
+    "id": "wall_04__0_0",
+    "kind": "wall",
+    "source_id": "wall_04"
+  },
+  "29": {
+    "id": "wall_05__0_0",
+    "kind": "wall",
+    "source_id": "wall_05"
+  },
+  "30": {
+    "id": "wall_05__1_1",
+    "kind": "wall",
+    "source_id": "wall_05"
+  },
+  "31": {
+    "id": "wall_05__2_0",
+    "kind": "wall",
+    "source_id": "wall_05"
+  },
+  "32": {
+    "id": "wall_05__3_0",
+    "kind": "wall",
+    "source_id": "wall_05"
+  },
+  "33": {
+    "id": "wall_05__3_1",
+    "kind": "wall",
+    "source_id": "wall_05"
+  },
+  "34": {
+    "id": "wall_05__4_0",
+    "kind": "wall",
+    "source_id": "wall_05"
+  },
+  "35": {
+    "id": "wall_06__0_0",
+    "kind": "wall",
+    "source_id": "wall_06"
+  },
+  "36": {
+    "id": "wall_06__1_1",
+    "kind": "wall",
+    "source_id": "wall_06"
+  },
+  "37": {
+    "id": "wall_06__2_0",
+    "kind": "wall",
+    "source_id": "wall_06"
+  },
+  "38": {
+    "id": "wall_06__3_1",
+    "kind": "wall",
+    "source_id": "wall_06"
+  },
+  "39": {
+    "id": "wall_06__4_0",
+    "kind": "wall",
+    "source_id": "wall_06"
+  },
+  "40": {
+    "id": "wall_06__5_1",
+    "kind": "wall",
+    "source_id": "wall_06"
+  },
+  "41": {
+    "id": "wall_06__6_0",
+    "kind": "wall",
+    "source_id": "wall_06"
+  },
+  "42": {
+    "id": "wall_07__0_0",
+    "kind": "wall",
+    "source_id": "wall_07"
+  },
+  "43": {
+    "id": "wall_07__1_1",
+    "kind": "wall",
+    "source_id": "wall_07"
+  },
+  "44": {
+    "id": "wall_07__2_0",
+    "kind": "wall",
+    "source_id": "wall_07"
+  },
+  "45": {
+    "id": "wall_08__0_0",
+    "kind": "wall",
+    "source_id": "wall_08"
+  },
+  "46": {
+    "id": "wall_08__1_1",
+    "kind": "wall",
+    "source_id": "wall_08"
+  },
+  "47": {
+    "id": "wall_08__2_0",
+    "kind": "wall",
+    "source_id": "wall_08"
+  },
+  "48": {
+    "id": "wall_09__0_0",
+    "kind": "wall",
+    "source_id": "wall_09"
+  }
+}

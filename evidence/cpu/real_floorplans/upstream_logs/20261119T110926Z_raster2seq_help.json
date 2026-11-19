@@ -1,0 +1,13 @@
+{
+  "argv": [
+    "/Users/shinobu/\u573a\u666f\u751f\u6210/.venv/bin/python",
+    "/Users/shinobu/\u573a\u666f\u751f\u6210/work/upstream/Raster2Seq/predict.py",
+    "--help"
+  ],
+  "cwd": "/Users/shinobu/\u573a\u666f\u751f\u6210_real_floorplan_2026-11-19",
+  "start_utc": "20261119T110926Z",
+  "elapsed_seconds": 0.7436476669972762,
+  "exit_code": 1,
+  "stdout": "evidence/cpu/real_floorplans/upstream_logs/20261119T110926Z_raster2seq_help.stdout.log",
+  "stderr": "evidence/cpu/real_floorplans/upstream_logs/20261119T110926Z_raster2seq_help.stderr.log"
+}

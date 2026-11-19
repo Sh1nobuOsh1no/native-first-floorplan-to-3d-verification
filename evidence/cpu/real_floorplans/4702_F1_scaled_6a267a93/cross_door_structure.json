@@ -1,0 +1,120 @@
+{
+  "scene_id": "cubicasa5k_4702",
+  "source": "BLENDER_CPU_WHITEBOX",
+  "doors": [
+    {
+      "door_id": "opening_006_Door",
+      "connects": [
+        "space_00",
+        "space_03"
+      ],
+      "status": "PASS",
+      "cameras": [
+        "door_opening_006_Door_space_00",
+        "door_opening_006_Door_space_03"
+      ],
+      "shared_wall_source_id": "wall_06",
+      "shared_component_id": "wall_06__1_1",
+      "door_to_door_camera_ray_clear": true,
+      "visible_pixels": [
+        1128,
+        1128
+      ],
+      "reprojected_pixels": 1128,
+      "depth_id_match_ratio": 1.0,
+      "depth_tolerance_m": 0.1
+    },
+    {
+      "door_id": "opening_007_Door",
+      "connects": [
+        "space_00",
+        "space_04"
+      ],
+      "status": "PASS",
+      "cameras": [
+        "door_opening_007_Door_space_00",
+        "door_opening_007_Door_space_04"
+      ],
+      "shared_wall_source_id": "wall_06",
+      "shared_component_id": "wall_06__3_1",
+      "door_to_door_camera_ray_clear": true,
+      "visible_pixels": [
+        780,
+        780
+      ],
+      "reprojected_pixels": 780,
+      "depth_id_match_ratio": 1.0,
+      "depth_tolerance_m": 0.1
+    },
+    {
+      "door_id": "opening_008_Door",
+      "connects": [
+        "space_01",
+        "space_02"
+      ],
+      "status": "PASS",
+      "cameras": [
+        "door_opening_008_Door_space_01",
+        "door_opening_008_Door_space_02"
+      ],
+      "shared_wall_source_id": "wall_06",
+      "shared_component_id": "wall_06__5_1",
+      "door_to_door_camera_ray_clear": true,
+      "visible_pixels": [
+        1100,
+        1100
+      ],
+      "reprojected_pixels": 1100,
+      "depth_id_match_ratio": 1.0,
+      "depth_tolerance_m": 0.1
+    },
+    {
+      "door_id": "opening_009_Door",
+      "connects": [
+        "space_02",
+        "space_05"
+      ],
+      "status": "FAIL_REPROJECTION",
+      "cameras": [
+        "door_opening_009_Door_space_02",
+        "door_opening_009_Door_space_05"
+      ],
+      "shared_wall_source_id": "wall_07",
+      "shared_component_id": "wall_07__1_1",
+      "door_to_door_camera_ray_clear": true,
+      "visible_pixels": [
+        794,
+        794
+      ],
+      "reprojected_pixels": 794,
+      "depth_id_match_ratio": 0.6675062972292192,
+      "depth_tolerance_m": 0.1
+    },
+    {
+      "door_id": "opening_010_Door",
+      "connects": [
+        "space_03",
+        "space_05"
+      ],
+      "status": "PASS",
+      "cameras": [
+        "door_opening_010_Door_space_03",
+        "door_opening_010_Door_space_05"
+      ],
+      "shared_wall_source_id": "wall_08",
+      "shared_component_id": "wall_08__1_1",
+      "door_to_door_camera_ray_clear": true,
+      "visible_pixels": [
+        744,
+        744
+      ],
+      "reprojected_pixels": 744,
+      "depth_id_match_ratio": 1.0,
+      "depth_tolerance_m": 0.1
+    }
+  ],
+  "pass_count": 4,
+  "clear_door_ray_count": 5,
+  "total": 5,
+  "all_pass": false
+}

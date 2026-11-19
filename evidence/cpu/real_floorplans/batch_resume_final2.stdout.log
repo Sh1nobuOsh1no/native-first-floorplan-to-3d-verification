@@ -1,0 +1,7 @@
+{"input": "/Users/shinobu/\u573a\u666f\u751f\u6210_real_floorplan_2026-11-19/fixtures/real_floorplans/2055/F1_scaled.png", "status": "NEEDS_REVIEW"}
+{"pass": 4, "total": 5}
+{"input": "/Users/shinobu/\u573a\u666f\u751f\u6210_real_floorplan_2026-11-19/fixtures/real_floorplans/4702/F1_scaled.png", "status": "PARTIAL_ANNOTATION_ASSISTED_CROSS_DOOR_FAILURE"}
+{"input": "/Users/shinobu/\u573a\u666f\u751f\u6210_real_floorplan_2026-11-19/fixtures/real_floorplans/4790/F1_scaled.png", "status": "NEEDS_REVIEW"}
+{"input": "/Users/shinobu/\u573a\u666f\u751f\u6210_real_floorplan_2026-11-19/fixtures/real_floorplans/8741/F1_scaled.png", "status": "NEEDS_REVIEW"}
+{"input": "/Users/shinobu/\u573a\u666f\u751f\u6210_real_floorplan_2026-11-19/fixtures/real_floorplans/9557/F1_scaled.png", "status": "NEEDS_REVIEW"}
+{"total": 5, "counts": {"NEEDS_REVIEW": 4, "PARTIAL_ANNOTATION_ASSISTED_CROSS_DOOR_FAILURE": 1}}

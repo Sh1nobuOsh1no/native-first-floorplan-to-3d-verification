@@ -1,5 +1,7 @@
 # Future native GenRecon GPU experiment — NOT RUN
 
+The real CubiCasa5K `4702` CPU control added this round uses **human SVG annotations**, 13 Blender views and 2/20 native chunk fallbacks. It is not yet an all-chunk-covered GPU input, and the raster parser has not produced a trustworthy metric building unaided. Any future real-drawing GPU run must keep this provenance and failure separate from the synthetic baseline below. No GPU work was performed in this round.
+
 This is an execution plan, **not** a GPU result. It uses the same synthetic A/B input and 20 Blender poses. A real whole-floorplan source remains a separate prerequisite for the final research claim. The CPU Reader has now measured 30/30 chunks with 0 fallback at cap 32, selecting all 20 source views. At cap 8 it measured 11 fallback chunks. Preserve cap 32 for the first native attempt and verify the saved selected-image list. The training configs reference up to 16 conditioning views; GPU behavior with 20 selected views is untested. Do not train, edit upstream GenRecon or weights, or interpret CPU Reader success as output consistency.
 
 ## Resources and fixed inputs

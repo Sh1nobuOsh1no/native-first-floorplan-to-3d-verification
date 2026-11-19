@@ -1,0 +1,878 @@
+{
+  "status": "PASS_CPU_NATIVE_READER",
+  "repo": "/Users/shinobu/场景生成/work/upstream/GenRecon",
+  "render_dir": "/Users/shinobu/场景生成_real_floorplan_2026-11-19/outputs/batch_real/4702_F1_scaled_6a267a93/sage_gt_A/renders_room/cubicasa5k_4702",
+  "chunk_centers": [
+    [
+      0.6709499999999992,
+      0.7345699999999998,
+      1.425
+    ],
+    [
+      2.630324999999999,
+      0.7345699999999998,
+      1.425
+    ],
+    [
+      4.5897,
+      0.7345699999999998,
+      1.425
+    ],
+    [
+      6.549075,
+      0.7345699999999998,
+      1.425
+    ],
+    [
+      8.50845,
+      0.7345699999999998,
+      1.425
+    ],
+    [
+      0.6709499999999992,
+      2.87207,
+      1.425
+    ],
+    [
+      2.630324999999999,
+      2.87207,
+      1.425
+    ],
+    [
+      4.5897,
+      2.87207,
+      1.425
+    ],
+    [
+      6.549075,
+      2.87207,
+      1.425
+    ],
+    [
+      8.50845,
+      2.87207,
+      1.425
+    ],
+    [
+      0.6709499999999992,
+      5.00957,
+      1.425
+    ],
+    [
+      2.630324999999999,
+      5.00957,
+      1.425
+    ],
+    [
+      4.5897,
+      5.00957,
+      1.425
+    ],
+    [
+      6.549075,
+      5.00957,
+      1.425
+    ],
+    [
+      8.50845,
+      5.00957,
+      1.425
+    ],
+    [
+      0.6709499999999992,
+      7.147070000000001,
+      1.425
+    ],
+    [
+      2.630324999999999,
+      7.147070000000001,
+      1.425
+    ],
+    [
+      4.5897,
+      7.147070000000001,
+      1.425
+    ],
+    [
+      6.549075,
+      7.147070000000001,
+      1.425
+    ],
+    [
+      8.50845,
+      7.147070000000001,
+      1.425
+    ]
+  ],
+  "n_chunk_transforms": 20,
+  "n_inverse_transforms": 20,
+  "n_relative_translations": 20,
+  "scene_images_512_shape": [
+    13,
+    3,
+    512,
+    512
+  ],
+  "scene_images_1024_shape": [
+    13,
+    3,
+    1024,
+    1024
+  ],
+  "scene_intrinsics_shape": [
+    13,
+    3,
+    3
+  ],
+  "scene_extrinsics_c0_shape": [
+    13,
+    4,
+    4
+  ],
+  "n_cond2d_images": 20,
+  "chunk_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "images_finite": true,
+  "extrinsics_finite": true,
+  "image_min_max": [
+    0.0,
+    1.0
+  ],
+  "native_output_files": [
+    "/Users/shinobu/场景生成_real_floorplan_2026-11-19/outputs/batch_real/4702_F1_scaled_6a267a93/native_A/chunks/chunk_layout.png",
+    "/Users/shinobu/场景生成_real_floorplan_2026-11-19/outputs/batch_real/4702_F1_scaled_6a267a93/native_A/chunks/chunk_transforms.json",
+    "/Users/shinobu/场景生成_real_floorplan_2026-11-19/outputs/batch_real/4702_F1_scaled_6a267a93/native_A/images/cameras.json"
+  ],
+  "source_scene_provenance": {
+    "kind": "SOURCE_DRAWING",
+    "source_file": "source_floorplan.png",
+    "source_sha256": "6a267a932525638ba5d7177d07352f113a10aef45968ce8775c4cb6304ebcd76",
+    "annotation_file": "source_annotation.svg",
+    "annotation_sha256": "d3d42b917f886493d9d2435cd6560ee28b814074c3b8c2fa1c6feea980b02234",
+    "parser_kind": "CUBICASA5K_HUMAN_SVG_ANNOTATION_ADAPTER",
+    "automatic_raster_inference": false,
+    "real_floorplan_parsed": true,
+    "scale_evidence": "SVG room dimension labels, median 0.010000 m/px from 12 measurements",
+    "scale_m_per_px": 0.00999967534575677,
+    "height_evidence": "ASSUMED_2.7_M_FOR_SAGE_GT",
+    "agent_interpretation_used": false
+  },
+  "source_camera_count": 13,
+  "native_camera_count": 13,
+  "num_imgs_per_scene": 32,
+  "selected_scene_camera_ids": [
+    "door_opening_006_Door_space_00",
+    "door_opening_006_Door_space_03",
+    "door_opening_007_Door_space_00",
+    "door_opening_007_Door_space_04",
+    "door_opening_008_Door_space_01",
+    "door_opening_008_Door_space_02",
+    "door_opening_009_Door_space_02",
+    "door_opening_009_Door_space_05",
+    "door_opening_010_Door_space_03",
+    "door_opening_010_Door_space_05",
+    "auto_00_space_01_3",
+    "auto_02_space_02_4",
+    "auto_00_space_01_4"
+  ],
+  "selected_scene_camera_count": 13,
+  "global_to_sage_translation_m": [
+    -0.0,
+    -0.0,
+    0
+  ],
+  "visible_by_chunk": [
+    {
+      "index": 0,
+      "center_m": [
+        0.6709499999999992,
+        0.7345699999999998,
+        1.425
+      ],
+      "center_world_m": [
+        0.6709499999999992,
+        0.7345699999999998,
+        1.425
+      ],
+      "accepted_camera_count": 0,
+      "accepted_camera_ids": [],
+      "selected_accepted_camera_count": 0,
+      "selected_accepted_camera_ids": [],
+      "selected_camera_id": "door_opening_006_Door_space_00",
+      "fallback_used": true,
+      "accepted_spaces": []
+    },
+    {
+      "index": 1,
+      "center_m": [
+        2.630324999999999,
+        0.7345699999999998,
+        1.425
+      ],
+      "center_world_m": [
+        2.630324999999999,
+        0.7345699999999998,
+        1.425
+      ],
+      "accepted_camera_count": 1,
+      "accepted_camera_ids": [
+        "door_opening_006_Door_space_03"
+      ],
+      "selected_accepted_camera_count": 1,
+      "selected_accepted_camera_ids": [
+        "door_opening_006_Door_space_03"
+      ],
+      "selected_camera_id": "door_opening_006_Door_space_03",
+      "fallback_used": false,
+      "accepted_spaces": [
+        "space_03"
+      ]
+    },
+    {
+      "index": 2,
+      "center_m": [
+        4.5897,
+        0.7345699999999998,
+        1.425
+      ],
+      "center_world_m": [
+        4.5897,
+        0.7345699999999998,
+        1.425
+      ],
+      "accepted_camera_count": 2,
+      "accepted_camera_ids": [
+        "door_opening_006_Door_space_00",
+        "door_opening_006_Door_space_03"
+      ],
+      "selected_accepted_camera_count": 2,
+      "selected_accepted_camera_ids": [
+        "door_opening_006_Door_space_00",
+        "door_opening_006_Door_space_03"
+      ],
+      "selected_camera_id": "door_opening_006_Door_space_03",
+      "fallback_used": false,
+      "accepted_spaces": [
+        "space_00",
+        "space_03"
+      ]
+    },
+    {
+      "index": 3,
+      "center_m": [
+        6.549075,
+        0.7345699999999998,
+        1.425
+      ],
+      "center_world_m": [
+        6.549075,
+        0.7345699999999998,
+        1.425
+      ],
+      "accepted_camera_count": 3,
+      "accepted_camera_ids": [
+        "door_opening_006_Door_space_00",
+        "door_opening_006_Door_space_03",
+        "door_opening_010_Door_space_05"
+      ],
+      "selected_accepted_camera_count": 3,
+      "selected_accepted_camera_ids": [
+        "door_opening_006_Door_space_00",
+        "door_opening_006_Door_space_03",
+        "door_opening_010_Door_space_05"
+      ],
+      "selected_camera_id": "door_opening_010_Door_space_05",
+      "fallback_used": false,
+      "accepted_spaces": [
+        "space_00",
+        "space_03",
+        "space_05"
+      ]
+    },
+    {
+      "index": 4,
+      "center_m": [
+        8.50845,
+        0.7345699999999998,
+        1.425
+      ],
+      "center_world_m": [
+        8.50845,
+        0.7345699999999998,
+        1.425
+      ],
+      "accepted_camera_count": 2,
+      "accepted_camera_ids": [
+        "door_opening_010_Door_space_03",
+        "door_opening_010_Door_space_05"
+      ],
+      "selected_accepted_camera_count": 2,
+      "selected_accepted_camera_ids": [
+        "door_opening_010_Door_space_03",
+        "door_opening_010_Door_space_05"
+      ],
+      "selected_camera_id": "door_opening_010_Door_space_05",
+      "fallback_used": false,
+      "accepted_spaces": [
+        "space_03",
+        "space_05"
+      ]
+    },
+    {
+      "index": 5,
+      "center_m": [
+        0.6709499999999992,
+        2.87207,
+        1.425
+      ],
+      "center_world_m": [
+        0.6709499999999992,
+        2.87207,
+        1.425
+      ],
+      "accepted_camera_count": 0,
+      "accepted_camera_ids": [],
+      "selected_accepted_camera_count": 0,
+      "selected_accepted_camera_ids": [],
+      "selected_camera_id": "door_opening_007_Door_space_00",
+      "fallback_used": true,
+      "accepted_spaces": []
+    },
+    {
+      "index": 6,
+      "center_m": [
+        2.630324999999999,
+        2.87207,
+        1.425
+      ],
+      "center_world_m": [
+        2.630324999999999,
+        2.87207,
+        1.425
+      ],
+      "accepted_camera_count": 1,
+      "accepted_camera_ids": [
+        "door_opening_007_Door_space_04"
+      ],
+      "selected_accepted_camera_count": 1,
+      "selected_accepted_camera_ids": [
+        "door_opening_007_Door_space_04"
+      ],
+      "selected_camera_id": "door_opening_007_Door_space_04",
+      "fallback_used": false,
+      "accepted_spaces": [
+        "space_04"
+      ]
+    },
+    {
+      "index": 7,
+      "center_m": [
+        4.5897,
+        2.87207,
+        1.425
+      ],
+      "center_world_m": [
+        4.5897,
+        2.87207,
+        1.425
+      ],
+      "accepted_camera_count": 5,
+      "accepted_camera_ids": [
+        "door_opening_006_Door_space_00",
+        "door_opening_006_Door_space_03",
+        "door_opening_007_Door_space_00",
+        "door_opening_007_Door_space_04",
+        "door_opening_008_Door_space_02"
+      ],
+      "selected_accepted_camera_count": 5,
+      "selected_accepted_camera_ids": [
+        "door_opening_006_Door_space_00",
+        "door_opening_006_Door_space_03",
+        "door_opening_007_Door_space_00",
+        "door_opening_007_Door_space_04",
+        "door_opening_008_Door_space_02"
+      ],
+      "selected_camera_id": "door_opening_006_Door_space_03",
+      "fallback_used": false,
+      "accepted_spaces": [
+        "space_00",
+        "space_02",
+        "space_03",
+        "space_04"
+      ]
+    },
+    {
+      "index": 8,
+      "center_m": [
+        6.549075,
+        2.87207,
+        1.425
+      ],
+      "center_world_m": [
+        6.549075,
+        2.87207,
+        1.425
+      ],
+      "accepted_camera_count": 6,
+      "accepted_camera_ids": [
+        "door_opening_006_Door_space_00",
+        "door_opening_006_Door_space_03",
+        "door_opening_007_Door_space_00",
+        "door_opening_007_Door_space_04",
+        "door_opening_008_Door_space_01",
+        "door_opening_009_Door_space_02"
+      ],
+      "selected_accepted_camera_count": 6,
+      "selected_accepted_camera_ids": [
+        "door_opening_006_Door_space_00",
+        "door_opening_006_Door_space_03",
+        "door_opening_007_Door_space_00",
+        "door_opening_007_Door_space_04",
+        "door_opening_008_Door_space_01",
+        "door_opening_009_Door_space_02"
+      ],
+      "selected_camera_id": "door_opening_006_Door_space_00",
+      "fallback_used": false,
+      "accepted_spaces": [
+        "space_00",
+        "space_01",
+        "space_02",
+        "space_03",
+        "space_04"
+      ]
+    },
+    {
+      "index": 9,
+      "center_m": [
+        8.50845,
+        2.87207,
+        1.425
+      ],
+      "center_world_m": [
+        8.50845,
+        2.87207,
+        1.425
+      ],
+      "accepted_camera_count": 3,
+      "accepted_camera_ids": [
+        "door_opening_009_Door_space_02",
+        "door_opening_009_Door_space_05",
+        "door_opening_010_Door_space_05"
+      ],
+      "selected_accepted_camera_count": 3,
+      "selected_accepted_camera_ids": [
+        "door_opening_009_Door_space_02",
+        "door_opening_009_Door_space_05",
+        "door_opening_010_Door_space_05"
+      ],
+      "selected_camera_id": "door_opening_009_Door_space_05",
+      "fallback_used": false,
+      "accepted_spaces": [
+        "space_02",
+        "space_05"
+      ]
+    },
+    {
+      "index": 10,
+      "center_m": [
+        0.6709499999999992,
+        5.00957,
+        1.425
+      ],
+      "center_world_m": [
+        0.6709499999999992,
+        5.00957,
+        1.425
+      ],
+      "accepted_camera_count": 2,
+      "accepted_camera_ids": [
+        "auto_00_space_01_3",
+        "auto_00_space_01_4"
+      ],
+      "selected_accepted_camera_count": 2,
+      "selected_accepted_camera_ids": [
+        "auto_00_space_01_3",
+        "auto_00_space_01_4"
+      ],
+      "selected_camera_id": "auto_00_space_01_3",
+      "fallback_used": false,
+      "accepted_spaces": [
+        "space_01"
+      ]
+    },
+    {
+      "index": 11,
+      "center_m": [
+        2.630324999999999,
+        5.00957,
+        1.425
+      ],
+      "center_world_m": [
+        2.630324999999999,
+        5.00957,
+        1.425
+      ],
+      "accepted_camera_count": 3,
+      "accepted_camera_ids": [
+        "door_opening_008_Door_space_02",
+        "auto_00_space_01_3",
+        "auto_00_space_01_4"
+      ],
+      "selected_accepted_camera_count": 3,
+      "selected_accepted_camera_ids": [
+        "door_opening_008_Door_space_02",
+        "auto_00_space_01_3",
+        "auto_00_space_01_4"
+      ],
+      "selected_camera_id": "auto_00_space_01_4",
+      "fallback_used": false,
+      "accepted_spaces": [
+        "space_01",
+        "space_02"
+      ]
+    },
+    {
+      "index": 12,
+      "center_m": [
+        4.5897,
+        5.00957,
+        1.425
+      ],
+      "center_world_m": [
+        4.5897,
+        5.00957,
+        1.425
+      ],
+      "accepted_camera_count": 5,
+      "accepted_camera_ids": [
+        "door_opening_007_Door_space_00",
+        "door_opening_007_Door_space_04",
+        "door_opening_008_Door_space_01",
+        "door_opening_008_Door_space_02",
+        "auto_00_space_01_4"
+      ],
+      "selected_accepted_camera_count": 5,
+      "selected_accepted_camera_ids": [
+        "door_opening_007_Door_space_00",
+        "door_opening_007_Door_space_04",
+        "door_opening_008_Door_space_01",
+        "door_opening_008_Door_space_02",
+        "auto_00_space_01_4"
+      ],
+      "selected_camera_id": "door_opening_007_Door_space_04",
+      "fallback_used": false,
+      "accepted_spaces": [
+        "space_00",
+        "space_01",
+        "space_02",
+        "space_04"
+      ]
+    },
+    {
+      "index": 13,
+      "center_m": [
+        6.549075,
+        5.00957,
+        1.425
+      ],
+      "center_world_m": [
+        6.549075,
+        5.00957,
+        1.425
+      ],
+      "accepted_camera_count": 6,
+      "accepted_camera_ids": [
+        "door_opening_007_Door_space_00",
+        "door_opening_007_Door_space_04",
+        "door_opening_008_Door_space_01",
+        "door_opening_008_Door_space_02",
+        "door_opening_009_Door_space_05",
+        "auto_02_space_02_4"
+      ],
+      "selected_accepted_camera_count": 6,
+      "selected_accepted_camera_ids": [
+        "door_opening_007_Door_space_00",
+        "door_opening_007_Door_space_04",
+        "door_opening_008_Door_space_01",
+        "door_opening_008_Door_space_02",
+        "door_opening_009_Door_space_05",
+        "auto_02_space_02_4"
+      ],
+      "selected_camera_id": "door_opening_008_Door_space_01",
+      "fallback_used": false,
+      "accepted_spaces": [
+        "space_00",
+        "space_01",
+        "space_02",
+        "space_04",
+        "space_05"
+      ]
+    },
+    {
+      "index": 14,
+      "center_m": [
+        8.50845,
+        5.00957,
+        1.425
+      ],
+      "center_world_m": [
+        8.50845,
+        5.00957,
+        1.425
+      ],
+      "accepted_camera_count": 4,
+      "accepted_camera_ids": [
+        "door_opening_009_Door_space_02",
+        "door_opening_009_Door_space_05",
+        "door_opening_010_Door_space_03",
+        "auto_02_space_02_4"
+      ],
+      "selected_accepted_camera_count": 4,
+      "selected_accepted_camera_ids": [
+        "door_opening_009_Door_space_02",
+        "door_opening_009_Door_space_05",
+        "door_opening_010_Door_space_03",
+        "auto_02_space_02_4"
+      ],
+      "selected_camera_id": "auto_02_space_02_4",
+      "fallback_used": false,
+      "accepted_spaces": [
+        "space_02",
+        "space_03",
+        "space_05"
+      ]
+    },
+    {
+      "index": 15,
+      "center_m": [
+        0.6709499999999992,
+        7.147070000000001,
+        1.425
+      ],
+      "center_world_m": [
+        0.6709499999999992,
+        7.147070000000001,
+        1.425
+      ],
+      "accepted_camera_count": 1,
+      "accepted_camera_ids": [
+        "auto_00_space_01_3"
+      ],
+      "selected_accepted_camera_count": 1,
+      "selected_accepted_camera_ids": [
+        "auto_00_space_01_3"
+      ],
+      "selected_camera_id": "auto_00_space_01_3",
+      "fallback_used": false,
+      "accepted_spaces": [
+        "space_01"
+      ]
+    },
+    {
+      "index": 16,
+      "center_m": [
+        2.630324999999999,
+        7.147070000000001,
+        1.425
+      ],
+      "center_world_m": [
+        2.630324999999999,
+        7.147070000000001,
+        1.425
+      ],
+      "accepted_camera_count": 2,
+      "accepted_camera_ids": [
+        "auto_00_space_01_3",
+        "auto_00_space_01_4"
+      ],
+      "selected_accepted_camera_count": 2,
+      "selected_accepted_camera_ids": [
+        "auto_00_space_01_3",
+        "auto_00_space_01_4"
+      ],
+      "selected_camera_id": "auto_00_space_01_3",
+      "fallback_used": false,
+      "accepted_spaces": [
+        "space_01"
+      ]
+    },
+    {
+      "index": 17,
+      "center_m": [
+        4.5897,
+        7.147070000000001,
+        1.425
+      ],
+      "center_world_m": [
+        4.5897,
+        7.147070000000001,
+        1.425
+      ],
+      "accepted_camera_count": 1,
+      "accepted_camera_ids": [
+        "auto_00_space_01_4"
+      ],
+      "selected_accepted_camera_count": 1,
+      "selected_accepted_camera_ids": [
+        "auto_00_space_01_4"
+      ],
+      "selected_camera_id": "auto_00_space_01_4",
+      "fallback_used": false,
+      "accepted_spaces": [
+        "space_01"
+      ]
+    },
+    {
+      "index": 18,
+      "center_m": [
+        6.549075,
+        7.147070000000001,
+        1.425
+      ],
+      "center_world_m": [
+        6.549075,
+        7.147070000000001,
+        1.425
+      ],
+      "accepted_camera_count": 1,
+      "accepted_camera_ids": [
+        "auto_02_space_02_4"
+      ],
+      "selected_accepted_camera_count": 1,
+      "selected_accepted_camera_ids": [
+        "auto_02_space_02_4"
+      ],
+      "selected_camera_id": "auto_02_space_02_4",
+      "fallback_used": false,
+      "accepted_spaces": [
+        "space_02"
+      ]
+    },
+    {
+      "index": 19,
+      "center_m": [
+        8.50845,
+        7.147070000000001,
+        1.425
+      ],
+      "center_world_m": [
+        8.50845,
+        7.147070000000001,
+        1.425
+      ],
+      "accepted_camera_count": 1,
+      "accepted_camera_ids": [
+        "auto_02_space_02_4"
+      ],
+      "selected_accepted_camera_count": 1,
+      "selected_accepted_camera_ids": [
+        "auto_02_space_02_4"
+      ],
+      "selected_camera_id": "auto_02_space_02_4",
+      "fallback_used": false,
+      "accepted_spaces": [
+        "space_02"
+      ]
+    }
+  ],
+  "zero_visible_chunks": [
+    0,
+    5
+  ],
+  "fallback_chunks": [
+    0,
+    5
+  ],
+  "zero_selected_visible_chunks": [
+    0,
+    5
+  ],
+  "door_visibility": [
+    {
+      "door_id": "opening_006_Door",
+      "connects": [
+        "space_00",
+        "space_03"
+      ],
+      "near_chunk_count": 4,
+      "chunks_with_both_side_cameras": [
+        2,
+        3,
+        7,
+        8
+      ]
+    },
+    {
+      "door_id": "opening_007_Door",
+      "connects": [
+        "space_00",
+        "space_04"
+      ],
+      "near_chunk_count": 4,
+      "chunks_with_both_side_cameras": [
+        7,
+        8,
+        12,
+        13
+      ]
+    },
+    {
+      "door_id": "opening_008_Door",
+      "connects": [
+        "space_01",
+        "space_02"
+      ],
+      "near_chunk_count": 3,
+      "chunks_with_both_side_cameras": [
+        12,
+        13
+      ]
+    },
+    {
+      "door_id": "opening_009_Door",
+      "connects": [
+        "space_02",
+        "space_05"
+      ],
+      "near_chunk_count": 3,
+      "chunks_with_both_side_cameras": [
+        9,
+        13,
+        14
+      ]
+    },
+    {
+      "door_id": "opening_010_Door",
+      "connects": [
+        "space_03",
+        "space_05"
+      ],
+      "near_chunk_count": 3,
+      "chunks_with_both_side_cameras": [
+        4
+      ]
+    }
+  ],
+  "native_layout_limitation": "Sage_gt uses only first room outer width/length and fixed 2.7m height; interior walls and door topology are not hard constraints.",
+  "disclaimer": "Only original CPU input readers ran; no GenRecon model inference or training."
+}

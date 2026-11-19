@@ -1,0 +1,32 @@
+{
+  "source_sha256": "2c7495d5a8db20826c6396a22b512c15d4f34c8de25d839b65953f0f08860de5",
+  "input": "/Users/shinobu/\u573a\u666f\u751f\u6210_real_floorplan_2026-11-19/fixtures/real_floorplans/4790/F1_scaled.png",
+  "input_sha256": "2c7495d5a8db20826c6396a22b512c15d4f34c8de25d839b65953f0f08860de5",
+  "annotation_sidecar": "/Users/shinobu/\u573a\u666f\u751f\u6210_real_floorplan_2026-11-19/fixtures/real_floorplans/4790/model.svg",
+  "status": "NEEDS_REVIEW",
+  "stages": {
+    "parse": {
+      "exit_code": 0,
+      "resumed": true,
+      "output": "/Users/shinobu/\u573a\u666f\u751f\u6210_real_floorplan_2026-11-19/outputs/batch_real/4790_F1_scaled_2c7495d5/parser/raw_prediction.json"
+    },
+    "revise": {
+      "exit_code": 0,
+      "resumed": true,
+      "output": "/Users/shinobu/\u573a\u666f\u751f\u6210_real_floorplan_2026-11-19/outputs/batch_real/4790_F1_scaled_2c7495d5/parser/revised_prediction.json"
+    },
+    "annotated_vector": {
+      "exit_code": 1,
+      "resumed": false,
+      "output": null
+    }
+  },
+  "elapsed_seconds": 0.069,
+  "milestones": [
+    "PARSED_CANDIDATES",
+    "AGENT_REVISED_TRACES"
+  ],
+  "baseline_prediction_is_not_annotation": true,
+  "agent_model_used": false,
+  "note": "Annotation-assisted successes do not count as raster parser successes."
+}

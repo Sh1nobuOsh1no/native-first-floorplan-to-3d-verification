@@ -1,0 +1,69 @@
+{
+  "source_sha256": "6a267a932525638ba5d7177d07352f113a10aef45968ce8775c4cb6304ebcd76",
+  "input": "/Users/shinobu/\u573a\u666f\u751f\u6210_real_floorplan_2026-11-19/fixtures/real_floorplans/4702/F1_scaled.png",
+  "input_sha256": "6a267a932525638ba5d7177d07352f113a10aef45968ce8775c4cb6304ebcd76",
+  "annotation_sidecar": "/Users/shinobu/\u573a\u666f\u751f\u6210_real_floorplan_2026-11-19/fixtures/real_floorplans/4702/model.svg",
+  "status": "PARTIAL_ANNOTATION_ASSISTED_CROSS_DOOR_FAILURE",
+  "stages": {
+    "parse": {
+      "exit_code": 0,
+      "resumed": true,
+      "output": "/Users/shinobu/\u573a\u666f\u751f\u6210_real_floorplan_2026-11-19/outputs/batch_real/4702_F1_scaled_6a267a93/parser/raw_prediction.json"
+    },
+    "revise": {
+      "exit_code": 0,
+      "resumed": true,
+      "output": "/Users/shinobu/\u573a\u666f\u751f\u6210_real_floorplan_2026-11-19/outputs/batch_real/4702_F1_scaled_6a267a93/parser/revised_prediction.json"
+    },
+    "annotated_vector": {
+      "exit_code": 0,
+      "resumed": true,
+      "output": "/Users/shinobu/\u573a\u666f\u751f\u6210_real_floorplan_2026-11-19/outputs/batch_real/4702_F1_scaled_6a267a93/metric_scene.json"
+    },
+    "plan": {
+      "exit_code": 0,
+      "resumed": true,
+      "output": "/Users/shinobu/\u573a\u666f\u751f\u6210_real_floorplan_2026-11-19/outputs/batch_real/4702_F1_scaled_6a267a93/planned_scene.json"
+    },
+    "layout": {
+      "exit_code": 0,
+      "resumed": true,
+      "output": "/Users/shinobu/\u573a\u666f\u751f\u6210_real_floorplan_2026-11-19/outputs/batch_real/4702_F1_scaled_6a267a93/layout_camera_map.png"
+    },
+    "render_A": {
+      "exit_code": 0,
+      "resumed": true,
+      "output": "/Users/shinobu/\u573a\u666f\u751f\u6210_real_floorplan_2026-11-19/outputs/batch_real/4702_F1_scaled_6a267a93/render_A/building_unified.glb"
+    },
+    "decode_A": {
+      "exit_code": 0,
+      "resumed": true,
+      "output": "/Users/shinobu/\u573a\u666f\u751f\u6210_real_floorplan_2026-11-19/outputs/batch_real/4702_F1_scaled_6a267a93/render_A/contact_sheet.png"
+    },
+    "sage_A": {
+      "exit_code": 0,
+      "resumed": true,
+      "output": "/Users/shinobu/\u573a\u666f\u751f\u6210_real_floorplan_2026-11-19/outputs/batch_real/4702_F1_scaled_6a267a93/sage_gt_A/renders_room/cubicasa5k_4702/transforms.json"
+    },
+    "native_A": {
+      "exit_code": 0,
+      "resumed": true,
+      "output": "/Users/shinobu/\u573a\u666f\u751f\u6210_real_floorplan_2026-11-19/outputs/batch_real/4702_F1_scaled_6a267a93/native_A_report.json"
+    },
+    "cross_door_structure": {
+      "exit_code": 2,
+      "resumed": false,
+      "output": "/Users/shinobu/\u573a\u666f\u751f\u6210_real_floorplan_2026-11-19/outputs/batch_real/4702_F1_scaled_6a267a93/cross_door_structure.json"
+    }
+  },
+  "elapsed_seconds": 0.175,
+  "milestones": [
+    "PARSED_CANDIDATES",
+    "GEOMETRY_VALIDATED_ANNOTATION_ASSISTED",
+    "BLENDER_BUILT_ANNOTATION_ASSISTED",
+    "GENRECON_INPUT_VALIDATED_ANNOTATION_ASSISTED"
+  ],
+  "baseline_prediction_is_not_annotation": true,
+  "agent_model_used": false,
+  "note": "Annotation-assisted successes do not count as raster parser successes."
+}

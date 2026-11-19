@@ -1,0 +1,28 @@
+{
+  "global_to_sage_translation_m": [
+    -0.0,
+    -0.0,
+    0
+  ],
+  "original_bounds_m": [
+    0.0,
+    0.0,
+    9.1794,
+    7.88164
+  ],
+  "provenance": {
+    "kind": "SOURCE_DRAWING",
+    "source_file": "source_floorplan.png",
+    "source_sha256": "6a267a932525638ba5d7177d07352f113a10aef45968ce8775c4cb6304ebcd76",
+    "annotation_file": "source_annotation.svg",
+    "annotation_sha256": "d3d42b917f886493d9d2435cd6560ee28b814074c3b8c2fa1c6feea980b02234",
+    "parser_kind": "CUBICASA5K_HUMAN_SVG_ANNOTATION_ADAPTER",
+    "automatic_raster_inference": false,
+    "real_floorplan_parsed": true,
+    "scale_evidence": "SVG room dimension labels, median 0.010000 m/px from 12 measurements",
+    "scale_m_per_px": 0.00999967534575677,
+    "height_evidence": "ASSUMED_2.7_M_FOR_SAGE_GT",
+    "agent_interpretation_used": false
+  },
+  "limitation": "Only outer bounds enter Sage_gt; interior walls and doors are not hard constraints."
+}

@@ -1,0 +1,15 @@
+{
+  "argv": [
+    "/Users/shinobu/\u573a\u666f\u751f\u6210/.venv/bin/python",
+    "-m",
+    "src.floorplan.parse_cpu",
+    "/Users/shinobu/\u573a\u666f\u751f\u6210_real_floorplan_2026-11-19/fixtures/real_floorplans/9557/F1_scaled.png",
+    "/Users/shinobu/\u573a\u666f\u751f\u6210_real_floorplan_2026-11-19/outputs/batch_real/9557_F1_scaled_f13ce9ed/parser"
+  ],
+  "cwd": "/Users/shinobu/\u573a\u666f\u751f\u6210_real_floorplan_2026-11-19",
+  "start_utc": "20261119T105320Z",
+  "elapsed_seconds": 0.10253074998036027,
+  "exit_code": 0,
+  "stdout": "/Users/shinobu/\u573a\u666f\u751f\u6210_real_floorplan_2026-11-19/outputs/batch_real/9557_F1_scaled_f13ce9ed/logs/20261119T105320Z_parse.stdout.log",
+  "stderr": "/Users/shinobu/\u573a\u666f\u751f\u6210_real_floorplan_2026-11-19/outputs/batch_real/9557_F1_scaled_f13ce9ed/logs/20261119T105320Z_parse.stderr.log"
+}

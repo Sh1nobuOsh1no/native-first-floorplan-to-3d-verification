@@ -1,7 +1,10 @@
 # Architecture
 
 ```text
-complete multiroom drawing (real source extraction pending)
+complete multiroom drawing (PNG/JPG or one-page PDF)
+  → OpenCV axis-aligned wall/room candidates + source-pixel evidence
+  → bounded deterministic trace revision; unresolved doors/scale = NEEDS_REVIEW
+  → optional separately labelled human SVG vector control
   → validated global metric_scene_v1 JSON, topology and provenance
   → automatic room/door/chunk camera plan in one RH_Z_UP metre frame
   → one Blender Scene, A/B mesh and identical cameras
@@ -12,6 +15,10 @@ complete multiroom drawing (real source extraction pending)
 ```
 
 The scene compiler makes one list of global primitives and splits each wall at openings. Blender builds a single building Scene and exports a joined mesh. The two regression layouts are 12 × 9 m with four rooms/four corridor doors, and 6 × 9 m with two rooms/two corridor doors and world x/y origin (−4, 10). A contains the shell; B adds gray furniture with stable IDs. Both variants use the exact same planned camera list.
+
+The real raster baseline is in `src/floorplan/parse_cpu.py`: OpenCV Otsu thresholding, long horizontal/vertical morphology, and enclosed-light-region candidates. It deliberately emits no verified door/window or metric scale. `revise_bounded.py` merges duplicate traces or bridges ≤12 px collinear gaps only when the source pixels are dark enough; every actual change has before/after/evidence. The work is deterministic rules, **not an Agent model call**. `batch_floorplans.py` hashes each source, isolates per-image results, records each subprocess exit and supports resumption. It does not promote candidates to valid building geometry when door/topology/scale remain unknown.
+
+The separate CubiCasa5K human SVG control in `cubicasa_vector_adapter.py` checks every room is rectangular, derives scale from multiple printed metric room dimensions, maps annotated wall/opening polygons into one global frame, and rejects ambiguous geometry. Its `4702` scene uses `footprint_mode: SPACE_UNION` for the L-shaped outline and explicit `exterior_door` openings. All coordinates still share one frame and one Blender Scene. This control demonstrates the downstream geometry contract on a real drawing with human vector labels; it is not a raster parser result. The GLB exporter uses glTF's Y-up coordinate convention, while `camera_metadata.json` retains Blender RH_Z_UP metres.
 
 `src/cameras/plan_native.py` calls the official `SageGtChunker` and `SageImageSelecter._check_acceptance` on CPU. It generates candidates from rooms and currently uncovered chunks, requires a clear ray to each candidate's covered chunk centre, and greedily adds cameras until every native chunk is covered or the `--n-views` budget is reached. Existing cameras keep the four door-side observation pairs. The official acceptance samples eight chunk corners and its centre, projects them through the camera and requires clipped normalized image area ≥0.4. This ignores wall occlusion; the adapter's ray check prevents a newly added camera from counting a solid-wall-only view. The native Reader and actual rendered passes remain the final evidence.
 

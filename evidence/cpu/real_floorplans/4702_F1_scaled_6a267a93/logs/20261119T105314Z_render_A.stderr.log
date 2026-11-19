@@ -1,0 +1,8 @@
+/Users/shinobu/场景生成_real_floorplan_2026-11-19/src/blender/render_global.py:98: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  scene.world.use_nodes = True
+/Users/shinobu/场景生成_real_floorplan_2026-11-19/src/blender/render_global.py:36: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m.use_nodes = True
+/Users/shinobu/场景生成_real_floorplan_2026-11-19/src/blender/render_global.py:133: DeprecationWarning: 'Scene.use_nodes' is expected to be removed in Blender 6.0
+  scene.use_nodes = True
+/Users/shinobu/场景生成_real_floorplan_2026-11-19/src/blender/render_global.py:135: DeprecationWarning: 'Scene.compositing_node_group' is expected to be removed in Blender 6.0
+  scene.compositing_node_group = tree

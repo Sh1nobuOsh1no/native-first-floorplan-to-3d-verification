@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "/Users/shinobu/\u573a\u666f\u751f\u6210/.venv/bin/python",
+    "-m",
+    "src.floorplan.cubicasa_vector_adapter",
+    "/Users/shinobu/\u573a\u666f\u751f\u6210_real_floorplan_2026-11-19/fixtures/real_floorplans/9557/F1_scaled.png",
+    "/Users/shinobu/\u573a\u666f\u751f\u6210_real_floorplan_2026-11-19/fixtures/real_floorplans/9557/model.svg",
+    "/Users/shinobu/\u573a\u666f\u751f\u6210_real_floorplan_2026-11-19/outputs/batch_real/9557_F1_scaled_f13ce9ed"
+  ],
+  "cwd": "/Users/shinobu/\u573a\u666f\u751f\u6210_real_floorplan_2026-11-19",
+  "start_utc": "20261119T105320Z",
+  "elapsed_seconds": 0.037754207965917885,
+  "exit_code": 1,
+  "stdout": "/Users/shinobu/\u573a\u666f\u751f\u6210_real_floorplan_2026-11-19/outputs/batch_real/9557_F1_scaled_f13ce9ed/logs/20261119T105320Z_annotated_vector.stdout.log",
+  "stderr": "/Users/shinobu/\u573a\u666f\u751f\u6210_real_floorplan_2026-11-19/outputs/batch_real/9557_F1_scaled_f13ce9ed/logs/20261119T105320Z_annotated_vector.stderr.log"
+}

@@ -1,0 +1,52 @@
+{
+  "source": "CUBICASA5K_HUMAN_SVG_REFERENCE_NOT_PARSER_INPUT",
+  "rooms": {
+    "candidate_count": 6,
+    "reference_count": 6,
+    "matched_iou_ge_0_5": 4,
+    "precision": 0.6666666666666666,
+    "recall": 0.6666666666666666,
+    "matches": [
+      {
+        "candidate": 2,
+        "annotation": 2,
+        "bbox_iou": 0.9759
+      },
+      {
+        "candidate": 3,
+        "annotation": 4,
+        "bbox_iou": 0.9758
+      },
+      {
+        "candidate": 5,
+        "annotation": 3,
+        "bbox_iou": 0.9526
+      },
+      {
+        "candidate": 4,
+        "annotation": 5,
+        "bbox_iou": 0.7502
+      }
+    ]
+  },
+  "walls": {
+    "trace_count": 45,
+    "reference_polygon_count": 12,
+    "traces_overlapping_reference_ge_0_5": 13,
+    "trace_precision_proxy": 0.28888888888888886
+  },
+  "doors": {
+    "candidate_count": 0,
+    "reference_count": 7,
+    "recall": 0
+  },
+  "windows": {
+    "candidate_count": 0,
+    "reference_count": 4,
+    "recall": 0
+  },
+  "limitations": [
+    "Wall trace overlap is a pixel proxy, not instance level wall F1",
+    "Annotation alignment to source raster may introduce small IoU error"
+  ]
+}

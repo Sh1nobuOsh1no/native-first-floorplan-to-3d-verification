@@ -1,0 +1,12 @@
+{
+  "rooms": [
+    {
+      "dimensions": {
+        "width": 9.1794,
+        "length": 7.88164,
+        "height": 2.7
+      }
+    }
+  ],
+  "adapter_provenance": "SOURCE_DRAWING_BUILDING_OUTER_BOUNDS_ONLY"
+}

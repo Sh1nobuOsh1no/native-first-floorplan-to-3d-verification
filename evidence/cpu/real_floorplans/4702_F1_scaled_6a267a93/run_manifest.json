@@ -1,0 +1,11 @@
+{
+  "source_scene": "/Users/shinobu/\u573a\u666f\u751f\u6210_real_floorplan_2026-11-19/outputs/batch_real/4702_F1_scaled_6a267a93/metric_scene.json",
+  "render_scene": "/Users/shinobu/\u573a\u666f\u751f\u6210_real_floorplan_2026-11-19/outputs/batch_real/4702_F1_scaled_6a267a93/planned_scene.json",
+  "scene_id": "cubicasa5k_4702",
+  "steps": [
+    "native_A"
+  ],
+  "n_views": 32,
+  "size": 128,
+  "samples": 4
+}

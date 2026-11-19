@@ -1,0 +1,193 @@
+{
+  "implementation": "deterministic_rules_v1",
+  "model_used": false,
+  "max_rounds": 2,
+  "edits": 2,
+  "history": [
+    {
+      "round": 1,
+      "edit_type": "MERGE_DUPLICATE_TRACE",
+      "before": [
+        {
+          "id": "trace_0004",
+          "axis": "H",
+          "pixel_span": [
+            151,
+            1470
+          ],
+          "pixel_center": 77.0,
+          "pixel_thickness": 12,
+          "bbox_px": [
+            151,
+            71,
+            1470,
+            83
+          ],
+          "confidence": 0.55,
+          "source_evidence": {
+            "kind": "dark_line_morphology",
+            "bbox_px": [
+              151,
+              71,
+              1470,
+              83
+            ]
+          }
+        },
+        {
+          "id": "trace_0005",
+          "axis": "H",
+          "pixel_span": [
+            472,
+            541
+          ],
+          "pixel_center": 80.0,
+          "pixel_thickness": 2,
+          "bbox_px": [
+            472,
+            79,
+            541,
+            81
+          ],
+          "confidence": 0.55,
+          "source_evidence": {
+            "kind": "dark_line_morphology",
+            "bbox_px": [
+              472,
+              79,
+              541,
+              81
+            ]
+          }
+        }
+      ],
+      "after": {
+        "id": "trace_0004",
+        "axis": "H",
+        "pixel_span": [
+          151,
+          1470
+        ],
+        "pixel_center": 77.0,
+        "pixel_thickness": 12,
+        "bbox_px": [
+          151,
+          71,
+          1470,
+          83
+        ],
+        "confidence": 0.55,
+        "source_evidence": {
+          "kind": "MERGE_DUPLICATE_TRACE",
+          "source_trace_ids": [
+            "trace_0004",
+            "trace_0005"
+          ],
+          "gap_px": null
+        }
+      },
+      "reason": "collinear traces with source pixel support",
+      "source_evidence": {
+        "kind": "MERGE_DUPLICATE_TRACE",
+        "source_trace_ids": [
+          "trace_0004",
+          "trace_0005"
+        ],
+        "gap_px": null
+      },
+      "validation": "axis_and_pixel_check_passed"
+    },
+    {
+      "round": 2,
+      "edit_type": "MERGE_DUPLICATE_TRACE",
+      "before": [
+        {
+          "id": "trace_0004",
+          "axis": "H",
+          "pixel_span": [
+            151,
+            1470
+          ],
+          "pixel_center": 77.0,
+          "pixel_thickness": 12,
+          "bbox_px": [
+            151,
+            71,
+            1470,
+            83
+          ],
+          "confidence": 0.55,
+          "source_evidence": {
+            "kind": "MERGE_DUPLICATE_TRACE",
+            "source_trace_ids": [
+              "trace_0004",
+              "trace_0005"
+            ],
+            "gap_px": null
+          }
+        },
+        {
+          "id": "trace_0008",
+          "axis": "H",
+          "pixel_span": [
+            1231,
+            1291
+          ],
+          "pixel_center": 80.0,
+          "pixel_thickness": 2,
+          "bbox_px": [
+            1231,
+            79,
+            1291,
+            81
+          ],
+          "confidence": 0.55,
+          "source_evidence": {
+            "kind": "dark_line_morphology",
+            "bbox_px": [
+              1231,
+              79,
+              1291,
+              81
+            ]
+          }
+        }
+      ],
+      "after": {
+        "id": "trace_0004",
+        "axis": "H",
+        "pixel_span": [
+          151,
+          1470
+        ],
+        "pixel_center": 77.0,
+        "pixel_thickness": 12,
+        "bbox_px": [
+          151,
+          71,
+          1470,
+          83
+        ],
+        "confidence": 0.55,
+        "source_evidence": {
+          "kind": "MERGE_DUPLICATE_TRACE",
+          "source_trace_ids": [
+            "trace_0004",
+            "trace_0008"
+          ],
+          "gap_px": null
+        }
+      },
+      "reason": "collinear traces with source pixel support",
+      "source_evidence": {
+        "kind": "MERGE_DUPLICATE_TRACE",
+        "source_trace_ids": [
+          "trace_0004",
+          "trace_0008"
+        ],
+        "gap_px": null
+      },
+      "validation": "axis_and_pixel_check_passed"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "scene_id": "cubicasa5k_4702",
+  "provenance": "SOURCE_DRAWING",
+  "variant": "A",
+  "engine": "CYCLES_CPU",
+  "samples": 4,
+  "resolution": [
+    128,
+    128
+  ],
+  "frame_count": 13,
+  "object_count": 48,
+  "global_scene": true
+}
