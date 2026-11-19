@@ -1,7 +1,7 @@
 {
   "scene": [
     {
-      "img_path": "evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c00_corridor_to_bed.png",
+      "img_path": "/Users/shinobu/\u573a\u666f\u751f\u6210_remote_verify_2026-11-18/evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c00_corridor_to_bed.png",
       "extrinsics_c0": [
         [
           -2.8499999046325684,
@@ -47,7 +47,7 @@
       ]
     },
     {
-      "img_path": "evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c01_bed_to_bed.png",
+      "img_path": "/Users/shinobu/\u573a\u666f\u751f\u6210_remote_verify_2026-11-18/evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c01_bed_to_bed.png",
       "extrinsics_c0": [
         [
           -2.163881778717041,
@@ -93,7 +93,7 @@
       ]
     },
     {
-      "img_path": "evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c02_bed_side.png",
+      "img_path": "/Users/shinobu/\u573a\u666f\u751f\u6210_remote_verify_2026-11-18/evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c02_bed_side.png",
       "extrinsics_c0": [
         [
           0.22430135309696198,
@@ -139,7 +139,7 @@
       ]
     },
     {
-      "img_path": "evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c03_bed_to_corridor.png",
+      "img_path": "/Users/shinobu/\u573a\u666f\u751f\u6210_remote_verify_2026-11-18/evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c03_bed_to_corridor.png",
       "extrinsics_c0": [
         [
           2.8499999046325684,
@@ -185,7 +185,7 @@
       ]
     },
     {
-      "img_path": "evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c04_corridor_oblique_bed.png",
+      "img_path": "/Users/shinobu/\u573a\u666f\u751f\u6210_remote_verify_2026-11-18/evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c04_corridor_oblique_bed.png",
       "extrinsics_c0": [
         [
           -2.4044349193573,
@@ -231,7 +231,7 @@
       ]
     },
     {
-      "img_path": "evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c05_corridor_to_office.png",
+      "img_path": "/Users/shinobu/\u573a\u666f\u751f\u6210_remote_verify_2026-11-18/evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c05_corridor_to_office.png",
       "extrinsics_c0": [
         [
           -2.8499999046325684,
@@ -277,7 +277,7 @@
       ]
     },
     {
-      "img_path": "evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c06_office_to_desk.png",
+      "img_path": "/Users/shinobu/\u573a\u666f\u751f\u6210_remote_verify_2026-11-18/evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c06_office_to_desk.png",
       "extrinsics_c0": [
         [
           -2.4344654083251953,
@@ -323,7 +323,7 @@
       ]
     },
     {
-      "img_path": "evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c07_office_side.png",
+      "img_path": "/Users/shinobu/\u573a\u666f\u751f\u6210_remote_verify_2026-11-18/evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c07_office_side.png",
       "extrinsics_c0": [
         [
           0.08901902288198471,
@@ -369,7 +369,7 @@
       ]
     },
     {
-      "img_path": "evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c08_corridor_to_living.png",
+      "img_path": "/Users/shinobu/\u573a\u666f\u751f\u6210_remote_verify_2026-11-18/evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c08_corridor_to_living.png",
       "extrinsics_c0": [
         [
           2.8499999046325684,
@@ -415,7 +415,7 @@
       ]
     },
     {
-      "img_path": "evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c09_living_to_sofa.png",
+      "img_path": "/Users/shinobu/\u573a\u666f\u751f\u6210_remote_verify_2026-11-18/evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c09_living_to_sofa.png",
       "extrinsics_c0": [
         [
           2.3048980236053467,
@@ -461,7 +461,7 @@
       ]
     },
     {
-      "img_path": "evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c10_living_side.png",
+      "img_path": "/Users/shinobu/\u573a\u666f\u751f\u6210_remote_verify_2026-11-18/evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c10_living_side.png",
       "extrinsics_c0": [
         [
           -0.2983512580394745,
@@ -507,7 +507,7 @@
       ]
     },
     {
-      "img_path": "evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c11_living_to_corridor.png",
+      "img_path": "/Users/shinobu/\u573a\u666f\u751f\u6210_remote_verify_2026-11-18/evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c11_living_to_corridor.png",
       "extrinsics_c0": [
         [
           -2.8499999046325684,
@@ -553,7 +553,7 @@
       ]
     },
     {
-      "img_path": "evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c12_corridor_to_kitchen.png",
+      "img_path": "/Users/shinobu/\u573a\u666f\u751f\u6210_remote_verify_2026-11-18/evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c12_corridor_to_kitchen.png",
       "extrinsics_c0": [
         [
           2.8499999046325684,
@@ -599,7 +599,7 @@
       ]
     },
     {
-      "img_path": "evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c13_kitchen_to_counter.png",
+      "img_path": "/Users/shinobu/\u573a\u666f\u751f\u6210_remote_verify_2026-11-18/evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c13_kitchen_to_counter.png",
       "extrinsics_c0": [
         [
           2.404435157775879,
@@ -645,7 +645,7 @@
       ]
     },
     {
-      "img_path": "evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c14_kitchen_side.png",
+      "img_path": "/Users/shinobu/\u573a\u666f\u751f\u6210_remote_verify_2026-11-18/evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c14_kitchen_side.png",
       "extrinsics_c0": [
         [
           -0.33299756050109863,
@@ -691,7 +691,7 @@
       ]
     },
     {
-      "img_path": "evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c15_corridor_axis.png",
+      "img_path": "/Users/shinobu/\u573a\u666f\u751f\u6210_remote_verify_2026-11-18/evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c15_corridor_axis.png",
       "extrinsics_c0": [
         [
           -4.6432393219220103e-07,
@@ -735,13 +735,197 @@
           1.0
         ]
       ]
+    },
+    {
+      "img_path": "/Users/shinobu/\u573a\u666f\u751f\u6210_remote_verify_2026-11-18/evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/auto_03_office_0.png",
+      "extrinsics_c0": [
+        [
+          -1.4755859375,
+          2.4382669925689697,
+          2.874471363156772e-07,
+          3.320068597793579
+        ],
+        [
+          0.1348104327917099,
+          0.08158464729785919,
+          -2.8456404209136963,
+          -0.30332332849502563
+        ],
+        [
+          -2.434537410736084,
+          -1.4733285903930664,
+          -0.1575750857591629,
+          7.738533973693848
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          0.4195497930049896,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          0.4195497930049896,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "img_path": "/Users/shinobu/\u573a\u666f\u751f\u6210_remote_verify_2026-11-18/evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/auto_03_office_2.png",
+      "extrinsics_c0": [
+        [
+          -0.243100106716156,
+          2.8396129608154297,
+          5.881826936615653e-08,
+          0.5469756722450256
+        ],
+        [
+          0.10300157964229584,
+          0.008818053640425205,
+          -2.8481245040893555,
+          -0.2317531853914261
+        ],
+        [
+          -2.8377444744110107,
+          -0.24294014275074005,
+          -0.10337834805250168,
+          9.830994606018066
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          0.4195497930049896,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          0.4195497930049896,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "img_path": "/Users/shinobu/\u573a\u666f\u751f\u6210_remote_verify_2026-11-18/evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/auto_03_kitchen_3.png",
+      "extrinsics_c0": [
+        [
+          -2.8453543186187744,
+          0.1626593917608261,
+          -3.167286877214792e-07,
+          6.4020466804504395
+        ],
+        [
+          0.0026907941792160273,
+          0.04706375300884247,
+          -2.8496100902557373,
+          -0.0060529704205691814
+        ],
+        [
+          -0.1626371294260025,
+          -2.8449652194976807,
+          -0.04714060574769974,
+          7.923034191131592
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          0.4195497930049896,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          0.4195497930049896,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "img_path": "/Users/shinobu/\u573a\u666f\u751f\u6210_remote_verify_2026-11-18/evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/auto_05_corridor_2.png",
+      "extrinsics_c0": [
+        [
+          -2.3506486415863037,
+          -1.6115056276321411,
+          -1.344176325801527e-07,
+          8.814933776855469
+        ],
+        [
+          -0.04857559874653816,
+          0.07085582613945007,
+          -2.8487050533294678,
+          0.18215879797935486
+        ],
+        [
+          1.6107733249664307,
+          -2.3495805263519287,
+          -0.08590772747993469,
+          -1.8935171365737915
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          0.4195497930049896,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          0.4195497930049896,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
     }
   ],
   "chunks": [
     {
       "chunk_index": 0,
       "cond2d_view": {
-        "img_path": "evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c02_bed_side.png",
+        "img_path": "/Users/shinobu/\u573a\u666f\u751f\u6210_remote_verify_2026-11-18/evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c02_bed_side.png",
         "extrinsics_c0": [
           [
             0.22430135309696198,
@@ -790,25 +974,25 @@
     {
       "chunk_index": 1,
       "cond2d_view": {
-        "img_path": "evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c01_bed_to_bed.png",
+        "img_path": "/Users/shinobu/\u573a\u666f\u751f\u6210_remote_verify_2026-11-18/evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c03_bed_to_corridor.png",
         "extrinsics_c0": [
           [
-            -2.163881778717041,
-            -1.8547545671463013,
-            -2.5316595042568224e-07,
-            2.3991148471832275
+            2.8499999046325684,
+            0.0,
+            0.0,
+            -2.2437500953674316
           ],
           [
-            -1.185896873474121,
-            1.3835476636886597,
-            -2.1913340091705322,
-            -0.37330740690231323
+            0.0,
+            -0.07913602888584137,
+            -2.8489012718200684,
+            0.13657929003238678
           ],
           [
-            1.4261006116867065,
-            -1.6637848615646362,
-            -1.8222393989562988,
-            0.6444216370582581
+            0.0,
+            2.8489012718200684,
+            -0.07913602888584137,
+            -0.41511771082878113
           ],
           [
             0.0,
@@ -839,7 +1023,7 @@
     {
       "chunk_index": 2,
       "cond2d_view": {
-        "img_path": "evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c01_bed_to_bed.png",
+        "img_path": "/Users/shinobu/\u573a\u666f\u751f\u6210_remote_verify_2026-11-18/evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c01_bed_to_bed.png",
         "extrinsics_c0": [
           [
             -2.163881778717041,
@@ -888,7 +1072,56 @@
     {
       "chunk_index": 3,
       "cond2d_view": {
-        "img_path": "evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c06_office_to_desk.png",
+        "img_path": "/Users/shinobu/\u573a\u666f\u751f\u6210_remote_verify_2026-11-18/evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/auto_03_office_0.png",
+        "extrinsics_c0": [
+          [
+            -1.4755859375,
+            2.4382669925689697,
+            2.874471363156772e-07,
+            3.320068597793579
+          ],
+          [
+            0.1348104327917099,
+            0.08158464729785919,
+            -2.8456404209136963,
+            -0.30332332849502563
+          ],
+          [
+            -2.434537410736084,
+            -1.4733285903930664,
+            -0.1575750857591629,
+            7.738533973693848
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "intrinsics": [
+          [
+            0.4195497930049896,
+            0.0,
+            0.5
+          ],
+          [
+            0.0,
+            0.4195497930049896,
+            0.5
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      }
+    },
+    {
+      "chunk_index": 4,
+      "cond2d_view": {
+        "img_path": "/Users/shinobu/\u573a\u666f\u751f\u6210_remote_verify_2026-11-18/evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c06_office_to_desk.png",
         "extrinsics_c0": [
           [
             -2.4344654083251953,
@@ -935,76 +1168,27 @@
       }
     },
     {
-      "chunk_index": 4,
-      "cond2d_view": {
-        "img_path": "evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c05_corridor_to_office.png",
-        "extrinsics_c0": [
-          [
-            -2.8499999046325684,
-            -4.3033801944147854e-07,
-            4.1863552269205684e-07,
-            8.443750381469727
-          ],
-          [
-            -5.069263693258108e-07,
-            0.6601184606552124,
-            -2.7724978923797607,
-            -0.8555467128753662
-          ],
-          [
-            3.2167099561775103e-07,
-            -2.7724978923797607,
-            -0.6601184010505676,
-            4.1329779624938965
-          ],
-          [
-            0.0,
-            0.0,
-            0.0,
-            1.0
-          ]
-        ],
-        "intrinsics": [
-          [
-            0.617448627948761,
-            0.0,
-            0.5
-          ],
-          [
-            0.0,
-            0.617448627948761,
-            0.5
-          ],
-          [
-            0.0,
-            0.0,
-            1.0
-          ]
-        ]
-      }
-    },
-    {
       "chunk_index": 5,
       "cond2d_view": {
-        "img_path": "evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c07_office_side.png",
+        "img_path": "/Users/shinobu/\u573a\u666f\u751f\u6210_remote_verify_2026-11-18/evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/auto_03_office_2.png",
         "extrinsics_c0": [
           [
-            0.08901902288198471,
-            2.848609447479248,
-            -1.391982920040391e-07,
-            -1.3319669961929321
+            -0.243100106716156,
+            2.8396129608154297,
+            5.881826936615653e-08,
+            0.5469756722450256
           ],
           [
-            1.6620163917541504,
-            -0.051938120275735855,
-            -2.3146281242370605,
-            -5.73706579208374
+            0.10300157964229584,
+            0.008818053640425205,
+            -2.8481245040893555,
+            -0.2317531853914261
           ],
           [
-            -2.3134992122650146,
-            0.07229674607515335,
-            -1.6628278493881226,
-            8.200143814086914
+            -2.8377444744110107,
+            -0.24294014275074005,
+            -0.10337834805250168,
+            9.830994606018066
           ],
           [
             0.0,
@@ -1015,13 +1199,13 @@
         ],
         "intrinsics": [
           [
-            0.617448627948761,
+            0.4195497930049896,
             0.0,
             0.5
           ],
           [
             0.0,
-            0.617448627948761,
+            0.4195497930049896,
             0.5
           ],
           [
@@ -1035,25 +1219,25 @@
     {
       "chunk_index": 6,
       "cond2d_view": {
-        "img_path": "evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c04_corridor_oblique_bed.png",
+        "img_path": "/Users/shinobu/\u573a\u666f\u751f\u6210_remote_verify_2026-11-18/evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c01_bed_to_bed.png",
         "extrinsics_c0": [
           [
-            -2.4044349193573,
-            -1.5300953388214111,
-            -9.411886736643282e-08,
-            2.815720319747925
+            -2.163881778717041,
+            -1.8547545671463013,
+            -2.5316595042568224e-07,
+            2.3991148471832275
           ],
           [
-            -0.3700735867023468,
-            0.5815442800521851,
-            -2.7653844356536865,
-            -0.5687732696533203
+            -1.185896873474121,
+            1.3835476636886597,
+            -2.1913340091705322,
+            -0.37330740690231323
           ],
           [
-            1.4846673011779785,
-            -2.3330485820770264,
-            -0.6893100142478943,
-            2.7986350059509277
+            1.4261006116867065,
+            -1.6637848615646362,
+            -1.8222393989562988,
+            0.6444216370582581
           ],
           [
             0.0,
@@ -1084,7 +1268,7 @@
     {
       "chunk_index": 7,
       "cond2d_view": {
-        "img_path": "evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c01_bed_to_bed.png",
+        "img_path": "/Users/shinobu/\u573a\u666f\u751f\u6210_remote_verify_2026-11-18/evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c01_bed_to_bed.png",
         "extrinsics_c0": [
           [
             -2.163881778717041,
@@ -1133,25 +1317,25 @@
     {
       "chunk_index": 8,
       "cond2d_view": {
-        "img_path": "evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c00_corridor_to_bed.png",
+        "img_path": "/Users/shinobu/\u573a\u666f\u751f\u6210_remote_verify_2026-11-18/evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c04_corridor_oblique_bed.png",
         "extrinsics_c0": [
           [
-            -2.8499999046325684,
-            -4.303380762848974e-07,
-            4.1547741602698807e-07,
-            2.243750810623169
+            -2.4044349193573,
+            -1.5300953388214111,
+            -9.411886736643282e-08,
+            2.815720319747925
           ],
           [
-            -5.132429237164615e-07,
-            0.7424901723861694,
-            -2.7515828609466553,
-            -0.9783971309661865
+            -0.3700735867023468,
+            0.5815442800521851,
+            -2.7653844356536865,
+            -0.5687732696533203
           ],
           [
-            3.07236149410528e-07,
-            -2.7515830993652344,
-            -0.7424901127815247,
-            4.105632781982422
+            1.4846673011779785,
+            -2.3330485820770264,
+            -0.6893100142478943,
+            2.7986350059509277
           ],
           [
             0.0,
@@ -1182,7 +1366,7 @@
     {
       "chunk_index": 9,
       "cond2d_view": {
-        "img_path": "evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c07_office_side.png",
+        "img_path": "/Users/shinobu/\u573a\u666f\u751f\u6210_remote_verify_2026-11-18/evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c07_office_side.png",
         "extrinsics_c0": [
           [
             0.08901902288198471,
@@ -1231,25 +1415,25 @@
     {
       "chunk_index": 10,
       "cond2d_view": {
-        "img_path": "evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c07_office_side.png",
+        "img_path": "/Users/shinobu/\u573a\u666f\u751f\u6210_remote_verify_2026-11-18/evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c15_corridor_axis.png",
         "extrinsics_c0": [
           [
-            0.08901902288198471,
-            2.848609447479248,
-            -1.391982920040391e-07,
-            -1.3319669961929321
+            -4.6432393219220103e-07,
+            -2.8499999046325684,
+            8.54071444678084e-08,
+            3.9187510013580322
           ],
           [
-            1.6620163917541504,
-            -0.051938120275735855,
-            -2.3146281242370605,
-            -5.73706579208374
+            -0.031664274632930756,
+            -8.024310460541528e-08,
+            -2.8498239517211914,
+            0.18436294794082642
           ],
           [
-            -2.3134992122650146,
-            0.07229674607515335,
-            -1.6628278493881226,
-            8.200143814086914
+            2.8498241901397705,
+            -4.652441987218481e-07,
+            -0.031664274632930756,
+            -5.342031002044678
           ],
           [
             0.0,
@@ -1280,7 +1464,7 @@
     {
       "chunk_index": 11,
       "cond2d_view": {
-        "img_path": "evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c06_office_to_desk.png",
+        "img_path": "/Users/shinobu/\u573a\u666f\u751f\u6210_remote_verify_2026-11-18/evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c06_office_to_desk.png",
         "extrinsics_c0": [
           [
             -2.4344654083251953,
@@ -1329,7 +1513,7 @@
     {
       "chunk_index": 12,
       "cond2d_view": {
-        "img_path": "evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c04_corridor_oblique_bed.png",
+        "img_path": "/Users/shinobu/\u573a\u666f\u751f\u6210_remote_verify_2026-11-18/evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c04_corridor_oblique_bed.png",
         "extrinsics_c0": [
           [
             -2.4044349193573,
@@ -1378,25 +1562,25 @@
     {
       "chunk_index": 13,
       "cond2d_view": {
-        "img_path": "evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c04_corridor_oblique_bed.png",
+        "img_path": "/Users/shinobu/\u573a\u666f\u751f\u6210_remote_verify_2026-11-18/evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c00_corridor_to_bed.png",
         "extrinsics_c0": [
           [
-            -2.4044349193573,
-            -1.5300953388214111,
-            -9.411886736643282e-08,
-            2.815720319747925
+            -2.8499999046325684,
+            -4.303380762848974e-07,
+            4.1547741602698807e-07,
+            2.243750810623169
           ],
           [
-            -0.3700735867023468,
-            0.5815442800521851,
-            -2.7653844356536865,
-            -0.5687732696533203
+            -5.132429237164615e-07,
+            0.7424901723861694,
+            -2.7515828609466553,
+            -0.9783971309661865
           ],
           [
-            1.4846673011779785,
-            -2.3330485820770264,
-            -0.6893100142478943,
-            2.7986350059509277
+            3.07236149410528e-07,
+            -2.7515830993652344,
+            -0.7424901127815247,
+            4.105632781982422
           ],
           [
             0.0,
@@ -1427,7 +1611,7 @@
     {
       "chunk_index": 14,
       "cond2d_view": {
-        "img_path": "evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c15_corridor_axis.png",
+        "img_path": "/Users/shinobu/\u573a\u666f\u751f\u6210_remote_verify_2026-11-18/evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c15_corridor_axis.png",
         "extrinsics_c0": [
           [
             -4.6432393219220103e-07,
@@ -1476,7 +1660,7 @@
     {
       "chunk_index": 15,
       "cond2d_view": {
-        "img_path": "evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c15_corridor_axis.png",
+        "img_path": "/Users/shinobu/\u573a\u666f\u751f\u6210_remote_verify_2026-11-18/evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c15_corridor_axis.png",
         "extrinsics_c0": [
           [
             -4.6432393219220103e-07,
@@ -1525,56 +1709,7 @@
     {
       "chunk_index": 16,
       "cond2d_view": {
-        "img_path": "evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c12_corridor_to_kitchen.png",
-        "extrinsics_c0": [
-          [
-            2.8499999046325684,
-            0.0,
-            0.0,
-            -8.443750381469727
-          ],
-          [
-            0.0,
-            -0.67018061876297,
-            -2.770082473754883,
-            0.97244793176651
-          ],
-          [
-            0.0,
-            2.770082712173462,
-            -0.67018061876297,
-            -3.487882137298584
-          ],
-          [
-            0.0,
-            0.0,
-            0.0,
-            1.0
-          ]
-        ],
-        "intrinsics": [
-          [
-            0.617448627948761,
-            0.0,
-            0.5
-          ],
-          [
-            0.0,
-            0.617448627948761,
-            0.5
-          ],
-          [
-            0.0,
-            0.0,
-            1.0
-          ]
-        ]
-      }
-    },
-    {
-      "chunk_index": 17,
-      "cond2d_view": {
-        "img_path": "evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c05_corridor_to_office.png",
+        "img_path": "/Users/shinobu/\u573a\u666f\u751f\u6210_remote_verify_2026-11-18/evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c05_corridor_to_office.png",
         "extrinsics_c0": [
           [
             -2.8499999046325684,
@@ -1621,9 +1756,58 @@
       }
     },
     {
+      "chunk_index": 17,
+      "cond2d_view": {
+        "img_path": "/Users/shinobu/\u573a\u666f\u751f\u6210_remote_verify_2026-11-18/evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/auto_05_corridor_2.png",
+        "extrinsics_c0": [
+          [
+            -2.3506486415863037,
+            -1.6115056276321411,
+            -1.344176325801527e-07,
+            8.814933776855469
+          ],
+          [
+            -0.04857559874653816,
+            0.07085582613945007,
+            -2.8487050533294678,
+            0.18215879797935486
+          ],
+          [
+            1.6107733249664307,
+            -2.3495805263519287,
+            -0.08590772747993469,
+            -1.8935171365737915
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "intrinsics": [
+          [
+            0.4195497930049896,
+            0.0,
+            0.5
+          ],
+          [
+            0.0,
+            0.4195497930049896,
+            0.5
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      }
+    },
+    {
       "chunk_index": 18,
       "cond2d_view": {
-        "img_path": "evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c10_living_side.png",
+        "img_path": "/Users/shinobu/\u573a\u666f\u751f\u6210_remote_verify_2026-11-18/evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c10_living_side.png",
         "extrinsics_c0": [
           [
             -0.2983512580394745,
@@ -1672,25 +1856,25 @@
     {
       "chunk_index": 19,
       "cond2d_view": {
-        "img_path": "evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c10_living_side.png",
+        "img_path": "/Users/shinobu/\u573a\u666f\u751f\u6210_remote_verify_2026-11-18/evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c11_living_to_corridor.png",
         "extrinsics_c0": [
           [
-            -0.2983512580394745,
-            -2.8343405723571777,
-            9.601409090009838e-08,
-            6.916719913482666
+            -2.8499999046325684,
+            -4.3033801944147854e-07,
+            4.3017212192353327e-07,
+            2.243751287460327
           ],
           [
-            -1.4617139101028442,
-            0.153864324092865,
-            -2.441765546798706,
-            -0.09012768417596817
+            -4.419555068579939e-07,
+            0.07913602888584137,
+            -2.8489012718200684,
+            -0.08659786731004715
           ],
           [
-            2.428349018096924,
-            -0.2556154131889343,
-            -1.4697896242141724,
-            0.392111599445343
+            4.182275574748928e-07,
+            -2.8489012718200684,
+            -0.07913602888584137,
+            7.619283676147461
           ],
           [
             0.0,
@@ -1721,25 +1905,25 @@
     {
       "chunk_index": 20,
       "cond2d_view": {
-        "img_path": "evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c08_corridor_to_living.png",
+        "img_path": "/Users/shinobu/\u573a\u666f\u751f\u6210_remote_verify_2026-11-18/evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c09_living_to_sofa.png",
         "extrinsics_c0": [
           [
-            2.8499999046325684,
-            0.0,
-            0.0,
-            -2.2437500953674316
+            2.3048980236053467,
+            -1.6762893199920654,
+            3.736000664389394e-08,
+            2.1371774673461914
           ],
           [
-            0.0,
-            -0.67018061876297,
-            -2.770082473754883,
-            0.97244793176651
+            -1.0822954177856445,
+            -1.4881561994552612,
+            -2.176356315612793,
+            3.5776095390319824
           ],
           [
-            0.0,
-            2.770082712173462,
-            -0.67018061876297,
-            -3.487882137298584
+            1.2800712585449219,
+            1.7600979804992676,
+            -1.8401015996932983,
+            -4.037768840789795
           ],
           [
             0.0,
@@ -1770,25 +1954,25 @@
     {
       "chunk_index": 21,
       "cond2d_view": {
-        "img_path": "evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c14_kitchen_side.png",
+        "img_path": "/Users/shinobu/\u573a\u666f\u751f\u6210_remote_verify_2026-11-18/evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c13_kitchen_to_counter.png",
         "extrinsics_c0": [
           [
-            -0.33299756050109863,
-            2.830479383468628,
-            -7.043537380013731e-07,
-            -5.686152458190918
+            2.404435157775879,
+            -1.5300958156585693,
+            2.403314738330664e-07,
+            -3.5165317058563232
           ],
           [
-            1.5302153825759888,
-            0.18002475798130035,
-            -2.3976097106933594,
-            -5.778234481811523
+            -0.9866535067558289,
+            -1.55045485496521,
+            -2.17832612991333,
+            5.833090305328369
           ],
           [
-            -2.3811874389648438,
-            -0.28014010190963745,
-            -1.5407685041427612,
-            9.22280216217041
+            1.1694905757904053,
+            1.8377695083618164,
+            -1.8377691507339478,
+            -6.7201714515686035
           ],
           [
             0.0,
@@ -1819,7 +2003,7 @@
     {
       "chunk_index": 22,
       "cond2d_view": {
-        "img_path": "evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c14_kitchen_side.png",
+        "img_path": "/Users/shinobu/\u573a\u666f\u751f\u6210_remote_verify_2026-11-18/evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c14_kitchen_side.png",
         "extrinsics_c0": [
           [
             -0.33299756050109863,
@@ -1868,25 +2052,25 @@
     {
       "chunk_index": 23,
       "cond2d_view": {
-        "img_path": "evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c13_kitchen_to_counter.png",
+        "img_path": "/Users/shinobu/\u573a\u666f\u751f\u6210_remote_verify_2026-11-18/evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c14_kitchen_side.png",
         "extrinsics_c0": [
           [
-            2.404435157775879,
-            -1.5300958156585693,
-            2.403314738330664e-07,
-            -3.5165317058563232
+            -0.33299756050109863,
+            2.830479383468628,
+            -7.043537380013731e-07,
+            -5.686152458190918
           ],
           [
-            -0.9866535067558289,
-            -1.55045485496521,
-            -2.17832612991333,
-            5.833090305328369
+            1.5302153825759888,
+            0.18002475798130035,
+            -2.3976097106933594,
+            -5.778234481811523
           ],
           [
-            1.1694905757904053,
-            1.8377695083618164,
-            -1.8377691507339478,
-            -6.7201714515686035
+            -2.3811874389648438,
+            -0.28014010190963745,
+            -1.5407685041427612,
+            9.22280216217041
           ],
           [
             0.0,
@@ -1917,7 +2101,7 @@
     {
       "chunk_index": 24,
       "cond2d_view": {
-        "img_path": "evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c10_living_side.png",
+        "img_path": "/Users/shinobu/\u573a\u666f\u751f\u6210_remote_verify_2026-11-18/evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c10_living_side.png",
         "extrinsics_c0": [
           [
             -0.2983512580394745,
@@ -1966,7 +2150,7 @@
     {
       "chunk_index": 25,
       "cond2d_view": {
-        "img_path": "evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c09_living_to_sofa.png",
+        "img_path": "/Users/shinobu/\u573a\u666f\u751f\u6210_remote_verify_2026-11-18/evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c09_living_to_sofa.png",
         "extrinsics_c0": [
           [
             2.3048980236053467,
@@ -2015,7 +2199,7 @@
     {
       "chunk_index": 26,
       "cond2d_view": {
-        "img_path": "evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c09_living_to_sofa.png",
+        "img_path": "/Users/shinobu/\u573a\u666f\u751f\u6210_remote_verify_2026-11-18/evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c09_living_to_sofa.png",
         "extrinsics_c0": [
           [
             2.3048980236053467,
@@ -2064,25 +2248,25 @@
     {
       "chunk_index": 27,
       "cond2d_view": {
-        "img_path": "evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c13_kitchen_to_counter.png",
+        "img_path": "/Users/shinobu/\u573a\u666f\u751f\u6210_remote_verify_2026-11-18/evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/auto_03_kitchen_3.png",
         "extrinsics_c0": [
           [
-            2.404435157775879,
-            -1.5300958156585693,
-            2.403314738330664e-07,
-            -3.5165317058563232
+            -2.8453543186187744,
+            0.1626593917608261,
+            -3.167286877214792e-07,
+            6.4020466804504395
           ],
           [
-            -0.9866535067558289,
-            -1.55045485496521,
-            -2.17832612991333,
-            5.833090305328369
+            0.0026907941792160273,
+            0.04706375300884247,
+            -2.8496100902557373,
+            -0.0060529704205691814
           ],
           [
-            1.1694905757904053,
-            1.8377695083618164,
-            -1.8377691507339478,
-            -6.7201714515686035
+            -0.1626371294260025,
+            -2.8449652194976807,
+            -0.04714060574769974,
+            7.923034191131592
           ],
           [
             0.0,
@@ -2093,13 +2277,13 @@
         ],
         "intrinsics": [
           [
-            0.617448627948761,
+            0.4195497930049896,
             0.0,
             0.5
           ],
           [
             0.0,
-            0.617448627948761,
+            0.4195497930049896,
             0.5
           ],
           [
@@ -2113,25 +2297,25 @@
     {
       "chunk_index": 28,
       "cond2d_view": {
-        "img_path": "evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c14_kitchen_side.png",
+        "img_path": "/Users/shinobu/\u573a\u666f\u751f\u6210_remote_verify_2026-11-18/evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c12_corridor_to_kitchen.png",
         "extrinsics_c0": [
           [
-            -0.33299756050109863,
-            2.830479383468628,
-            -7.043537380013731e-07,
-            -5.686152458190918
+            2.8499999046325684,
+            0.0,
+            0.0,
+            -8.443750381469727
           ],
           [
-            1.5302153825759888,
-            0.18002475798130035,
-            -2.3976097106933594,
-            -5.778234481811523
+            0.0,
+            -0.67018061876297,
+            -2.770082473754883,
+            0.97244793176651
           ],
           [
-            -2.3811874389648438,
-            -0.28014010190963745,
-            -1.5407685041427612,
-            9.22280216217041
+            0.0,
+            2.770082712173462,
+            -0.67018061876297,
+            -3.487882137298584
           ],
           [
             0.0,
@@ -2162,7 +2346,7 @@
     {
       "chunk_index": 29,
       "cond2d_view": {
-        "img_path": "evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c14_kitchen_side.png",
+        "img_path": "/Users/shinobu/\u573a\u666f\u751f\u6210_remote_verify_2026-11-18/evidence/cpu/sage_gt_B/renders_room/synthetic_multiroom_4r1c/c14_kitchen_side.png",
         "extrinsics_c0": [
           [
             -0.33299756050109863,

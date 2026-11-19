@@ -11,3 +11,9 @@ evidence/cpu/render_*/depth/*.npy
 evidence/cpu/render_*/object_id/*.npy
 evidence/cpu/render_*/building.blend1
 evidence/cpu/sage_gt_*/
+evidence/cpu/alternate/sage_gt_*/
+evidence/cpu/alternate/render_*/passes/
+evidence/cpu/alternate/render_*/depth/*.npy
+evidence/cpu/alternate/render_*/object_id/*.npy
+evidence/cpu/alternate/render_*/building.blend1
+evidence/cpu/render_*/building.blend1

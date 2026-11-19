@@ -1,31 +1,34 @@
-# Floorplan to one consistent 3D building world
+# Floorplan → one globally consistent building scene
 
-**Target:** complete multiroom floorplan → global metric scene JSON → one Blender building mesh and shared camera world → GenRecon 3D prior → building level 3D world.
+**Research target:** complete multiroom floorplan → global metric JSON → one Blender building mesh and shared RGB/Depth/Object-ID/Camera world → GenRecon 3D prior → full building 3D world. The final learned reconstruction and a real drawing ingestion remain **unverified**.
 
-**Current status (2026-11-18):** a **SYNTHETIC** 12 × 9 × 2.7 m building with four rooms, one corridor and four doors passed the CPU geometry/render/interface checks. Two variants, empty shell A and shell plus four gray furniture blocks B, each rendered 16 RGB/depth/object ID frames from identical global camera poses. The unmodified GenRecon `Sage_gt` CPU reader accepted both, but **4 of 30 chunks use closest-camera fallback**. GenRecon network inference and structural preservation **have not run**. No real full floorplan was validated. No GPU was used.
+## CPU status — 2026-11-19
 
-The hypothesis that GenRecon can turn geometrically consistent whitebox views into realistic geometry and PBR material while preserving connected rooms is **unproven**. Its `Sage_gt` layout reads outer width/length and a fixed 2.7 m height, not internal walls or doors as hard constraints.
+Two **SYNTHETIC** layouts were run in Blender CPU with the unmodified GenRecon `Sage_gt` Chunker and ImageSelecter. The 12 × 9 × 2.7 m four-room/corridor building has four physical doors. Automatic room/chunk camera planning raised its view count from 16 to 20. Both A (structure) and B (structure plus gray furniture) deliver **30/30 native chunks with an accepted selected camera and 0 fallback**. All four doors have selected cameras on both sides and Blender B reprojects the same object across each door with 99.25–99.65% depth/ID agreement. A second 6 × 9 × 2.7 m layout at world origin (−4, 10), with two rooms and two doors, delivers **20/20 chunks and 0 fallback** using 13 views. **29/29 CPU tests passed.** See [validation](docs/validation.md).
 
-## Reproduce CPU work
+These results establish CPU geometry, rendering, camera selection and native input parsing only. The Blender images are whitebox renders, not photographs; GenRecon network forward, generated geometry and preservation of door connectivity have not been tested. `Sage_gt` receives outer bounds and images, not interior walls and doors as hard constraints.
 
-Requirements: Blender 5.3, Python with `requirements/cpu.txt`, and a clean checkout of official GenRecon fixed at `eaf1468118d20469d17079a4a19737297d2ef87b`. The paper repository is read only. No model checkpoint is needed for the CPU tests.
+## Reproduce
+
+Use Python with `requirements/cpu.txt`, Blender 5.3, and a clean official GenRecon checkout at `eaf1468118d20469d17079a4a19737297d2ef87b`:
 
 ```bash
 python -m pip install -r requirements/cpu.txt
-python -m src.runner.run_cpu --repo /absolute/path/to/GenRecon --blender /absolute/path/to/blender
+python -m src.runner.run_cpu --scene fixtures/multiroom/synthetic_building.json --repo /absolute/path/to/GenRecon --output-root evidence/cpu --n-views 32
+python -m src.cameras.check_cross_door --scene evidence/cpu/planned_scene.json --render evidence/cpu/render_B --out evidence/cpu/cross_door_check.json
+python -m src.runner.run_cpu --scene fixtures/multiroom/synthetic_offset_2r1c.json --repo /absolute/path/to/GenRecon --output-root evidence/cpu/alternate --n-views 32
+python -m src.cameras.check_cross_door --scene evidence/cpu/alternate/planned_scene.json --render evidence/cpu/alternate/render_B --out evidence/cpu/alternate/cross_door_check.json
+python -m src.runner.pack_evidence --root evidence/cpu
+python -m src.runner.pack_evidence --root evidence/cpu/alternate
+python -m unittest discover -s tests -p 'test_*.py' -v
 ```
 
-The runner logs each command, stdout, stderr, exit code and timing under `evidence/cpu/logs/`. The checked in evidence retains all 16 RGB frames per variant plus compressed aligned depth/object-ID arrays, camera JSON, mesh and native-reader reports. `python -m unittest discover -s tests` runs directly against this evidence. The complete multilayer EXRs and full native input directories are regenerated locally by the runner.
+`--scene` accepts a validated `metric_scene_v1` building JSON; the two fixtures are regression examples, not special cases in the runner. The runner logs argv, output and exit code for every stage. The compact public log archive is `evidence/cpu/execution_2026-11-19.jsonl.gz`; full local EXRs, `Sage_gt` copies and per-frame NPYs regenerate from the commands. The original GenRecon checkout and pretrained weights stay outside this repository.
 
-## Files
+## Repository map
 
-- `fixtures/multiroom/synthetic_building.json`: one global metric coordinate frame and explicit provenance.
-- `src/`: one scene compiler, one Blender CPU renderer, camera checks, native input adapter, CFG preflight, runner.
-- `tests/`: topology, invalid input, aligned passes, cross-door reprojection and native reader assertions.
-- `docs/architecture.md`: dataflow and scope.
-- `docs/interfaces.md`: exact JSON/camera/`Sage_gt` contract.
-- `docs/validation.md`: executed results and limitations.
-- `docs/gpu_experiments.md`: future native inference and controlled CFG ablation; **not executed**.
-- `evidence/cpu/`: selected images, layout, command records, measured JSON and separate official SAGE single-room evidence.
-
-Official GenRecon weights and source SAGE data are retained outside Git and are not distributed here. Their validation receipts remain in the local protected workspace. Do not treat this synthetic building evidence as real drawing ingestion or generated 3D output.
+- `src/scene_graph`, `src/cameras`, `src/blender`, `src/genrecon`, `src/runner`: one global scene compiler, camera planner/checks, CPU renderer, external native adapter, runner.
+- `fixtures/multiroom/`: two synthetic full-building schemas, including nonzero x/y world origin.
+- `tests/`: 29 CPU unit and evidence-backed integration tests.
+- `evidence/cpu/`: plans, layouts, aligned compact passes, cross-door RGB collage, native Reader reports and command records.
+- `docs/`: [architecture](docs/architecture.md), [interfaces](docs/interfaces.md), [validation](docs/validation.md), [future GPU experiments](docs/gpu_experiments.md).

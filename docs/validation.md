@@ -1,43 +1,61 @@
-# CPU validation executed 2026-11-18
+# CPU validation — executed 2026-11-19
 
-## Scope and measured outcomes
+**Scope:** all building input is **SYNTHETIC**. Blender 5.3/Cycles ran on CPU at 256×256, eight samples per frame. GenRecon official source remained clean at `eaf1468118d20469d17079a4a19737297d2ef87b`. No NVIDIA GPU, model checkpoint forward, training, real-drawing extraction or learned 3D output ran.
 
-All building results below use **SYNTHETIC** geometry. No complete real floorplan image or real drawing end-to-end extraction was tested. No NVIDIA GPU, training, checkpoint forward or learned 3D mesh generation ran.
+## Results
 
-| Check | Actual result | Evidence / limit |
+| Check | Main, 12×9×2.7 m, 4 rooms + corridor | Alternate, 6×9×2.7 m, origin (−4,10), 2 rooms + corridor |
 | --- | --- | --- |
-| Whole-building metric scene | **PASS CPU**: 12 × 9 × 2.7 m, four rooms, corridor, four physical doors, six windows; source labels and unique IDs | `fixtures/multiroom/synthetic_building.json`, layout PNG, 21 tests |
-| Pixel-to-metre affine | **PASS UNIT INTERFACE** on synthetic polygons, including negative world coordinates and missing scale rejection | `tests/unit/test_metric_scene.py`; this is not real floorplan understanding |
-| One Blender Scene / unified mesh | **PASS CPU**: A 36 global primitives, B 40 including four gray furniture blocks; `building_unified.glb` made by joining copies inside Blender, 16 renders each | render manifests, GLB, EXR; glTF splits material primitives |
-| RGB / depth / K / pose / object ID | **PASS CPU**: 16 aligned 256² frames per variant, A/B K and c2w equal; metric Z pass and EXR channels checked | camera metadata, `decode_check.json`, images, tests |
-| Same object across doors | **PASS SYNTHETIC CPU**: each of four blocks visible from corridor and its own room; bedroom jamb depth 1.219 m before bed depth 2.856 m | object IDs, depth, integration test |
-| Cross-view reprojection | **PASS SYNTHETIC CPU**: projected object pixels matched object ID and depth within 0.1 m: bed 3123/3134 (99.65%), desk 3111/3118 (99.78%), sofa 3847/3876 (99.25%), counter 3948/3970 (99.45%) | `evidence/cpu/validation_summary.json`; whitebox only |
-| GenRecon native `Sage_gt` Reader/Chunker | **PASS CPU INPUT** for A/B: original classes read 16 images, output 30 chunks and tensors | `native_A_report.json`, `native_B_report.json`; **4/30 chunks have zero accepted cameras and native fallback**: 3, 5, 17, 27 |
-| Door vicinity camera acceptance | **PARTIAL**: 1–2 chunks near each of four doors have accepted cameras from both connected spaces | `native_*_report.json`; does not guarantee model output consistency |
-| GenRecon CFG parameter/source | **PASS STATIC CPU**: original config 7.5/7.5/1.0; external 3/3/1, 1/1/1, 7.5/7.5/0.5 JSONs parsed; CLI and condition/stage source symbols checked | `cfg_preflight.json`, `configs/genrecon_cfg/`; no CFG effect measured |
-| Official SAGE single room | **PASS PRIOR CPU INPUT**, kept separately as native interface evidence: official SAGE scene `84b703fb`, 67 ZIP files CRC identical, author Blender CPU output 16 views, native reader 12 chunks without fallback | `evidence/cpu/official_sage/`; it does **not** validate a multiroom building |
-| Real building inference and final PBR world | **NOT RUN** | needs a real source drawing and GPU model forward; hypothesis unresolved |
+| Physical doors | 4, topology connected | 2, topology connected |
+| Planned A/B cameras | 20 / 20, same K and global c2w | 13 / 13, same K and global c2w |
+| Real Blender RGB/Depth/Object ID | 20 aligned frames per variant | 13 aligned frames per variant |
+| Official `Sage_gt` CPU chunks | 30 / 30 have accepted **selected** cameras | 20 / 20 have accepted **selected** cameras |
+| Closest-camera fallback | 0 in A, 0 in B | 0 in A, 0 in B |
+| Native selected scene images with cap 32 | 20 in A, 20 in B | 13 in A, 13 in B |
+| Cross-door same-object depth/ID reprojection | 4 / 4 doors pass | 2 / 2 doors pass |
+| Provenance | SYNTHETIC | SYNTHETIC |
 
-## Native reader coverage risk
+All **29 CPU unit and integration tests passed**, exit code 0. The tests check invalid doors, closed walls, disconnected spaces, metric units, nonzero x/y origin, real-source hash rejection, invalid camera matrices, A/B K/c2w alignment, aligned real rendered passes, both layouts' native Reader, and all door pairs. Logs and exact commands are in `evidence/cpu/execution_2026-11-19.jsonl.gz` and `command_index_2026-11-19.csv`; the final test log is in that archive. Local raw EXRs, NPY arrays and full native input copies are retained outside the compact Git evidence and regenerate with the README commands.
+The staged public snapshot was materialized with `git checkout-index` into a separate directory and independently reran **29/29 tests with exit 0**, using only committed compact evidence. Its log and exit record are `staged_snapshot_test.log` and `staged_snapshot_test.json`.
 
-Official GenRecon source at `eaf1468118d20469d17079a4a19737297d2ef87b` is unchanged. `inference/get_chunks.py` uses the first `rooms[0].dimensions.width/length` and fixed ceiling 2.7 m to place 30 overlapping chunks. `inference/get_images.py` accepts camera views by frustum/area and falls back to nearest camera where none passes. We measured zero accepted cameras and fallback in chunks **3, 5, 17, 27** for both variants. At the four door vicinities, at least one nearby chunk sees accepted cameras from both connected spaces, but this is a sampling check, not a cross-room learned geometry constraint.
+An additional **planner-only CPU precheck** removed every source camera from the alternate JSON. Topology-derived placement produced four door-side cameras and a nine-camera plan with 20/20 chunks covered by the official acceptance rule. That no-camera variant was **not rendered or passed through the native image Reader**; see `alternate/no_camera_plan.json`.
 
-The `Sage_gt` adapter passes RGB and original Blender poses; its layout file cannot impose the internal wall or door graph. Depth and object ID are measured evidence and future acceptance references, **not inputs consumed by this native pipeline**. Consequently, CPU reader success must never be presented as structural preservation or a GenRecon generated world.
+## Why chunks 3, 5, 17 and 27 originally failed
 
-## Commands, failures and outputs
+The original 16 cameras all had horizontal FOV 78°. The official rule projects the eight corners and centre of each 2.85 m chunk through each view, clips projected coordinates to `[0,1]`, and requires resulting image area ≥ **0.4**. For these four chunks, **every original camera was below 0.4**; the best original values are below. Positions are global metres in the main layout.
 
-The single formal entry is:
+| Chunk | Centre (x, y, z) m | Best original camera | Best clipped projected area | Cause |
+| --- | --- | --- | ---: | --- |
+| 3 | (7.069, 0.581, 1.425) | `c06_office_to_desk` | 0.368 | 78° frustum and oblique/offset view leave insufficient projected area near south office edge |
+| 5 | (11.344, 0.581, 1.425) | `c06_office_to_desk` | 0.381 | far southeast edge insufficient in the existing office and corridor views |
+| 17 | (11.344, 4.500, 1.425) | `c05_corridor_to_office` | 0.211 | east corridor end lies outside strong coverage of door-directed views |
+| 27 | (7.069, 8.419, 1.425) | `c13_kitchen_to_counter` | 0.362 | northeast-side chunk coverage is insufficient from the kitchen views |
 
-```bash
-python -m src.runner.run_cpu --repo /absolute/path/to/clean/GenRecon --blender /absolute/path/to/blender
-```
+The per-camera eye, target, FOV, front-point count, area and rejection reason are preserved in `evidence/cpu/camera_plan.json`. The planner generated candidates from room bounds and uncovered chunk centres, evaluated the original official acceptance function, and required a clear ray through the building mesh to each newly covered chunk centre. A first 19-camera plan reached native 30/30 but produced a wall-only view; an integration test rejected it. The corrected plan used 20 cameras: original 16 plus 4 selected automatic candidates. A/B were re-rendered from this final plan and the native Reader measured **30/30, 0 fallback**.
 
-The 2026-11-18 run used Blender 5.3.0 CPU, 256², 8 samples, 16 cameras per variant and a clean official GenRecon checkout. `evidence/cpu/command_index.csv` records **58** actual logged invocations, argv, working directory, UTC start, elapsed time and exit status. Final success logs for fixture, layout, A/B Blender render, EXR decode, `Sage_gt` packaging, native reader, CFG and **21 passing tests** are in `evidence/cpu/logs/`. The clean public package was independently retested against its packed depth/object-ID evidence: 21/21 passed. Full local raw EXR, all PNG/depth arrays, `.blend`, GLB and command logs were retained in the engineering workspace; the public repository carries 16 RGB frames per variant, packed depth/object-ID arrays, contact sheets, JSON, mesh and compact final logs.
+`num_imgs_per_scene` is a real selection limit. With the final 20 source images and the native CLI default cap 32, all 20 enter `scene_images_512`, and every chunk has an accepted view in that **selected** set. A measured control at cap **8** selected only eight views and produced **11 fallback chunks**: `[0,2,5,6,12,14,15,18,24,26,27]`. Adding source photos while keeping an inadequate cap would not solve conditioning coverage.
 
-During implementation, nine Blender probe invocations returned nonzero while adapting Blender 5.3's compositor API and output path. Two early wrapper calls returned 127 because `--log-dir` was placed after the positional command name. An initial test discovery returned 5 because `tests/` subdirectories had no `__init__.py`. These are recorded in the command index and were corrected; the final 21-test run returned 0. Blender was invoked with `--python-exit-code 2` after discovering the first Python exception could otherwise leave process exit 0. No failed probe is counted as an accepted result.
+## Four-door physical cross-view check
 
-## Next minimum actions
+In the final Blender B output, cameras on opposite sides of each door see the same unique furniture ID. Reprojecting the corridor-side object's rendered metric depth into the room-side view, requiring the same Object ID and depth difference <0.1 m, gave:
 
-1. Acquire a **complete real multiroom floorplan with scale and source rights**, extract global walls, doors and topology, and rerun this CPU contract. The current affine calibration test is only an interface unit test.
-2. Improve or document 16-view coverage so all 30 native chunks have an accepted camera; do not reinterpret closest-camera fallback as valid coverage.
-3. On a separately approved NVIDIA host, run official GenRecon baseline on this same A/B input, then fixed-seed CFG ablations. Verify generated mesh against all four door rays and the reference global geometry. See `gpu_experiments.md`.
+| Door | Cameras (corridor → room) | Same object | Reprojected pixels | Depth/ID match |
+| --- | --- | --- | ---: | ---: |
+| bedroom | `c00_corridor_to_bed` → `c01_bed_to_bed` | `bed_01` | 3134 | 99.65% |
+| office | `auto_05_corridor_2` → `c06_office_to_desk` | `desk_01` | 5905 | 99.64% |
+| living | `c08_corridor_to_living` → `c09_living_to_sofa` | `sofa_01` | 3876 | 99.25% |
+| kitchen | `c12_corridor_to_kitchen` → `c13_kitchen_to_counter` | `counter_01` | 3970 | 99.45% |
+
+The alternate layout's two door pairs also pass at 99.56% and 99.25%. The full per-door camera IDs, pixel counts and ratios are in `cross_door_check.json` for each layout; `cross_door_check.png` is the actual rendered RGB collage. The main bedroom jamb precedes the bed in rendered depth. These are **Blender whitebox** consistency results, not GenRecon output consistency.
+
+## Constraints and failures
+
+- `Sage_gt` fixes floor/ceiling at 0/2.7 m. `prepare_sage_gt.py` now rejects another height; a unit/integration test covers this. Nonzero global x/y is translated only in the native adapter, with the inverse mapping recorded. `metric_scene_v1` rejects a nonzero floor z.
+- The official native layout accepts outer width/length only. Internal wall geometry, door connectivity, Blender Depth and Object ID are not hard constraints for GenRecon. Camera frustum acceptance does not prove a useful image; the corrected planner and rendered-pass checks address the specific wall-only candidate found here.
+- `SOURCE_DRAWING` requires a present source file with matching SHA256, scale evidence, explicit parsed status and non-synthetic per-element evidence. No genuine whole-building drawing was supplied or parsed; this branch is an input contract only.
+- The full-scene pretrained model has **not** been run with 20 views. Training configs mention up to 16 conditioning views; whether 20 views with the official full-scene inference path meet memory and output-quality requirements remains a GPU-stage risk.
+- The command archive includes unsuccessful development attempts, including a first camera plan rejected for a wall-only view, Blender 5.3 compositor output-path probes and stale-pass packing attempts. Their nonzero exits are retained, not counted as passes. The final pipeline and 29-test run exited 0.
+
+## Evidence index
+
+`evidence/cpu/camera_plan.json`, `planned_scene.json`, `layout_camera_map.png`, `render_A/`, `render_B/`, `native_A_report.json`, `native_B_report.json`, `native_B_cap8_report.json`, `cross_door_check.{json,png}`, and the corresponding `alternate/` files are the primary outputs. `validation_summary_2026-11-19.json` summarizes measured values. The separate `official_sage/` evidence is a prior **single-room native input check** and is not counted as a multiroom result.

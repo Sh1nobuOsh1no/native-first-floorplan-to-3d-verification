@@ -1,0 +1,18 @@
+{
+  "cwd": "/tmp/native_first_staged_verify_20261119",
+  "argv": [
+    "/Users/shinobu/\u573a\u666f\u751f\u6210/.venv/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_*.py",
+    "-v"
+  ],
+  "exit_code": 0,
+  "test_count": 29,
+  "snapshot_file_count": 243,
+  "source": "git checkout-index --all --prefix=/tmp/native_first_staged_verify_20261119/"
+}

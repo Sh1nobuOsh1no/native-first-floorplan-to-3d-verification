@@ -1,0 +1,14 @@
+{
+  "scene_id": "synthetic_offset_2r1c",
+  "provenance": "SYNTHETIC",
+  "variant": "B",
+  "engine": "CYCLES_CPU",
+  "samples": 8,
+  "resolution": [
+    256,
+    256
+  ],
+  "frame_count": 13,
+  "object_count": 23,
+  "global_scene": true
+}

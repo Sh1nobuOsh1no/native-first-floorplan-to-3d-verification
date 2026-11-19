@@ -1,0 +1,20 @@
+{
+  "source_scene": "/Users/shinobu/\u573a\u666f\u751f\u6210_remote_verify_2026-11-18/fixtures/multiroom/synthetic_offset_2r1c.json",
+  "render_scene": "/Users/shinobu/\u573a\u666f\u751f\u6210_remote_verify_2026-11-18/evidence/cpu/alternate/planned_scene.json",
+  "scene_id": "synthetic_offset_2r1c",
+  "steps": [
+    "plan",
+    "layout",
+    "render_A",
+    "render_B",
+    "decode_A",
+    "decode_B",
+    "sage_A",
+    "sage_B",
+    "native_A",
+    "native_B"
+  ],
+  "n_views": 32,
+  "size": 256,
+  "samples": 8
+}

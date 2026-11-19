@@ -1,6 +1,6 @@
 {
   "variant": "A",
-  "frame_count": 16,
+  "frame_count": 20,
   "frames": [
     {
       "camera_id": "c00_corridor_to_bed",
@@ -353,6 +353,98 @@
         32,
         33,
         34
+      ]
+    },
+    {
+      "camera_id": "auto_03_office_0",
+      "shape": [
+        256,
+        256
+      ],
+      "finite_depth_pixels": 59263,
+      "depth_range_m": [
+        1.0177003145217896,
+        3.402235507965088
+      ],
+      "visible_object_indices": [
+        0,
+        1,
+        2,
+        6,
+        7,
+        8,
+        35
+      ]
+    },
+    {
+      "camera_id": "auto_03_office_2",
+      "shape": [
+        256,
+        256
+      ],
+      "finite_depth_pixels": 63734,
+      "depth_range_m": [
+        0.6094284057617188,
+        4.498912811279297
+      ],
+      "visible_object_indices": [
+        0,
+        1,
+        2,
+        6,
+        7,
+        8,
+        9,
+        27,
+        35
+      ]
+    },
+    {
+      "camera_id": "auto_03_kitchen_3",
+      "shape": [
+        256,
+        256
+      ],
+      "finite_depth_pixels": 65536,
+      "depth_range_m": [
+        0.9825686812400818,
+        7.8342413902282715
+      ],
+      "visible_object_indices": [
+        1,
+        2,
+        9,
+        28,
+        29,
+        32,
+        33,
+        34,
+        36
+      ]
+    },
+    {
+      "camera_id": "auto_05_corridor_2",
+      "shape": [
+        256,
+        256
+      ],
+      "finite_depth_pixels": 62993,
+      "depth_range_m": [
+        0.5188413858413696,
+        4.8815226554870605
+      ],
+      "visible_object_indices": [
+        0,
+        1,
+        2,
+        6,
+        7,
+        8,
+        9,
+        21,
+        24,
+        28,
+        29
       ]
     }
   ],

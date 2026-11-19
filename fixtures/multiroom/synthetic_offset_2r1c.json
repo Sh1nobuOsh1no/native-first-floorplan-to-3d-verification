@@ -1,0 +1,378 @@
+{
+  "schema": "metric_scene_v1",
+  "scene_id": "synthetic_offset_2r1c",
+  "units": "m",
+  "world_frame": "RH_Z_UP",
+  "bounds_m": [
+    -4,
+    10,
+    2,
+    19
+  ],
+  "height_m": 2.7,
+  "provenance": {
+    "kind": "SYNTHETIC",
+    "source_evidence": "SYNTHETIC: hand-authored multiroom geometry, no source drawing",
+    "real_floorplan_parsed": false,
+    "agent_interpretation_used": false
+  },
+  "spaces": [
+    {
+      "id": "bedroom",
+      "semantic": "bedroom",
+      "bounds_m": [
+        -4,
+        10,
+        2,
+        13.5
+      ],
+      "source_evidence": "SYNTHETIC: hand-authored multiroom geometry, no source drawing"
+    },
+    {
+      "id": "corridor",
+      "semantic": "corridor",
+      "bounds_m": [
+        -4,
+        13.5,
+        2,
+        15.5
+      ],
+      "source_evidence": "SYNTHETIC: hand-authored multiroom geometry, no source drawing"
+    },
+    {
+      "id": "living",
+      "semantic": "living_room",
+      "bounds_m": [
+        -4,
+        15.5,
+        2,
+        19
+      ],
+      "source_evidence": "SYNTHETIC: hand-authored multiroom geometry, no source drawing"
+    }
+  ],
+  "walls": [
+    {
+      "id": "south",
+      "p0_m": [
+        -4,
+        10
+      ],
+      "p1_m": [
+        2,
+        10
+      ],
+      "thickness_m": 0.2,
+      "source_evidence": "SYNTHETIC: hand-authored multiroom geometry, no source drawing",
+      "openings": [
+        {
+          "id": "window_bed",
+          "kind": "window",
+          "u0_m": 1.3,
+          "u1_m": 2.6,
+          "z0_m": 0.9,
+          "z1_m": 2.2,
+          "source_evidence": "SYNTHETIC: hand-authored multiroom geometry, no source drawing"
+        }
+      ]
+    },
+    {
+      "id": "north",
+      "p0_m": [
+        -4,
+        19
+      ],
+      "p1_m": [
+        2,
+        19
+      ],
+      "thickness_m": 0.2,
+      "source_evidence": "SYNTHETIC: hand-authored multiroom geometry, no source drawing",
+      "openings": [
+        {
+          "id": "window_living",
+          "kind": "window",
+          "u0_m": 1.3,
+          "u1_m": 2.6,
+          "z0_m": 0.9,
+          "z1_m": 2.2,
+          "source_evidence": "SYNTHETIC: hand-authored multiroom geometry, no source drawing"
+        }
+      ]
+    },
+    {
+      "id": "west",
+      "p0_m": [
+        -4,
+        10
+      ],
+      "p1_m": [
+        -4,
+        19
+      ],
+      "thickness_m": 0.2,
+      "source_evidence": "SYNTHETIC: hand-authored multiroom geometry, no source drawing",
+      "openings": [
+        {
+          "id": "window_west",
+          "kind": "window",
+          "u0_m": 6.5,
+          "u1_m": 7.8,
+          "z0_m": 0.9,
+          "z1_m": 2.2,
+          "source_evidence": "SYNTHETIC: hand-authored multiroom geometry, no source drawing"
+        }
+      ]
+    },
+    {
+      "id": "east",
+      "p0_m": [
+        2,
+        10
+      ],
+      "p1_m": [
+        2,
+        19
+      ],
+      "thickness_m": 0.2,
+      "source_evidence": "SYNTHETIC: hand-authored multiroom geometry, no source drawing",
+      "openings": []
+    },
+    {
+      "id": "south_rooms",
+      "p0_m": [
+        -4,
+        13.5
+      ],
+      "p1_m": [
+        2,
+        13.5
+      ],
+      "thickness_m": 0.2,
+      "source_evidence": "SYNTHETIC: hand-authored multiroom geometry, no source drawing",
+      "openings": [
+        {
+          "id": "door_bedroom",
+          "kind": "door",
+          "u0_m": 2.4,
+          "u1_m": 3.4,
+          "z0_m": 0.0,
+          "z1_m": 2.15,
+          "connects": [
+            "corridor",
+            "bedroom"
+          ],
+          "source_evidence": "SYNTHETIC: hand-authored multiroom geometry, no source drawing"
+        }
+      ]
+    },
+    {
+      "id": "north_rooms",
+      "p0_m": [
+        -4,
+        15.5
+      ],
+      "p1_m": [
+        2,
+        15.5
+      ],
+      "thickness_m": 0.2,
+      "source_evidence": "SYNTHETIC: hand-authored multiroom geometry, no source drawing",
+      "openings": [
+        {
+          "id": "door_living",
+          "kind": "door",
+          "u0_m": 2.4,
+          "u1_m": 3.4,
+          "z0_m": 0.0,
+          "z1_m": 2.15,
+          "connects": [
+            "corridor",
+            "living"
+          ],
+          "source_evidence": "SYNTHETIC: hand-authored multiroom geometry, no source drawing"
+        }
+      ]
+    }
+  ],
+  "objects": [
+    {
+      "id": "bed_01",
+      "room_id": "bedroom",
+      "kind": "bed_block",
+      "center_m": [
+        -1.1,
+        11.65,
+        0.35
+      ],
+      "size_m": [
+        1.25,
+        0.95,
+        0.7
+      ],
+      "source_evidence": "SYNTHETIC: hand-authored multiroom geometry, no source drawing"
+    },
+    {
+      "id": "sofa_01",
+      "room_id": "living",
+      "kind": "sofa_block",
+      "center_m": [
+        -1.1,
+        17.3,
+        0.4
+      ],
+      "size_m": [
+        1.4,
+        0.85,
+        0.8
+      ],
+      "source_evidence": "SYNTHETIC: hand-authored multiroom geometry, no source drawing"
+    }
+  ],
+  "cameras": [
+    {
+      "id": "c00_corridor_to_bed",
+      "space_id": "corridor",
+      "eye_m": [
+        -1.1,
+        14.8,
+        1.55
+      ],
+      "target_m": [
+        -1.1,
+        11.65,
+        0.7
+      ],
+      "fov_deg": 78.0,
+      "source_evidence": "SYNTHETIC: hand-authored multiroom geometry, no source drawing"
+    },
+    {
+      "id": "c01_bed_to_bed",
+      "space_id": "bedroom",
+      "eye_m": [
+        -2.0,
+        12.7,
+        1.55
+      ],
+      "target_m": [
+        -1.1,
+        11.65,
+        0.4
+      ],
+      "fov_deg": 78.0,
+      "source_evidence": "SYNTHETIC: hand-authored multiroom geometry, no source drawing"
+    },
+    {
+      "id": "c02_bed_side",
+      "space_id": "bedroom",
+      "eye_m": [
+        -3.0,
+        11.5,
+        1.55
+      ],
+      "target_m": [
+        -1.1,
+        11.65,
+        0.4
+      ],
+      "fov_deg": 78.0,
+      "source_evidence": "SYNTHETIC: hand-authored multiroom geometry, no source drawing"
+    },
+    {
+      "id": "c03_bed_to_corridor",
+      "space_id": "bedroom",
+      "eye_m": [
+        -1.1,
+        11.0,
+        1.55
+      ],
+      "target_m": [
+        -1.1,
+        14.6,
+        1.45
+      ],
+      "fov_deg": 78.0,
+      "source_evidence": "SYNTHETIC: hand-authored multiroom geometry, no source drawing"
+    },
+    {
+      "id": "c04_corridor_oblique_bed",
+      "space_id": "corridor",
+      "eye_m": [
+        -2.5,
+        14.5,
+        1.55
+      ],
+      "target_m": [
+        -1.1,
+        12.3,
+        0.9
+      ],
+      "fov_deg": 78.0,
+      "source_evidence": "SYNTHETIC: hand-authored multiroom geometry, no source drawing"
+    },
+    {
+      "id": "c08_corridor_to_living",
+      "space_id": "corridor",
+      "eye_m": [
+        -1.1,
+        14.2,
+        1.55
+      ],
+      "target_m": [
+        -1.1,
+        17.3,
+        0.8
+      ],
+      "fov_deg": 78.0,
+      "source_evidence": "SYNTHETIC: hand-authored multiroom geometry, no source drawing"
+    },
+    {
+      "id": "c09_living_to_sofa",
+      "space_id": "living",
+      "eye_m": [
+        -1.9,
+        16.2,
+        1.55
+      ],
+      "target_m": [
+        -1.1,
+        17.3,
+        0.4
+      ],
+      "fov_deg": 78.0,
+      "source_evidence": "SYNTHETIC: hand-authored multiroom geometry, no source drawing"
+    },
+    {
+      "id": "c10_living_side",
+      "space_id": "living",
+      "eye_m": [
+        -3.0,
+        17.5,
+        1.55
+      ],
+      "target_m": [
+        -1.1,
+        17.3,
+        0.4
+      ],
+      "fov_deg": 78.0,
+      "source_evidence": "SYNTHETIC: hand-authored multiroom geometry, no source drawing"
+    },
+    {
+      "id": "c11_living_to_corridor",
+      "space_id": "living",
+      "eye_m": [
+        -1.1,
+        18.2,
+        1.55
+      ],
+      "target_m": [
+        -1.1,
+        14.6,
+        1.45
+      ],
+      "fov_deg": 78.0,
+      "source_evidence": "SYNTHETIC: hand-authored multiroom geometry, no source drawing"
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "1": {
+    "id": "floor",
+    "kind": "floor",
+    "source_id": "floor"
+  },
+  "2": {
+    "id": "ceiling",
+    "kind": "ceiling",
+    "source_id": "ceiling"
+  },
+  "3": {
+    "id": "south__0_0",
+    "kind": "wall",
+    "source_id": "south"
+  },
+  "4": {
+    "id": "south__1_0",
+    "kind": "wall",
+    "source_id": "south"
+  },
+  "5": {
+    "id": "south__1_1",
+    "kind": "wall",
+    "source_id": "south"
+  },
+  "6": {
+    "id": "south__2_0",
+    "kind": "wall",
+    "source_id": "south"
+  },
+  "7": {
+    "id": "north__0_0",
+    "kind": "wall",
+    "source_id": "north"
+  },
+  "8": {
+    "id": "north__1_0",
+    "kind": "wall",
+    "source_id": "north"
+  },
+  "9": {
+    "id": "north__1_1",
+    "kind": "wall",
+    "source_id": "north"
+  },
+  "10": {
+    "id": "north__2_0",
+    "kind": "wall",
+    "source_id": "north"
+  },
+  "11": {
+    "id": "west__0_0",
+    "kind": "wall",
+    "source_id": "west"
+  },
+  "12": {
+    "id": "west__1_0",
+    "kind": "wall",
+    "source_id": "west"
+  },
+  "13": {
+    "id": "west__1_1",
+    "kind": "wall",
+    "source_id": "west"
+  },
+  "14": {
+    "id": "west__2_0",
+    "kind": "wall",
+    "source_id": "west"
+  },
+  "15": {
+    "id": "east__0_0",
+    "kind": "wall",
+    "source_id": "east"
+  },
+  "16": {
+    "id": "south_rooms__0_0",
+    "kind": "wall",
+    "source_id": "south_rooms"
+  },
+  "17": {
+    "id": "south_rooms__1_1",
+    "kind": "wall",
+    "source_id": "south_rooms"
+  },
+  "18": {
+    "id": "south_rooms__2_0",
+    "kind": "wall",
+    "source_id": "south_rooms"
+  },
+  "19": {
+    "id": "north_rooms__0_0",
+    "kind": "wall",
+    "source_id": "north_rooms"
+  },
+  "20": {
+    "id": "north_rooms__1_1",
+    "kind": "wall",
+    "source_id": "north_rooms"
+  },
+  "21": {
+    "id": "north_rooms__2_0",
+    "kind": "wall",
+    "source_id": "north_rooms"
+  }
+}

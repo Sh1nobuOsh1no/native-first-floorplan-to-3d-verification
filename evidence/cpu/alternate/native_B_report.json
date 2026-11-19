@@ -1,0 +1,872 @@
+{
+  "status": "PASS_CPU_NATIVE_READER",
+  "repo": "/Users/shinobu/场景生成/work/upstream/GenRecon",
+  "render_dir": "/Users/shinobu/场景生成_remote_verify_2026-11-18/evidence/cpu/alternate/sage_gt_B/renders_room/synthetic_offset_2r1c",
+  "chunk_centers": [
+    [
+      0.5953124999999996,
+      0.5812499999999995,
+      1.425
+    ],
+    [
+      2.1984374999999994,
+      0.5812499999999995,
+      1.425
+    ],
+    [
+      3.8015624999999997,
+      0.5812499999999995,
+      1.425
+    ],
+    [
+      5.4046875,
+      0.5812499999999995,
+      1.425
+    ],
+    [
+      0.5953124999999996,
+      2.5406249999999995,
+      1.425
+    ],
+    [
+      2.1984374999999994,
+      2.5406249999999995,
+      1.425
+    ],
+    [
+      3.8015624999999997,
+      2.5406249999999995,
+      1.425
+    ],
+    [
+      5.4046875,
+      2.5406249999999995,
+      1.425
+    ],
+    [
+      0.5953124999999996,
+      4.5,
+      1.425
+    ],
+    [
+      2.1984374999999994,
+      4.5,
+      1.425
+    ],
+    [
+      3.8015624999999997,
+      4.5,
+      1.425
+    ],
+    [
+      5.4046875,
+      4.5,
+      1.425
+    ],
+    [
+      0.5953124999999996,
+      6.4593750000000005,
+      1.425
+    ],
+    [
+      2.1984374999999994,
+      6.4593750000000005,
+      1.425
+    ],
+    [
+      3.8015624999999997,
+      6.4593750000000005,
+      1.425
+    ],
+    [
+      5.4046875,
+      6.4593750000000005,
+      1.425
+    ],
+    [
+      0.5953124999999996,
+      8.418750000000001,
+      1.425
+    ],
+    [
+      2.1984374999999994,
+      8.418750000000001,
+      1.425
+    ],
+    [
+      3.8015624999999997,
+      8.418750000000001,
+      1.425
+    ],
+    [
+      5.4046875,
+      8.418750000000001,
+      1.425
+    ]
+  ],
+  "n_chunk_transforms": 20,
+  "n_inverse_transforms": 20,
+  "n_relative_translations": 20,
+  "scene_images_512_shape": [
+    13,
+    3,
+    512,
+    512
+  ],
+  "scene_images_1024_shape": [
+    13,
+    3,
+    1024,
+    1024
+  ],
+  "scene_intrinsics_shape": [
+    13,
+    3,
+    3
+  ],
+  "scene_extrinsics_c0_shape": [
+    13,
+    4,
+    4
+  ],
+  "n_cond2d_images": 20,
+  "chunk_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "images_finite": true,
+  "extrinsics_finite": true,
+  "image_min_max": [
+    0.4274509847164154,
+    1.0
+  ],
+  "native_output_files": [
+    "/Users/shinobu/场景生成_remote_verify_2026-11-18/evidence/cpu/alternate/native_B/chunks/chunk_layout.png",
+    "/Users/shinobu/场景生成_remote_verify_2026-11-18/evidence/cpu/alternate/native_B/chunks/chunk_transforms.json",
+    "/Users/shinobu/场景生成_remote_verify_2026-11-18/evidence/cpu/alternate/native_B/images/cameras.json"
+  ],
+  "source_scene_provenance": {
+    "kind": "SYNTHETIC",
+    "source_evidence": "SYNTHETIC: hand-authored multiroom geometry, no source drawing",
+    "real_floorplan_parsed": false,
+    "agent_interpretation_used": false
+  },
+  "source_camera_count": 13,
+  "native_camera_count": 13,
+  "num_imgs_per_scene": 32,
+  "selected_scene_camera_ids": [
+    "c00_corridor_to_bed",
+    "c01_bed_to_bed",
+    "c02_bed_side",
+    "c03_bed_to_corridor",
+    "c04_corridor_oblique_bed",
+    "c08_corridor_to_living",
+    "c09_living_to_sofa",
+    "c10_living_side",
+    "c11_living_to_corridor",
+    "auto_03_bedroom_0",
+    "auto_03_living_4",
+    "auto_03_corridor_0",
+    "auto_08_corridor_0"
+  ],
+  "selected_scene_camera_count": 13,
+  "global_to_sage_translation_m": [
+    4,
+    -10,
+    0
+  ],
+  "visible_by_chunk": [
+    {
+      "index": 0,
+      "center_m": [
+        0.5953124999999996,
+        0.5812499999999995,
+        1.425
+      ],
+      "center_world_m": [
+        -3.4046875000000005,
+        10.581249999999999,
+        1.425
+      ],
+      "accepted_camera_count": 1,
+      "accepted_camera_ids": [
+        "c02_bed_side"
+      ],
+      "selected_accepted_camera_count": 1,
+      "selected_accepted_camera_ids": [
+        "c02_bed_side"
+      ],
+      "selected_camera_id": "c02_bed_side",
+      "fallback_used": false,
+      "accepted_spaces": [
+        "bedroom"
+      ]
+    },
+    {
+      "index": 1,
+      "center_m": [
+        2.1984374999999994,
+        0.5812499999999995,
+        1.425
+      ],
+      "center_world_m": [
+        -1.8015625000000006,
+        10.581249999999999,
+        1.425
+      ],
+      "accepted_camera_count": 6,
+      "accepted_camera_ids": [
+        "c00_corridor_to_bed",
+        "c01_bed_to_bed",
+        "c02_bed_side",
+        "c03_bed_to_corridor",
+        "c04_corridor_oblique_bed",
+        "auto_03_bedroom_0"
+      ],
+      "selected_accepted_camera_count": 6,
+      "selected_accepted_camera_ids": [
+        "c00_corridor_to_bed",
+        "c01_bed_to_bed",
+        "c02_bed_side",
+        "c03_bed_to_corridor",
+        "c04_corridor_oblique_bed",
+        "auto_03_bedroom_0"
+      ],
+      "selected_camera_id": "c02_bed_side",
+      "fallback_used": false,
+      "accepted_spaces": [
+        "bedroom",
+        "corridor"
+      ]
+    },
+    {
+      "index": 2,
+      "center_m": [
+        3.8015624999999997,
+        0.5812499999999995,
+        1.425
+      ],
+      "center_world_m": [
+        -0.19843750000000027,
+        10.581249999999999,
+        1.425
+      ],
+      "accepted_camera_count": 6,
+      "accepted_camera_ids": [
+        "c00_corridor_to_bed",
+        "c01_bed_to_bed",
+        "c02_bed_side",
+        "c03_bed_to_corridor",
+        "c04_corridor_oblique_bed",
+        "auto_03_bedroom_0"
+      ],
+      "selected_accepted_camera_count": 6,
+      "selected_accepted_camera_ids": [
+        "c00_corridor_to_bed",
+        "c01_bed_to_bed",
+        "c02_bed_side",
+        "c03_bed_to_corridor",
+        "c04_corridor_oblique_bed",
+        "auto_03_bedroom_0"
+      ],
+      "selected_camera_id": "c03_bed_to_corridor",
+      "fallback_used": false,
+      "accepted_spaces": [
+        "bedroom",
+        "corridor"
+      ]
+    },
+    {
+      "index": 3,
+      "center_m": [
+        5.4046875,
+        0.5812499999999995,
+        1.425
+      ],
+      "center_world_m": [
+        1.4046874999999996,
+        10.581249999999999,
+        1.425
+      ],
+      "accepted_camera_count": 1,
+      "accepted_camera_ids": [
+        "auto_03_bedroom_0"
+      ],
+      "selected_accepted_camera_count": 1,
+      "selected_accepted_camera_ids": [
+        "auto_03_bedroom_0"
+      ],
+      "selected_camera_id": "auto_03_bedroom_0",
+      "fallback_used": false,
+      "accepted_spaces": [
+        "bedroom"
+      ]
+    },
+    {
+      "index": 4,
+      "center_m": [
+        0.5953124999999996,
+        2.5406249999999995,
+        1.425
+      ],
+      "center_world_m": [
+        -3.4046875000000005,
+        12.540624999999999,
+        1.425
+      ],
+      "accepted_camera_count": 4,
+      "accepted_camera_ids": [
+        "c01_bed_to_bed",
+        "c02_bed_side",
+        "c04_corridor_oblique_bed",
+        "auto_08_corridor_0"
+      ],
+      "selected_accepted_camera_count": 4,
+      "selected_accepted_camera_ids": [
+        "c01_bed_to_bed",
+        "c02_bed_side",
+        "c04_corridor_oblique_bed",
+        "auto_08_corridor_0"
+      ],
+      "selected_camera_id": "c02_bed_side",
+      "fallback_used": false,
+      "accepted_spaces": [
+        "bedroom",
+        "corridor"
+      ]
+    },
+    {
+      "index": 5,
+      "center_m": [
+        2.1984374999999994,
+        2.5406249999999995,
+        1.425
+      ],
+      "center_world_m": [
+        -1.8015625000000006,
+        12.540624999999999,
+        1.425
+      ],
+      "accepted_camera_count": 6,
+      "accepted_camera_ids": [
+        "c00_corridor_to_bed",
+        "c01_bed_to_bed",
+        "c02_bed_side",
+        "c03_bed_to_corridor",
+        "c04_corridor_oblique_bed",
+        "auto_03_corridor_0"
+      ],
+      "selected_accepted_camera_count": 6,
+      "selected_accepted_camera_ids": [
+        "c00_corridor_to_bed",
+        "c01_bed_to_bed",
+        "c02_bed_side",
+        "c03_bed_to_corridor",
+        "c04_corridor_oblique_bed",
+        "auto_03_corridor_0"
+      ],
+      "selected_camera_id": "c00_corridor_to_bed",
+      "fallback_used": false,
+      "accepted_spaces": [
+        "bedroom",
+        "corridor"
+      ]
+    },
+    {
+      "index": 6,
+      "center_m": [
+        3.8015624999999997,
+        2.5406249999999995,
+        1.425
+      ],
+      "center_world_m": [
+        -0.19843750000000027,
+        12.540624999999999,
+        1.425
+      ],
+      "accepted_camera_count": 7,
+      "accepted_camera_ids": [
+        "c00_corridor_to_bed",
+        "c01_bed_to_bed",
+        "c02_bed_side",
+        "c03_bed_to_corridor",
+        "c04_corridor_oblique_bed",
+        "auto_03_bedroom_0",
+        "auto_03_corridor_0"
+      ],
+      "selected_accepted_camera_count": 7,
+      "selected_accepted_camera_ids": [
+        "c00_corridor_to_bed",
+        "c01_bed_to_bed",
+        "c02_bed_side",
+        "c03_bed_to_corridor",
+        "c04_corridor_oblique_bed",
+        "auto_03_bedroom_0",
+        "auto_03_corridor_0"
+      ],
+      "selected_camera_id": "c00_corridor_to_bed",
+      "fallback_used": false,
+      "accepted_spaces": [
+        "bedroom",
+        "corridor"
+      ]
+    },
+    {
+      "index": 7,
+      "center_m": [
+        5.4046875,
+        2.5406249999999995,
+        1.425
+      ],
+      "center_world_m": [
+        1.4046874999999996,
+        12.540624999999999,
+        1.425
+      ],
+      "accepted_camera_count": 2,
+      "accepted_camera_ids": [
+        "auto_03_bedroom_0",
+        "auto_03_corridor_0"
+      ],
+      "selected_accepted_camera_count": 2,
+      "selected_accepted_camera_ids": [
+        "auto_03_bedroom_0",
+        "auto_03_corridor_0"
+      ],
+      "selected_camera_id": "auto_03_bedroom_0",
+      "fallback_used": false,
+      "accepted_spaces": [
+        "bedroom",
+        "corridor"
+      ]
+    },
+    {
+      "index": 8,
+      "center_m": [
+        0.5953124999999996,
+        4.5,
+        1.425
+      ],
+      "center_world_m": [
+        -3.4046875000000005,
+        14.5,
+        1.425
+      ],
+      "accepted_camera_count": 1,
+      "accepted_camera_ids": [
+        "auto_08_corridor_0"
+      ],
+      "selected_accepted_camera_count": 1,
+      "selected_accepted_camera_ids": [
+        "auto_08_corridor_0"
+      ],
+      "selected_camera_id": "auto_08_corridor_0",
+      "fallback_used": false,
+      "accepted_spaces": [
+        "corridor"
+      ]
+    },
+    {
+      "index": 9,
+      "center_m": [
+        2.1984374999999994,
+        4.5,
+        1.425
+      ],
+      "center_world_m": [
+        -1.8015625000000006,
+        14.5,
+        1.425
+      ],
+      "accepted_camera_count": 6,
+      "accepted_camera_ids": [
+        "c00_corridor_to_bed",
+        "c03_bed_to_corridor",
+        "c04_corridor_oblique_bed",
+        "c08_corridor_to_living",
+        "c11_living_to_corridor",
+        "auto_03_corridor_0"
+      ],
+      "selected_accepted_camera_count": 6,
+      "selected_accepted_camera_ids": [
+        "c00_corridor_to_bed",
+        "c03_bed_to_corridor",
+        "c04_corridor_oblique_bed",
+        "c08_corridor_to_living",
+        "c11_living_to_corridor",
+        "auto_03_corridor_0"
+      ],
+      "selected_camera_id": "c04_corridor_oblique_bed",
+      "fallback_used": false,
+      "accepted_spaces": [
+        "bedroom",
+        "corridor",
+        "living"
+      ]
+    },
+    {
+      "index": 10,
+      "center_m": [
+        3.8015624999999997,
+        4.5,
+        1.425
+      ],
+      "center_world_m": [
+        -0.19843750000000027,
+        14.5,
+        1.425
+      ],
+      "accepted_camera_count": 7,
+      "accepted_camera_ids": [
+        "c00_corridor_to_bed",
+        "c03_bed_to_corridor",
+        "c04_corridor_oblique_bed",
+        "c08_corridor_to_living",
+        "c11_living_to_corridor",
+        "auto_03_corridor_0",
+        "auto_08_corridor_0"
+      ],
+      "selected_accepted_camera_count": 7,
+      "selected_accepted_camera_ids": [
+        "c00_corridor_to_bed",
+        "c03_bed_to_corridor",
+        "c04_corridor_oblique_bed",
+        "c08_corridor_to_living",
+        "c11_living_to_corridor",
+        "auto_03_corridor_0",
+        "auto_08_corridor_0"
+      ],
+      "selected_camera_id": "c11_living_to_corridor",
+      "fallback_used": false,
+      "accepted_spaces": [
+        "bedroom",
+        "corridor",
+        "living"
+      ]
+    },
+    {
+      "index": 11,
+      "center_m": [
+        5.4046875,
+        4.5,
+        1.425
+      ],
+      "center_world_m": [
+        1.4046874999999996,
+        14.5,
+        1.425
+      ],
+      "accepted_camera_count": 1,
+      "accepted_camera_ids": [
+        "auto_03_corridor_0"
+      ],
+      "selected_accepted_camera_count": 1,
+      "selected_accepted_camera_ids": [
+        "auto_03_corridor_0"
+      ],
+      "selected_camera_id": "auto_03_corridor_0",
+      "fallback_used": false,
+      "accepted_spaces": [
+        "corridor"
+      ]
+    },
+    {
+      "index": 12,
+      "center_m": [
+        0.5953124999999996,
+        6.4593750000000005,
+        1.425
+      ],
+      "center_world_m": [
+        -3.4046875000000005,
+        16.459375,
+        1.425
+      ],
+      "accepted_camera_count": 3,
+      "accepted_camera_ids": [
+        "c09_living_to_sofa",
+        "c10_living_side",
+        "auto_08_corridor_0"
+      ],
+      "selected_accepted_camera_count": 3,
+      "selected_accepted_camera_ids": [
+        "c09_living_to_sofa",
+        "c10_living_side",
+        "auto_08_corridor_0"
+      ],
+      "selected_camera_id": "c10_living_side",
+      "fallback_used": false,
+      "accepted_spaces": [
+        "corridor",
+        "living"
+      ]
+    },
+    {
+      "index": 13,
+      "center_m": [
+        2.1984374999999994,
+        6.4593750000000005,
+        1.425
+      ],
+      "center_world_m": [
+        -1.8015625000000006,
+        16.459375,
+        1.425
+      ],
+      "accepted_camera_count": 4,
+      "accepted_camera_ids": [
+        "c08_corridor_to_living",
+        "c09_living_to_sofa",
+        "c10_living_side",
+        "c11_living_to_corridor"
+      ],
+      "selected_accepted_camera_count": 4,
+      "selected_accepted_camera_ids": [
+        "c08_corridor_to_living",
+        "c09_living_to_sofa",
+        "c10_living_side",
+        "c11_living_to_corridor"
+      ],
+      "selected_camera_id": "c09_living_to_sofa",
+      "fallback_used": false,
+      "accepted_spaces": [
+        "corridor",
+        "living"
+      ]
+    },
+    {
+      "index": 14,
+      "center_m": [
+        3.8015624999999997,
+        6.4593750000000005,
+        1.425
+      ],
+      "center_world_m": [
+        -0.19843750000000027,
+        16.459375,
+        1.425
+      ],
+      "accepted_camera_count": 5,
+      "accepted_camera_ids": [
+        "c08_corridor_to_living",
+        "c09_living_to_sofa",
+        "c10_living_side",
+        "c11_living_to_corridor",
+        "auto_03_living_4"
+      ],
+      "selected_accepted_camera_count": 5,
+      "selected_accepted_camera_ids": [
+        "c08_corridor_to_living",
+        "c09_living_to_sofa",
+        "c10_living_side",
+        "c11_living_to_corridor",
+        "auto_03_living_4"
+      ],
+      "selected_camera_id": "c08_corridor_to_living",
+      "fallback_used": false,
+      "accepted_spaces": [
+        "corridor",
+        "living"
+      ]
+    },
+    {
+      "index": 15,
+      "center_m": [
+        5.4046875,
+        6.4593750000000005,
+        1.425
+      ],
+      "center_world_m": [
+        1.4046874999999996,
+        16.459375,
+        1.425
+      ],
+      "accepted_camera_count": 1,
+      "accepted_camera_ids": [
+        "auto_03_living_4"
+      ],
+      "selected_accepted_camera_count": 1,
+      "selected_accepted_camera_ids": [
+        "auto_03_living_4"
+      ],
+      "selected_camera_id": "auto_03_living_4",
+      "fallback_used": false,
+      "accepted_spaces": [
+        "living"
+      ]
+    },
+    {
+      "index": 16,
+      "center_m": [
+        0.5953124999999996,
+        8.418750000000001,
+        1.425
+      ],
+      "center_world_m": [
+        -3.4046875000000005,
+        18.418750000000003,
+        1.425
+      ],
+      "accepted_camera_count": 1,
+      "accepted_camera_ids": [
+        "c10_living_side"
+      ],
+      "selected_accepted_camera_count": 1,
+      "selected_accepted_camera_ids": [
+        "c10_living_side"
+      ],
+      "selected_camera_id": "c10_living_side",
+      "fallback_used": false,
+      "accepted_spaces": [
+        "living"
+      ]
+    },
+    {
+      "index": 17,
+      "center_m": [
+        2.1984374999999994,
+        8.418750000000001,
+        1.425
+      ],
+      "center_world_m": [
+        -1.8015625000000006,
+        18.418750000000003,
+        1.425
+      ],
+      "accepted_camera_count": 4,
+      "accepted_camera_ids": [
+        "c08_corridor_to_living",
+        "c09_living_to_sofa",
+        "c10_living_side",
+        "c11_living_to_corridor"
+      ],
+      "selected_accepted_camera_count": 4,
+      "selected_accepted_camera_ids": [
+        "c08_corridor_to_living",
+        "c09_living_to_sofa",
+        "c10_living_side",
+        "c11_living_to_corridor"
+      ],
+      "selected_camera_id": "c08_corridor_to_living",
+      "fallback_used": false,
+      "accepted_spaces": [
+        "corridor",
+        "living"
+      ]
+    },
+    {
+      "index": 18,
+      "center_m": [
+        3.8015624999999997,
+        8.418750000000001,
+        1.425
+      ],
+      "center_world_m": [
+        -0.19843750000000027,
+        18.418750000000003,
+        1.425
+      ],
+      "accepted_camera_count": 5,
+      "accepted_camera_ids": [
+        "c08_corridor_to_living",
+        "c09_living_to_sofa",
+        "c10_living_side",
+        "c11_living_to_corridor",
+        "auto_03_living_4"
+      ],
+      "selected_accepted_camera_count": 5,
+      "selected_accepted_camera_ids": [
+        "c08_corridor_to_living",
+        "c09_living_to_sofa",
+        "c10_living_side",
+        "c11_living_to_corridor",
+        "auto_03_living_4"
+      ],
+      "selected_camera_id": "auto_03_living_4",
+      "fallback_used": false,
+      "accepted_spaces": [
+        "corridor",
+        "living"
+      ]
+    },
+    {
+      "index": 19,
+      "center_m": [
+        5.4046875,
+        8.418750000000001,
+        1.425
+      ],
+      "center_world_m": [
+        1.4046874999999996,
+        18.418750000000003,
+        1.425
+      ],
+      "accepted_camera_count": 1,
+      "accepted_camera_ids": [
+        "auto_03_living_4"
+      ],
+      "selected_accepted_camera_count": 1,
+      "selected_accepted_camera_ids": [
+        "auto_03_living_4"
+      ],
+      "selected_camera_id": "auto_03_living_4",
+      "fallback_used": false,
+      "accepted_spaces": [
+        "living"
+      ]
+    }
+  ],
+  "zero_visible_chunks": [],
+  "fallback_chunks": [],
+  "zero_selected_visible_chunks": [],
+  "door_visibility": [
+    {
+      "door_id": "door_bedroom",
+      "connects": [
+        "corridor",
+        "bedroom"
+      ],
+      "near_chunk_count": 4,
+      "chunks_with_both_side_cameras": [
+        5,
+        6,
+        9,
+        10
+      ]
+    },
+    {
+      "door_id": "door_living",
+      "connects": [
+        "corridor",
+        "living"
+      ],
+      "near_chunk_count": 4,
+      "chunks_with_both_side_cameras": [
+        9,
+        10,
+        13,
+        14
+      ]
+    }
+  ],
+  "native_layout_limitation": "Sage_gt uses only first room outer width/length and fixed 2.7m height; interior walls and door topology are not hard constraints.",
+  "disclaimer": "Only original CPU input readers ran; no GenRecon model inference or training."
+}

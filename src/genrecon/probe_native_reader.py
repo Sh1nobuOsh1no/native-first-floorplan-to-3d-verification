@@ -41,6 +41,9 @@ def main():
     source_cameras = {c["id"]: c for c in source_scene["cameras"]}
     native_cameras = selector._get_cameras(args.render_dir / "transforms.json")
     native_picks = json.loads((args.out_dir / "images" / "cameras.json").read_text())
+    selected_ids = [Path(x["img_path"]).stem for x in native_picks["scene"]]
+    selected_set = set(selected_ids)
+    offset = json.loads((args.render_dir / "adapter_transform.json").read_text())["global_to_sage_translation_m"]
     visible_by_chunk = []
     for idx, transform in enumerate(original_to_chunks):
         accepted = []
@@ -49,12 +52,16 @@ def main():
             if selector._check_acceptance(ext, cam["intrinsics"]):
                 accepted.append(Path(cam["img_path"]).stem)
         picked = Path(native_picks["chunks"][idx]["cond2d_view"]["img_path"]).stem
+        selected_accepted = [x for x in accepted if x in selected_set]
         visible_by_chunk.append({"index": idx, "center_m": centers[idx],
+                                 "center_world_m": [centers[idx][0]-offset[0], centers[idx][1]-offset[1], centers[idx][2]],
                                  "accepted_camera_count": len(accepted),
                                  "accepted_camera_ids": accepted,
+                                 "selected_accepted_camera_count": len(selected_accepted),
+                                 "selected_accepted_camera_ids": selected_accepted,
                                  "selected_camera_id": picked,
-                                 "fallback_used": picked not in accepted,
-                                 "accepted_spaces": sorted({source_cameras[x]["space_id"] for x in accepted})})
+                                 "fallback_used": picked not in selected_accepted,
+                                 "accepted_spaces": sorted({source_cameras[x]["space_id"] for x in selected_accepted})})
     door_visibility = []
     for wall in source_scene["walls"]:
         p0, p1 = wall["p0_m"], wall["p1_m"]
@@ -63,7 +70,7 @@ def main():
             if op["kind"] != "door":
                 continue
             t = (op["u0_m"] + op["u1_m"]) / (2*length)
-            xy = [p0[j] + t*(p1[j]-p0[j]) for j in (0,1)]
+            xy = [p0[j] + t*(p1[j]-p0[j]) + offset[j] for j in (0,1)]
             near = [v for v in visible_by_chunk if ((v["center_m"][0]-xy[0])**2 + (v["center_m"][1]-xy[1])**2)**0.5 <= 2.0]
             door_visibility.append({"door_id": op["id"], "connects": op["connects"],
                                     "near_chunk_count": len(near),
@@ -89,9 +96,14 @@ def main():
         "source_scene_provenance": source_scene["provenance"],
         "source_camera_count": len(source_scene["cameras"]),
         "native_camera_count": len(native_cameras),
+        "num_imgs_per_scene": args.n_views,
+        "selected_scene_camera_ids": selected_ids,
+        "selected_scene_camera_count": len(selected_ids),
+        "global_to_sage_translation_m": offset,
         "visible_by_chunk": visible_by_chunk,
         "zero_visible_chunks": [x["index"] for x in visible_by_chunk if not x["accepted_camera_count"]],
         "fallback_chunks": [x["index"] for x in visible_by_chunk if x["fallback_used"]],
+        "zero_selected_visible_chunks": [x["index"] for x in visible_by_chunk if not x["selected_accepted_camera_count"]],
         "door_visibility": door_visibility,
         "native_layout_limitation": "Sage_gt uses only first room outer width/length and fixed 2.7m height; interior walls and door topology are not hard constraints.",
         "disclaimer": "Only original CPU input readers ran; no GenRecon model inference or training.",

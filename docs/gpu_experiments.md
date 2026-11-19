@@ -1,6 +1,6 @@
 # Future native GenRecon GPU experiment — NOT RUN
 
-This is an execution plan, **not** a GPU result. It uses the same synthetic A/B input and 16 Blender poses. A real whole-floorplan source remains a separate prerequisite for the final research claim. Do not train, edit upstream GenRecon or weights, or interpret CPU Reader success as output consistency.
+This is an execution plan, **not** a GPU result. It uses the same synthetic A/B input and 20 Blender poses. A real whole-floorplan source remains a separate prerequisite for the final research claim. The CPU Reader has now measured 30/30 chunks with 0 fallback at cap 32, selecting all 20 source views. At cap 8 it measured 11 fallback chunks. Preserve cap 32 for the first native attempt and verify the saved selected-image list. The training configs reference up to 16 conditioning views; GPU behavior with 20 selected views is untested. Do not train, edit upstream GenRecon or weights, or interpret CPU Reader success as output consistency.
 
 ## Resources and fixed inputs
 
@@ -11,7 +11,7 @@ This is an execution plan, **not** a GPU result. It uses the same synthetic A/B 
 
 ## Exact proposed commands on the future GPU host
 
-Set paths explicitly and copy the full local `evidence/cpu/sage_gt_A` and `sage_gt_B` input directories, including all 16 PNGs, `transforms.json` and sibling `rooms_raw`, to the GPU host. Alternatively regenerate these on the host with the documented CPU runner. The compact GitHub evidence alone is not a full model input.
+Set paths explicitly and copy the full local `evidence/cpu/sage_gt_A` and `sage_gt_B` input directories, including all 20 PNGs, `transforms.json` and sibling `rooms_raw`, to the GPU host. Alternatively regenerate these on the host with the documented CPU runner. The compact GitHub evidence alone is not a full model input. `Sage_gt` uses original global poses shifted by the adapter only for nonzero-origin scenes; the main 12 × 9 m scene has zero shift.
 
 ```bash
 set -euo pipefail
@@ -27,10 +27,16 @@ nvidia-smi --query-gpu=name,memory.total,driver_version --format=csv
 python -c 'import torch; assert torch.cuda.is_available(); print(torch.__version__, torch.version.cuda)'
 sha256sum "$WEIGHTS/sparse_structure.pt" "$WEIGHTS/shape_slat.pt" "$WEIGHTS/texture_slat.pt"
 test -f "$INPUT_ROOT/sage_gt_B/renders_room/synthetic_multiroom_4r1c/transforms.json"
+python - "$INPUT_ROOT/sage_gt_B/renders_room/synthetic_multiroom_4r1c/transforms.json" <<'PY2'
+import json,sys
+f=json.load(open(sys.argv[1]))["frames"]
+assert len(f)==20, len(f)
+print("source_views",len(f))
+PY2
 test -f "$INPUT_ROOT/sage_gt_B/rooms_raw/synthetic_multiroom_4r1c/layout_synthetic_multiroom_4r1c.json"
 ```
 
-Run baseline A and B, then B's three ablations. Every run uses `seed=42`, the same 16 source camera matrices and unchanged weights. Execute the following block in the **official** checkout; capture its full stdout/stderr, process exit, peak GPU memory (`nvidia-smi` sampler) and wall time for each run.
+Run baseline A and B, then B's three ablations. Every run uses `seed=42`, the same 20 source camera matrices and unchanged weights. Execute the following block in the **official** checkout; capture its full stdout/stderr, process exit, peak GPU memory (`nvidia-smi` sampler) and wall time for each run.
 
 ```bash
 cd "$GENRECON"
@@ -45,7 +51,7 @@ for spec in A:official_baseline B:official_baseline B:geometry_cfg_3 B:no_extra_
     --shape_ckpt "$WEIGHTS/shape_slat.pt" \
     --tex_ckpt "$WEIGHTS/texture_slat.pt" \
     --pipeline 512 --pipeline_config "$PROJECT/configs/genrecon_cfg/${cfg}.json" \
-    --num_imgs_per_scene 16 --seed 42 --save_imgs \
+    --num_imgs_per_scene 32 --seed 42 --save_imgs \
     >"$run/reconstruct.stdout.log" 2>"$run/reconstruct.stderr.log"
   printf '%s\n' "$?" >"$run/reconstruct.exit_code"
   test -s "$run/to_glb_inputs.pt" && test -s "$run/chunk_inputs.pt"
@@ -63,7 +69,7 @@ PY
 done
 ```
 
-The block above uses `set -e`, so a failed native command stops that run before writing its exit-code file; the shell exit and raw logs still show the failure. For a production execution, wrap each command with the repository's `log_command.py` to capture nonzero exits in JSON as done in CPU validation. No script in this repository invokes a GPU experiment during this round.
+The block above uses `set -e`, so a failed native command stops before the following exit-code write. Wrap each command with the repository logger or explicitly capture `$?` without `set -e` when executing on GPU; preserve both raw logs and nonzero exit records. Before interpreting results, inspect the emitted selected images and confirm 20 distinct main-scene source views and zero fallback messages. For a production execution, wrap each command with the repository's `log_command.py` to capture nonzero exits in JSON as done in CPU validation. No script in this repository invokes a GPU experiment during this round.
 
 ## Acceptance gates and comparison
 

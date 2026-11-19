@@ -1,11 +1,15 @@
 import copy
+import json
+import tempfile
 import unittest
 from pathlib import Path
 
 from src.scene_graph.metric_scene import components, first_hit, load_scene, validate_scene
 from src.floorplan.calibration import calibrate_polygons
+from src.cameras.plan_native import door_side_candidates
 
 SCENE = Path(__file__).resolve().parents[2] / "fixtures/multiroom/synthetic_building.json"
+ALTERNATE = SCENE.with_name("synthetic_offset_2r1c.json")
 
 
 class MetricSceneTests(unittest.TestCase):
@@ -24,6 +28,24 @@ class MetricSceneTests(unittest.TestCase):
         doors = [o for w in self.scene["walls"] for o in w.get("openings", []) if o["kind"] == "door"]
         self.assertEqual(len(doors), 4)
         self.assertEqual(self.scene["provenance"]["kind"], "SYNTHETIC")
+
+    def test_alternate_layout_has_global_offset_and_two_links(self):
+        scene = load_scene(ALTERNATE)
+        self.assertEqual(scene["bounds_m"], [-4, 10, 2, 19])
+        self.assertEqual(len(scene["spaces"]), 3)
+        self.assertEqual(len([o for w in scene["walls"] for o in w.get("openings", []) if o["kind"]=="door"]), 2)
+        self.assertEqual(scene["provenance"]["kind"], "SYNTHETIC")
+
+    def test_topology_generates_missing_door_side_cameras(self):
+        scene = load_scene(ALTERNATE)
+        scene["cameras"] = []
+        generated = door_side_candidates(scene)
+        self.assertEqual(len(generated), 4)
+        self.assertEqual({c["space_id"] for c in generated}, {"corridor", "bedroom", "living"})
+        for camera in generated:
+            self.assertIsNone(first_hit(camera["eye_m"], camera["target_m"], components(scene, False), {"wall"}))
+        scene["cameras"] = generated
+        validate_scene(scene)
 
     def test_every_corridor_door_has_unblocked_ray(self):
         boxes = components(self.scene, False)
@@ -57,6 +79,23 @@ class MetricSceneTests(unittest.TestCase):
 
     def test_synthetic_cannot_claim_real_drawing(self):
         self.rejects(lambda s: s["provenance"].update(kind="SOURCE_DRAWING"))
+
+    def test_source_drawing_hash_and_component_evidence_required(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "scene.json"
+            drawing = Path(tmp) / "drawing.png"
+            drawing.write_bytes(b"placeholder source bytes for rejection test")
+            scene = copy.deepcopy(self.scene)
+            scene["provenance"].update(kind="SOURCE_DRAWING", source_file="drawing.png",
+                source_sha256="0"*64, scale_evidence="claimed", real_floorplan_parsed=True)
+            path.write_text(json.dumps(scene))
+            with self.assertRaises(ValueError):
+                load_scene(path)
+            for item in scene["spaces"]+scene["walls"]+scene["objects"]:
+                item["source_evidence"]="unverified claim"
+            path.write_text(json.dumps(scene))
+            with self.assertRaises(ValueError):
+                load_scene(path)
 
     def test_global_affine_calibration_keeps_negative_coordinates(self):
         calibration = {"pixel_to_world_m": [[.01, 0, -2], [0, -.01, 5]],

@@ -1,0 +1,501 @@
+{
+  "scene_id": "synthetic_offset_2r1c",
+  "native_rule": "GenRecon chunk_visible_in_camera, projected clipped area >= 0.4",
+  "chunk_size_m": 2.85,
+  "chunk_centers_sage_m": [
+    [
+      0.5953124999999996,
+      0.5812499999999995,
+      1.425
+    ],
+    [
+      2.1984374999999994,
+      0.5812499999999995,
+      1.425
+    ],
+    [
+      3.8015624999999997,
+      0.5812499999999995,
+      1.425
+    ],
+    [
+      5.4046875,
+      0.5812499999999995,
+      1.425
+    ],
+    [
+      0.5953124999999996,
+      2.5406249999999995,
+      1.425
+    ],
+    [
+      2.1984374999999994,
+      2.5406249999999995,
+      1.425
+    ],
+    [
+      3.8015624999999997,
+      2.5406249999999995,
+      1.425
+    ],
+    [
+      5.4046875,
+      2.5406249999999995,
+      1.425
+    ],
+    [
+      0.5953124999999996,
+      4.5,
+      1.425
+    ],
+    [
+      2.1984374999999994,
+      4.5,
+      1.425
+    ],
+    [
+      3.8015624999999997,
+      4.5,
+      1.425
+    ],
+    [
+      5.4046875,
+      4.5,
+      1.425
+    ],
+    [
+      0.5953124999999996,
+      6.4593750000000005,
+      1.425
+    ],
+    [
+      2.1984374999999994,
+      6.4593750000000005,
+      1.425
+    ],
+    [
+      3.8015624999999997,
+      6.4593750000000005,
+      1.425
+    ],
+    [
+      5.4046875,
+      6.4593750000000005,
+      1.425
+    ],
+    [
+      0.5953124999999996,
+      8.418750000000001,
+      1.425
+    ],
+    [
+      2.1984374999999994,
+      8.418750000000001,
+      1.425
+    ],
+    [
+      3.8015624999999997,
+      8.418750000000001,
+      1.425
+    ],
+    [
+      5.4046875,
+      8.418750000000001,
+      1.425
+    ]
+  ],
+  "global_to_sage_translation_m": [
+    4,
+    -10,
+    0
+  ],
+  "original_camera_count": 0,
+  "planned_camera_count": 9,
+  "topology_door_camera_ids": [
+    "door_door_bedroom_corridor",
+    "door_door_bedroom_bedroom",
+    "door_door_living_corridor",
+    "door_door_living_living"
+  ],
+  "num_imgs_per_scene": 32,
+  "missing_before": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "missing_after": [],
+  "original_accepted_counts": {
+    "0": 0,
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 0,
+    "6": 0,
+    "7": 0,
+    "8": 0,
+    "9": 0,
+    "10": 0,
+    "11": 0,
+    "12": 0,
+    "13": 0,
+    "14": 0,
+    "15": 0,
+    "16": 0,
+    "17": 0,
+    "18": 0,
+    "19": 0
+  },
+  "failure_diagnostics": {
+    "0": {
+      "center_sage_m": [
+        0.5953124999999996,
+        0.5812499999999995,
+        1.425
+      ],
+      "center_world_m": [
+        -3.4046875000000005,
+        10.581249999999999,
+        1.425
+      ],
+      "best_original_cameras": [],
+      "all_original_rejected": true
+    },
+    "1": {
+      "center_sage_m": [
+        2.1984374999999994,
+        0.5812499999999995,
+        1.425
+      ],
+      "center_world_m": [
+        -1.8015625000000006,
+        10.581249999999999,
+        1.425
+      ],
+      "best_original_cameras": [],
+      "all_original_rejected": true
+    },
+    "2": {
+      "center_sage_m": [
+        3.8015624999999997,
+        0.5812499999999995,
+        1.425
+      ],
+      "center_world_m": [
+        -0.19843750000000027,
+        10.581249999999999,
+        1.425
+      ],
+      "best_original_cameras": [],
+      "all_original_rejected": true
+    },
+    "3": {
+      "center_sage_m": [
+        5.4046875,
+        0.5812499999999995,
+        1.425
+      ],
+      "center_world_m": [
+        1.4046874999999996,
+        10.581249999999999,
+        1.425
+      ],
+      "best_original_cameras": [],
+      "all_original_rejected": true
+    },
+    "4": {
+      "center_sage_m": [
+        0.5953124999999996,
+        2.5406249999999995,
+        1.425
+      ],
+      "center_world_m": [
+        -3.4046875000000005,
+        12.540624999999999,
+        1.425
+      ],
+      "best_original_cameras": [],
+      "all_original_rejected": true
+    },
+    "5": {
+      "center_sage_m": [
+        2.1984374999999994,
+        2.5406249999999995,
+        1.425
+      ],
+      "center_world_m": [
+        -1.8015625000000006,
+        12.540624999999999,
+        1.425
+      ],
+      "best_original_cameras": [],
+      "all_original_rejected": true
+    },
+    "6": {
+      "center_sage_m": [
+        3.8015624999999997,
+        2.5406249999999995,
+        1.425
+      ],
+      "center_world_m": [
+        -0.19843750000000027,
+        12.540624999999999,
+        1.425
+      ],
+      "best_original_cameras": [],
+      "all_original_rejected": true
+    },
+    "7": {
+      "center_sage_m": [
+        5.4046875,
+        2.5406249999999995,
+        1.425
+      ],
+      "center_world_m": [
+        1.4046874999999996,
+        12.540624999999999,
+        1.425
+      ],
+      "best_original_cameras": [],
+      "all_original_rejected": true
+    },
+    "8": {
+      "center_sage_m": [
+        0.5953124999999996,
+        4.5,
+        1.425
+      ],
+      "center_world_m": [
+        -3.4046875000000005,
+        14.5,
+        1.425
+      ],
+      "best_original_cameras": [],
+      "all_original_rejected": true
+    },
+    "9": {
+      "center_sage_m": [
+        2.1984374999999994,
+        4.5,
+        1.425
+      ],
+      "center_world_m": [
+        -1.8015625000000006,
+        14.5,
+        1.425
+      ],
+      "best_original_cameras": [],
+      "all_original_rejected": true
+    },
+    "10": {
+      "center_sage_m": [
+        3.8015624999999997,
+        4.5,
+        1.425
+      ],
+      "center_world_m": [
+        -0.19843750000000027,
+        14.5,
+        1.425
+      ],
+      "best_original_cameras": [],
+      "all_original_rejected": true
+    },
+    "11": {
+      "center_sage_m": [
+        5.4046875,
+        4.5,
+        1.425
+      ],
+      "center_world_m": [
+        1.4046874999999996,
+        14.5,
+        1.425
+      ],
+      "best_original_cameras": [],
+      "all_original_rejected": true
+    },
+    "12": {
+      "center_sage_m": [
+        0.5953124999999996,
+        6.4593750000000005,
+        1.425
+      ],
+      "center_world_m": [
+        -3.4046875000000005,
+        16.459375,
+        1.425
+      ],
+      "best_original_cameras": [],
+      "all_original_rejected": true
+    },
+    "13": {
+      "center_sage_m": [
+        2.1984374999999994,
+        6.4593750000000005,
+        1.425
+      ],
+      "center_world_m": [
+        -1.8015625000000006,
+        16.459375,
+        1.425
+      ],
+      "best_original_cameras": [],
+      "all_original_rejected": true
+    },
+    "14": {
+      "center_sage_m": [
+        3.8015624999999997,
+        6.4593750000000005,
+        1.425
+      ],
+      "center_world_m": [
+        -0.19843750000000027,
+        16.459375,
+        1.425
+      ],
+      "best_original_cameras": [],
+      "all_original_rejected": true
+    },
+    "15": {
+      "center_sage_m": [
+        5.4046875,
+        6.4593750000000005,
+        1.425
+      ],
+      "center_world_m": [
+        1.4046874999999996,
+        16.459375,
+        1.425
+      ],
+      "best_original_cameras": [],
+      "all_original_rejected": true
+    },
+    "16": {
+      "center_sage_m": [
+        0.5953124999999996,
+        8.418750000000001,
+        1.425
+      ],
+      "center_world_m": [
+        -3.4046875000000005,
+        18.418750000000003,
+        1.425
+      ],
+      "best_original_cameras": [],
+      "all_original_rejected": true
+    },
+    "17": {
+      "center_sage_m": [
+        2.1984374999999994,
+        8.418750000000001,
+        1.425
+      ],
+      "center_world_m": [
+        -1.8015625000000006,
+        18.418750000000003,
+        1.425
+      ],
+      "best_original_cameras": [],
+      "all_original_rejected": true
+    },
+    "18": {
+      "center_sage_m": [
+        3.8015624999999997,
+        8.418750000000001,
+        1.425
+      ],
+      "center_world_m": [
+        -0.19843750000000027,
+        18.418750000000003,
+        1.425
+      ],
+      "best_original_cameras": [],
+      "all_original_rejected": true
+    },
+    "19": {
+      "center_sage_m": [
+        5.4046875,
+        8.418750000000001,
+        1.425
+      ],
+      "center_world_m": [
+        1.4046874999999996,
+        18.418750000000003,
+        1.425
+      ],
+      "best_original_cameras": [],
+      "all_original_rejected": true
+    }
+  },
+  "planned_camera_ids": [
+    "door_door_bedroom_corridor",
+    "door_door_bedroom_bedroom",
+    "door_door_living_corridor",
+    "door_door_living_living",
+    "auto_00_bedroom_0",
+    "auto_13_living_4",
+    "auto_02_bedroom_4",
+    "auto_09_corridor_1",
+    "auto_14_living_3"
+  ],
+  "auto_camera_coverage": {
+    "auto_00_bedroom_0": [
+      0,
+      1,
+      2,
+      4,
+      5
+    ],
+    "auto_13_living_4": [
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "auto_02_bedroom_4": [
+      1,
+      2,
+      3,
+      6,
+      7
+    ],
+    "auto_09_corridor_1": [
+      8,
+      9,
+      10,
+      11,
+      14
+    ],
+    "auto_14_living_3": [
+      12,
+      13,
+      14,
+      17,
+      18,
+      19
+    ]
+  },
+  "auto_camera_requires_unblocked_ray_to_chunk_center": true,
+  "official_source_sha": "unmodified",
+  "model_forward_executed": false
+}

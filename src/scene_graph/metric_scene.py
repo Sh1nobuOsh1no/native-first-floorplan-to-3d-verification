@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import json
 import math
+import hashlib
 from collections import deque
 from pathlib import Path
 
@@ -16,8 +17,14 @@ EPS = 1e-6
 
 
 def load_scene(path: str | Path) -> dict:
-    scene = json.loads(Path(path).read_text(encoding="utf-8"))
+    path = Path(path).resolve()
+    scene = json.loads(path.read_text(encoding="utf-8"))
     validate_scene(scene)
+    if scene["provenance"]["kind"] == "SOURCE_DRAWING":
+        source = Path(scene["provenance"]["source_file"])
+        source = source if source.is_absolute() else path.parent / source
+        if not source.is_file() or hashlib.sha256(source.read_bytes()).hexdigest() != scene["provenance"]["source_sha256"]:
+            raise ValueError("SOURCE_DRAWING source file missing or SHA256 mismatch")
     return scene
 
 
@@ -59,24 +66,30 @@ def _side_spaces(scene: dict, wall: dict, op: dict) -> set[str]:
 
 
 def validate_scene(scene: dict) -> None:
+    if scene.get("schema") != "metric_scene_v1" or not scene.get("scene_id"):
+        raise ValueError("Expected metric_scene_v1 and nonempty scene_id")
     if scene.get("units") != "m" or scene.get("world_frame") != "RH_Z_UP":
         raise ValueError("Expected metres and RH_Z_UP global frame")
+    if float(scene.get("floor_z_m", 0)) != 0:
+        raise ValueError("metric_scene_v1 fixes floor_z_m=0; nonzero vertical origin is unsupported")
     if scene.get("provenance", {}).get("kind") not in {"SYNTHETIC", "SOURCE_DRAWING"}:
         raise ValueError("Explicit provenance kind required")
     if scene["provenance"]["kind"] == "SOURCE_DRAWING":
         source = scene["provenance"]
         digest = source.get("source_sha256", "")
-        if not source.get("source_file") or len(digest) != 64 or any(c not in "0123456789abcdef" for c in digest.lower()):
+        if (not source.get("source_file") or len(digest) != 64 or
+                any(c not in "0123456789abcdef" for c in digest.lower()) or
+                not source.get("scale_evidence") or source.get("real_floorplan_parsed") is not True):
             raise ValueError("SOURCE_DRAWING requires source_file and SHA256")
     height = float(scene.get("height_m", 0))
     if not 2.0 <= height <= 6.0:
         raise ValueError("Invalid scene height")
     bx0, by0, bx1, by1 = scene["bounds_m"]
-    if not _finite(scene["bounds_m"]) or bx0 != 0 or by0 != 0 or bx1 <= bx0 or by1 <= by0:
-        raise ValueError("Scene bounds must start at (0,0) and have positive metric extents")
+    if not _finite(scene["bounds_m"]) or bx1 <= bx0 or by1 <= by0:
+        raise ValueError("Scene bounds must have positive metric extents")
     spaces = scene["spaces"]
-    if len(spaces) < 5 or sum(s["semantic"] == "corridor" for s in spaces) != 1:
-        raise ValueError("Need at least four rooms and one corridor")
+    if len(spaces) < 3 or sum(s["semantic"] == "corridor" for s in spaces) < 1:
+        raise ValueError("Need at least two rooms and one corridor")
     ids = set()
     for group in ("spaces", "walls", "objects", "cameras"):
         for item in scene.get(group, []):
@@ -121,8 +134,8 @@ def validate_scene(scene: dict) -> None:
                 doors.append(op)
             elif op["kind"] != "window" or op.get("connects"):
                 raise ValueError(f"{op['id']}: invalid window")
-    if len(doors) < 3:
-        raise ValueError("Need at least three physically linked doors")
+    if len(doors) < len(spaces) - 1:
+        raise ValueError("Too few physically linked doors for connected spaces")
     adjacency = {x: set() for x in space_ids}
     for op in doors:
         a, b = op["connects"]

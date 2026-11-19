@@ -1,0 +1,49 @@
+{
+  "scene_id": "synthetic_offset_2r1c",
+  "provenance": "SYNTHETIC",
+  "results": [
+    {
+      "door_id": "door_bedroom",
+      "connects": [
+        "corridor",
+        "bedroom"
+      ],
+      "status": "PASS",
+      "shared_object_id": "bed_01",
+      "side_cameras": [
+        "auto_03_corridor_0",
+        "c01_bed_to_bed"
+      ],
+      "visible_pixels": [
+        4071,
+        12320
+      ],
+      "reprojected_pixels": 4071,
+      "depth_id_match_ratio": 0.9955784819454679,
+      "depth_tolerance_m": 0.1,
+      "source": "BLENDER_CPU_SYNTHETIC_GEOMETRY"
+    },
+    {
+      "door_id": "door_living",
+      "connects": [
+        "corridor",
+        "living"
+      ],
+      "status": "PASS",
+      "shared_object_id": "sofa_01",
+      "side_cameras": [
+        "c08_corridor_to_living",
+        "c09_living_to_sofa"
+      ],
+      "visible_pixels": [
+        3876,
+        14291
+      ],
+      "reprojected_pixels": 3876,
+      "depth_id_match_ratio": 0.9925180598555211,
+      "depth_tolerance_m": 0.1,
+      "source": "BLENDER_CPU_SYNTHETIC_GEOMETRY"
+    }
+  ],
+  "all_pass": true
+}

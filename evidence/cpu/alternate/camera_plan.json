@@ -1,0 +1,714 @@
+{
+  "scene_id": "synthetic_offset_2r1c",
+  "native_rule": "GenRecon chunk_visible_in_camera, projected clipped area >= 0.4",
+  "chunk_size_m": 2.85,
+  "chunk_centers_sage_m": [
+    [
+      0.5953124999999996,
+      0.5812499999999995,
+      1.425
+    ],
+    [
+      2.1984374999999994,
+      0.5812499999999995,
+      1.425
+    ],
+    [
+      3.8015624999999997,
+      0.5812499999999995,
+      1.425
+    ],
+    [
+      5.4046875,
+      0.5812499999999995,
+      1.425
+    ],
+    [
+      0.5953124999999996,
+      2.5406249999999995,
+      1.425
+    ],
+    [
+      2.1984374999999994,
+      2.5406249999999995,
+      1.425
+    ],
+    [
+      3.8015624999999997,
+      2.5406249999999995,
+      1.425
+    ],
+    [
+      5.4046875,
+      2.5406249999999995,
+      1.425
+    ],
+    [
+      0.5953124999999996,
+      4.5,
+      1.425
+    ],
+    [
+      2.1984374999999994,
+      4.5,
+      1.425
+    ],
+    [
+      3.8015624999999997,
+      4.5,
+      1.425
+    ],
+    [
+      5.4046875,
+      4.5,
+      1.425
+    ],
+    [
+      0.5953124999999996,
+      6.4593750000000005,
+      1.425
+    ],
+    [
+      2.1984374999999994,
+      6.4593750000000005,
+      1.425
+    ],
+    [
+      3.8015624999999997,
+      6.4593750000000005,
+      1.425
+    ],
+    [
+      5.4046875,
+      6.4593750000000005,
+      1.425
+    ],
+    [
+      0.5953124999999996,
+      8.418750000000001,
+      1.425
+    ],
+    [
+      2.1984374999999994,
+      8.418750000000001,
+      1.425
+    ],
+    [
+      3.8015624999999997,
+      8.418750000000001,
+      1.425
+    ],
+    [
+      5.4046875,
+      8.418750000000001,
+      1.425
+    ]
+  ],
+  "global_to_sage_translation_m": [
+    4,
+    -10,
+    0
+  ],
+  "original_camera_count": 9,
+  "planned_camera_count": 13,
+  "topology_door_camera_ids": [],
+  "num_imgs_per_scene": 32,
+  "missing_before": [
+    3,
+    7,
+    8,
+    11,
+    15,
+    19
+  ],
+  "missing_after": [],
+  "original_accepted_counts": {
+    "0": 1,
+    "1": 5,
+    "2": 5,
+    "3": 0,
+    "4": 3,
+    "5": 5,
+    "6": 5,
+    "7": 0,
+    "8": 0,
+    "9": 5,
+    "10": 5,
+    "11": 0,
+    "12": 2,
+    "13": 4,
+    "14": 4,
+    "15": 0,
+    "16": 1,
+    "17": 4,
+    "18": 4,
+    "19": 0
+  },
+  "failure_diagnostics": {
+    "3": {
+      "center_sage_m": [
+        5.4046875,
+        0.5812499999999995,
+        1.425
+      ],
+      "center_world_m": [
+        1.4046874999999996,
+        10.581249999999999,
+        1.425
+      ],
+      "best_original_cameras": [
+        {
+          "camera_id": "c01_bed_to_bed",
+          "space_id": "bedroom",
+          "fov_deg": 78.0,
+          "eye_m": [
+            -2.0,
+            12.7,
+            1.55
+          ],
+          "target_m": [
+            -1.1,
+            11.65,
+            0.4
+          ],
+          "projected_clipped_area": 0.3671182096004486,
+          "front_sample_count": 9,
+          "reason": "clipped_projected_area_below_0.4"
+        },
+        {
+          "camera_id": "c04_corridor_oblique_bed",
+          "space_id": "corridor",
+          "fov_deg": 78.0,
+          "eye_m": [
+            -2.5,
+            14.5,
+            1.55
+          ],
+          "target_m": [
+            -1.1,
+            12.3,
+            0.9
+          ],
+          "projected_clipped_area": 0.28220057487487793,
+          "front_sample_count": 9,
+          "reason": "clipped_projected_area_below_0.4"
+        },
+        {
+          "camera_id": "c02_bed_side",
+          "space_id": "bedroom",
+          "fov_deg": 78.0,
+          "eye_m": [
+            -3.0,
+            11.5,
+            1.55
+          ],
+          "target_m": [
+            -1.1,
+            11.65,
+            0.4
+          ],
+          "projected_clipped_area": 0.280991792678833,
+          "front_sample_count": 9,
+          "reason": "clipped_projected_area_below_0.4"
+        },
+        {
+          "camera_id": "c00_corridor_to_bed",
+          "space_id": "corridor",
+          "fov_deg": 78.0,
+          "eye_m": [
+            -1.1,
+            14.8,
+            1.55
+          ],
+          "target_m": [
+            -1.1,
+            11.65,
+            0.7
+          ],
+          "projected_clipped_area": 0.252135694026947,
+          "front_sample_count": 9,
+          "reason": "clipped_projected_area_below_0.4"
+        }
+      ],
+      "all_original_rejected": true
+    },
+    "7": {
+      "center_sage_m": [
+        5.4046875,
+        2.5406249999999995,
+        1.425
+      ],
+      "center_world_m": [
+        1.4046874999999996,
+        12.540624999999999,
+        1.425
+      ],
+      "best_original_cameras": [
+        {
+          "camera_id": "c01_bed_to_bed",
+          "space_id": "bedroom",
+          "fov_deg": 78.0,
+          "eye_m": [
+            -2.0,
+            12.7,
+            1.55
+          ],
+          "target_m": [
+            -1.1,
+            11.65,
+            0.4
+          ],
+          "projected_clipped_area": 0.3949727416038513,
+          "front_sample_count": 8,
+          "reason": "clipped_projected_area_below_0.4"
+        },
+        {
+          "camera_id": "c04_corridor_oblique_bed",
+          "space_id": "corridor",
+          "fov_deg": 78.0,
+          "eye_m": [
+            -2.5,
+            14.5,
+            1.55
+          ],
+          "target_m": [
+            -1.1,
+            12.3,
+            0.9
+          ],
+          "projected_clipped_area": 0.37624379992485046,
+          "front_sample_count": 9,
+          "reason": "clipped_projected_area_below_0.4"
+        },
+        {
+          "camera_id": "c00_corridor_to_bed",
+          "space_id": "corridor",
+          "fov_deg": 78.0,
+          "eye_m": [
+            -1.1,
+            14.8,
+            1.55
+          ],
+          "target_m": [
+            -1.1,
+            11.65,
+            0.7
+          ],
+          "projected_clipped_area": 0.3316943049430847,
+          "front_sample_count": 9,
+          "reason": "clipped_projected_area_below_0.4"
+        },
+        {
+          "camera_id": "c02_bed_side",
+          "space_id": "bedroom",
+          "fov_deg": 78.0,
+          "eye_m": [
+            -3.0,
+            11.5,
+            1.55
+          ],
+          "target_m": [
+            -1.1,
+            11.65,
+            0.4
+          ],
+          "projected_clipped_area": 0.3280864357948303,
+          "front_sample_count": 9,
+          "reason": "clipped_projected_area_below_0.4"
+        }
+      ],
+      "all_original_rejected": true
+    },
+    "8": {
+      "center_sage_m": [
+        0.5953124999999996,
+        4.5,
+        1.425
+      ],
+      "center_world_m": [
+        -3.4046875000000005,
+        14.5,
+        1.425
+      ],
+      "best_original_cameras": [
+        {
+          "camera_id": "c04_corridor_oblique_bed",
+          "space_id": "corridor",
+          "fov_deg": 78.0,
+          "eye_m": [
+            -2.5,
+            14.5,
+            1.55
+          ],
+          "target_m": [
+            -1.1,
+            12.3,
+            0.9
+          ],
+          "projected_clipped_area": 0.3889147639274597,
+          "front_sample_count": 3,
+          "reason": "clipped_projected_area_below_0.4"
+        },
+        {
+          "camera_id": "c03_bed_to_corridor",
+          "space_id": "bedroom",
+          "fov_deg": 78.0,
+          "eye_m": [
+            -1.1,
+            11.0,
+            1.55
+          ],
+          "target_m": [
+            -1.1,
+            14.6,
+            1.45
+          ],
+          "projected_clipped_area": 0.3305445611476898,
+          "front_sample_count": 9,
+          "reason": "clipped_projected_area_below_0.4"
+        },
+        {
+          "camera_id": "c11_living_to_corridor",
+          "space_id": "living",
+          "fov_deg": 78.0,
+          "eye_m": [
+            -1.1,
+            18.2,
+            1.55
+          ],
+          "target_m": [
+            -1.1,
+            14.6,
+            1.45
+          ],
+          "projected_clipped_area": 0.3048233687877655,
+          "front_sample_count": 9,
+          "reason": "clipped_projected_area_below_0.4"
+        },
+        {
+          "camera_id": "c08_corridor_to_living",
+          "space_id": "corridor",
+          "fov_deg": 78.0,
+          "eye_m": [
+            -1.1,
+            14.2,
+            1.55
+          ],
+          "target_m": [
+            -1.1,
+            17.3,
+            0.8
+          ],
+          "projected_clipped_area": 0.1948365569114685,
+          "front_sample_count": 5,
+          "reason": "clipped_projected_area_below_0.4"
+        }
+      ],
+      "all_original_rejected": true
+    },
+    "11": {
+      "center_sage_m": [
+        5.4046875,
+        4.5,
+        1.425
+      ],
+      "center_world_m": [
+        1.4046874999999996,
+        14.5,
+        1.425
+      ],
+      "best_original_cameras": [
+        {
+          "camera_id": "c03_bed_to_corridor",
+          "space_id": "bedroom",
+          "fov_deg": 78.0,
+          "eye_m": [
+            -1.1,
+            11.0,
+            1.55
+          ],
+          "target_m": [
+            -1.1,
+            14.6,
+            1.45
+          ],
+          "projected_clipped_area": 0.3095029890537262,
+          "front_sample_count": 9,
+          "reason": "clipped_projected_area_below_0.4"
+        },
+        {
+          "camera_id": "c11_living_to_corridor",
+          "space_id": "living",
+          "fov_deg": 78.0,
+          "eye_m": [
+            -1.1,
+            18.2,
+            1.55
+          ],
+          "target_m": [
+            -1.1,
+            14.6,
+            1.45
+          ],
+          "projected_clipped_area": 0.2863699793815613,
+          "front_sample_count": 9,
+          "reason": "clipped_projected_area_below_0.4"
+        },
+        {
+          "camera_id": "c04_corridor_oblique_bed",
+          "space_id": "corridor",
+          "fov_deg": 78.0,
+          "eye_m": [
+            -2.5,
+            14.5,
+            1.55
+          ],
+          "target_m": [
+            -1.1,
+            12.3,
+            0.9
+          ],
+          "projected_clipped_area": 0.2108062207698822,
+          "front_sample_count": 8,
+          "reason": "clipped_projected_area_below_0.4"
+        },
+        {
+          "camera_id": "c10_living_side",
+          "space_id": "living",
+          "fov_deg": 78.0,
+          "eye_m": [
+            -3.0,
+            17.5,
+            1.55
+          ],
+          "target_m": [
+            -1.1,
+            17.3,
+            0.4
+          ],
+          "projected_clipped_area": 0.17978528141975403,
+          "front_sample_count": 9,
+          "reason": "clipped_projected_area_below_0.4"
+        }
+      ],
+      "all_original_rejected": true
+    },
+    "15": {
+      "center_sage_m": [
+        5.4046875,
+        6.4593750000000005,
+        1.425
+      ],
+      "center_world_m": [
+        1.4046874999999996,
+        16.459375,
+        1.425
+      ],
+      "best_original_cameras": [
+        {
+          "camera_id": "c09_living_to_sofa",
+          "space_id": "living",
+          "fov_deg": 78.0,
+          "eye_m": [
+            -1.9,
+            16.2,
+            1.55
+          ],
+          "target_m": [
+            -1.1,
+            17.3,
+            0.4
+          ],
+          "projected_clipped_area": 0.38669276237487793,
+          "front_sample_count": 8,
+          "reason": "clipped_projected_area_below_0.4"
+        },
+        {
+          "camera_id": "c10_living_side",
+          "space_id": "living",
+          "fov_deg": 78.0,
+          "eye_m": [
+            -3.0,
+            17.5,
+            1.55
+          ],
+          "target_m": [
+            -1.1,
+            17.3,
+            0.4
+          ],
+          "projected_clipped_area": 0.3422451913356781,
+          "front_sample_count": 9,
+          "reason": "clipped_projected_area_below_0.4"
+        },
+        {
+          "camera_id": "c08_corridor_to_living",
+          "space_id": "corridor",
+          "fov_deg": 78.0,
+          "eye_m": [
+            -1.1,
+            14.2,
+            1.55
+          ],
+          "target_m": [
+            -1.1,
+            17.3,
+            0.8
+          ],
+          "projected_clipped_area": 0.33103692531585693,
+          "front_sample_count": 9,
+          "reason": "clipped_projected_area_below_0.4"
+        },
+        {
+          "camera_id": "c11_living_to_corridor",
+          "space_id": "living",
+          "fov_deg": 78.0,
+          "eye_m": [
+            -1.1,
+            18.2,
+            1.55
+          ],
+          "target_m": [
+            -1.1,
+            14.6,
+            1.45
+          ],
+          "projected_clipped_area": 0.2921549379825592,
+          "front_sample_count": 9,
+          "reason": "clipped_projected_area_below_0.4"
+        }
+      ],
+      "all_original_rejected": true
+    },
+    "19": {
+      "center_sage_m": [
+        5.4046875,
+        8.418750000000001,
+        1.425
+      ],
+      "center_world_m": [
+        1.4046874999999996,
+        18.418750000000003,
+        1.425
+      ],
+      "best_original_cameras": [
+        {
+          "camera_id": "c09_living_to_sofa",
+          "space_id": "living",
+          "fov_deg": 78.0,
+          "eye_m": [
+            -1.9,
+            16.2,
+            1.55
+          ],
+          "target_m": [
+            -1.1,
+            17.3,
+            0.4
+          ],
+          "projected_clipped_area": 0.3450959324836731,
+          "front_sample_count": 9,
+          "reason": "clipped_projected_area_below_0.4"
+        },
+        {
+          "camera_id": "c10_living_side",
+          "space_id": "living",
+          "fov_deg": 78.0,
+          "eye_m": [
+            -3.0,
+            17.5,
+            1.55
+          ],
+          "target_m": [
+            -1.1,
+            17.3,
+            0.4
+          ],
+          "projected_clipped_area": 0.27272287011146545,
+          "front_sample_count": 9,
+          "reason": "clipped_projected_area_below_0.4"
+        },
+        {
+          "camera_id": "c08_corridor_to_living",
+          "space_id": "corridor",
+          "fov_deg": 78.0,
+          "eye_m": [
+            -1.1,
+            14.2,
+            1.55
+          ],
+          "target_m": [
+            -1.1,
+            17.3,
+            0.8
+          ],
+          "projected_clipped_area": 0.25572115182876587,
+          "front_sample_count": 9,
+          "reason": "clipped_projected_area_below_0.4"
+        },
+        {
+          "camera_id": "c03_bed_to_corridor",
+          "space_id": "bedroom",
+          "fov_deg": 78.0,
+          "eye_m": [
+            -1.1,
+            11.0,
+            1.55
+          ],
+          "target_m": [
+            -1.1,
+            14.6,
+            1.45
+          ],
+          "projected_clipped_area": 0.09755253046751022,
+          "front_sample_count": 9,
+          "reason": "clipped_projected_area_below_0.4"
+        }
+      ],
+      "all_original_rejected": true
+    }
+  },
+  "planned_camera_ids": [
+    "c00_corridor_to_bed",
+    "c01_bed_to_bed",
+    "c02_bed_side",
+    "c03_bed_to_corridor",
+    "c04_corridor_oblique_bed",
+    "c08_corridor_to_living",
+    "c09_living_to_sofa",
+    "c10_living_side",
+    "c11_living_to_corridor",
+    "auto_03_bedroom_0",
+    "auto_03_living_4",
+    "auto_03_corridor_0",
+    "auto_08_corridor_0"
+  ],
+  "auto_camera_coverage": {
+    "auto_03_bedroom_0": [
+      1,
+      2,
+      3,
+      6,
+      7
+    ],
+    "auto_03_living_4": [
+      14,
+      15,
+      18,
+      19
+    ],
+    "auto_03_corridor_0": [
+      5,
+      9,
+      10,
+      11
+    ],
+    "auto_08_corridor_0": [
+      8,
+      10
+    ]
+  },
+  "auto_camera_requires_unblocked_ray_to_chunk_center": true,
+  "official_source_sha": "unmodified",
+  "model_forward_executed": false
+}

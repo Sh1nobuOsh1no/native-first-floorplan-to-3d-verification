@@ -8,6 +8,7 @@ from the same render pass.
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import math
 import os
@@ -59,8 +60,8 @@ def output_node(nodes):
     return node
 
 
-def rendered_file(out: Path, camera_id: str) -> Path:
-    candidates = sorted((Path("/tmp") / "passes").glob(f"{camera_id}_*.exr"))
+def rendered_file(out: Path, temp_root: Path, camera_id: str) -> Path:
+    candidates = sorted(temp_root.glob(f"{camera_id}_*.exr"))
     if len(candidates) != 1:
         raise RuntimeError(f"Expected one EXR file for {camera_id}, got {candidates}")
     dest = out / "passes" / f"{camera_id}.exr"
@@ -116,7 +117,7 @@ def main():
         data.size = 3.0
         obj = bpy.data.objects.new(data.name, data)
         scene.collection.objects.link(obj)
-        obj.location = ((x0 + x1) / 2, (y0 + y1) / 2, 2.45)
+        obj.location = ((x0 + x1) / 2, (y0 + y1) / 2, scene_json["height_m"] - .25)
         obj.rotation_euler = (0, 0, 0)
     bpy.ops.object.camera_add()
     camera = bpy.context.object
@@ -135,6 +136,9 @@ def main():
     tree.nodes.clear()
     render_layer = tree.nodes.new("CompositorNodeRLayers")
     passes = output_node(tree.nodes)
+    temp_token = hashlib.sha256(str(out).encode()).hexdigest()[:16]
+    temp_root = Path("/tmp/native_first_blender") / temp_token
+    temp_root.mkdir(parents=True, exist_ok=True)
     tree.links.new(render_layer.outputs["Image"], passes.inputs["Image"])
     tree.links.new(render_layer.outputs["Depth"], passes.inputs["Depth"])
     tree.links.new(render_layer.outputs["Object Index"], passes.inputs["ObjectID"])
@@ -169,12 +173,12 @@ def main():
         c2w = [[float(camera.matrix_world[r][c]) for c in range(4)] for r in range(4)]
         fov_x = float(camera.data.angle_x)
         f = args.size / (2 * math.tan(fov_x / 2))
-        passes.file_name = f"passes/{cid}_"
-        for stale in (Path("/tmp") / "passes").glob(f"{cid}_*.exr"):
+        passes.file_name = f"native_first_blender/{temp_token}/{cid}_"
+        for stale in temp_root.glob(f"{cid}_*.exr"):
             stale.unlink()
         scene.frame_set(idx)
         bpy.ops.render.render(write_still=False)
-        exr_path = rendered_file(out, cid)
+        exr_path = rendered_file(out, temp_root, cid)
         rgb_path = out / "rgb" / f"{cid}.png"
         depth_path = out / "depth" / f"{cid}.npy"
         id_path = out / "object_id" / f"{cid}.npy"
@@ -184,12 +188,12 @@ def main():
                          "target_m": spec["target_m"], "K_px": [[f, 0, args.size / 2], [0, f, args.size / 2], [0, 0, 1]],
                          "c2w_blender": c2w, "rgb": str(rgb_path.relative_to(out)), "depth_npy": str(depth_path.relative_to(out)),
                          "object_id_npy": str(id_path.relative_to(out)), "passes_exr": str(exr_path.relative_to(out)),
-                         "provenance": "SYNTHETIC_BLENDER_CPU"})
+                         "provenance": scene_json["provenance"]["kind"] + "_BLENDER_CPU"})
         print(f"RENDERED {args.variant} {idx}/{len(cams)} {cid}", flush=True)
     (out / "transforms.json").write_text(json.dumps({"camera_angle_x": frames[0]["camera_angle_x"], "frames": frames}, indent=2) + "\n")
     (out / "camera_metadata.json").write_text(json.dumps({"variant": args.variant, "frames": metadata}, indent=2) + "\n")
     (out / "render_manifest.json").write_text(json.dumps({"scene_id": scene_json["scene_id"],
-        "provenance": "SYNTHETIC", "variant": args.variant, "engine": "CYCLES_CPU",
+        "provenance": scene_json["provenance"]["kind"], "variant": args.variant, "engine": "CYCLES_CPU",
         "samples": args.samples, "resolution": [args.size, args.size], "frame_count": len(frames),
         "object_count": len(boxes), "global_scene": True}, indent=2) + "\n")
 

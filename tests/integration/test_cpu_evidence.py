@@ -1,5 +1,6 @@
 """Tests actual Blender and unmodified GenRecon CPU outputs; never synthesize passes."""
 import json
+import tempfile
 import unittest
 from functools import lru_cache
 from pathlib import Path
@@ -8,6 +9,7 @@ import numpy as np
 import trimesh
 from PIL import Image
 from src.cameras.geometry import validate_camera
+from src.genrecon.prepare_sage_gt import prepare
 
 ROOT = Path(__file__).resolve().parents[2]
 E = ROOT / "evidence/cpu"
@@ -55,7 +57,7 @@ class CPUEvidenceTests(unittest.TestCase):
 
     def test_same_global_cameras_A_B(self):
         self.assertEqual(set(self.frames["A"]), set(self.frames["B"]))
-        self.assertEqual(len(self.frames["A"]), 16)
+        self.assertEqual(len(self.frames["A"]), 20)
         for cid in self.frames["A"]:
             a, b = self.frames["A"][cid], self.frames["B"][cid]
             np.testing.assert_allclose(a["K_px"], b["K_px"], atol=1e-8)
@@ -138,10 +140,76 @@ class CPUEvidenceTests(unittest.TestCase):
             report = json.loads((E / f"native_{variant}_report.json").read_text())
             self.assertEqual(report["status"], "PASS_CPU_NATIVE_READER")
             self.assertEqual(report["source_scene_provenance"]["kind"], "SYNTHETIC")
-            self.assertEqual(report["source_camera_count"], 16)
+            self.assertEqual(report["source_camera_count"], 20)
             self.assertEqual(len(report["chunk_centers"]), 30)
-            self.assertEqual(report["fallback_chunks"], [3, 5, 17, 27])
+            self.assertEqual(report["fallback_chunks"], [])
+            self.assertEqual(report["zero_selected_visible_chunks"], [])
+            self.assertEqual(report["selected_scene_camera_count"], 20)
+            self.assertEqual(len(report["door_visibility"]), 4)
+            self.assertTrue(all(x["chunks_with_both_side_cameras"] for x in report["door_visibility"]))
             self.assertIn("not hard constraints", report["native_layout_limitation"])
+
+    def test_camera_plan_and_all_door_reprojections(self):
+        plan = json.loads((E / "camera_plan.json").read_text())
+        self.assertEqual(plan["missing_before"], [3, 5, 17, 27])
+        self.assertEqual(plan["missing_after"], [])
+        self.assertEqual(plan["planned_camera_count"], 20)
+        self.assertTrue(plan["auto_camera_requires_unblocked_ray_to_chunk_center"])
+        self.assertEqual(plan["num_imgs_per_scene"], 32)
+        report = json.loads((E / "cross_door_check.json").read_text())
+        self.assertTrue(report["all_pass"])
+        self.assertEqual(len(report["results"]), 4)
+        self.assertTrue(all(x["depth_id_match_ratio"] > .99 for x in report["results"]))
+
+    def test_different_topology_and_offset_origin(self):
+        alt = E / "alternate"
+        plan = json.loads((alt / "camera_plan.json").read_text())
+        self.assertEqual(plan["global_to_sage_translation_m"], [4, -10, 0])
+        self.assertEqual(plan["missing_after"], [])
+        for variant in ("A", "B"):
+            report = json.loads((alt / f"native_{variant}_report.json").read_text())
+            self.assertEqual(len(report["chunk_centers"]), 20)
+            self.assertEqual(report["fallback_chunks"], [])
+            self.assertEqual(report["selected_scene_camera_count"], 13)
+            self.assertEqual(report["global_to_sage_translation_m"], [4, -10, 0])
+            self.assertEqual(len(report["door_visibility"]), 2)
+        cross = json.loads((alt / "cross_door_check.json").read_text())
+        self.assertTrue(cross["all_pass"])
+
+    def test_alternate_rgb_depth_id_and_camera_alignment(self):
+        alt = E / "alternate"
+        metas = {}
+        for variant in ("A", "B"):
+            root = alt / f"render_{variant}"
+            metas[variant] = {f["camera_id"]: f for f in json.loads((root / "camera_metadata.json").read_text())["frames"]}
+            with np.load(root / "depth_all.npz") as depth, np.load(root / "object_id_all.npz") as ids:
+                self.assertEqual(set(depth.files), set(metas[variant]))
+                for cid, frame in metas[variant].items():
+                    rgb = np.asarray(Image.open(root / frame["rgb"]))
+                    self.assertEqual(rgb.shape[:2], depth[cid].shape)
+                    self.assertEqual(depth[cid].shape, ids[cid].shape)
+                    self.assertGreater(len(np.unique(ids[cid])), 1)
+                    validate_camera(frame["K_px"], frame["c2w_blender"], (256, 256))
+                    np.testing.assert_allclose(np.asarray(frame["c2w_blender"])[:3, 3], frame["eye_m"], atol=1e-6)
+        self.assertEqual(set(metas["A"]), set(metas["B"]))
+        for cid in metas["A"]:
+            np.testing.assert_allclose(metas["A"][cid]["K_px"], metas["B"][cid]["K_px"])
+            np.testing.assert_allclose(metas["A"][cid]["c2w_blender"], metas["B"][cid]["c2w_blender"])
+
+    def test_native_image_cap_can_reintroduce_fallbacks(self):
+        report = json.loads((E / "native_B_cap8_report.json").read_text())
+        self.assertEqual(report["selected_scene_camera_count"], 8)
+        self.assertEqual(len(report["fallback_chunks"]), 11)
+        self.assertEqual(report["fallback_chunks"], report["zero_selected_visible_chunks"])
+
+    def test_sage_gt_rejects_nonstandard_height(self):
+        scene = json.loads((ROOT / "fixtures/multiroom/synthetic_building.json").read_text())
+        scene["height_m"] = 3.0
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp)/"tall.json"
+            path.write_text(json.dumps(scene))
+            with self.assertRaisesRegex(ValueError, "2.7"):
+                prepare(path, E/"render_B", Path(tmp)/"sage")
 
     def test_cfg_preflight_only(self):
         report = json.loads((E / "cfg_preflight.json").read_text())

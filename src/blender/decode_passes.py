@@ -48,12 +48,12 @@ def decode(root: Path) -> dict:
         draw.rectangle((0, 0, 256, 20), fill=(20, 20, 20))
         draw.text((4, 3), cid, fill=(255, 255, 255))
         tiles.append(tile)
-    canvas = Image.new("RGB", (4 * 256, 4 * 256))
+    canvas = Image.new("RGB", (4 * 256, ((len(tiles) + 3)//4) * 256))
     for i, tile in enumerate(tiles):
         canvas.paste(tile, ((i % 4) * 256, (i // 4) * 256))
     canvas.save(root / "contact_sheet.png")
     result = {"variant": meta["variant"], "frame_count": len(rows), "frames": rows,
-              "provenance": "SYNTHETIC_BLENDER_CPU"}
+              "provenance": meta["frames"][0]["provenance"] if meta["frames"] else "UNKNOWN"}
     (root / "decode_check.json").write_text(json.dumps(result, indent=2) + "\n")
     return result
 

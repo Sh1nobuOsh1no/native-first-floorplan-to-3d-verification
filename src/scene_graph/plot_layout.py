@@ -1,4 +1,4 @@
-"""Draw measured synthetic fixture geometry and global camera positions."""
+"""Draw one global metric building and its camera positions."""
 from __future__ import annotations
 
 import argparse
@@ -12,11 +12,11 @@ from src.scene_graph.metric_scene import load_scene
 def draw(scene_path: Path, out_path: Path) -> None:
     scene = load_scene(scene_path)
     scale, pad = 80, 55
-    x1, y1 = scene["bounds_m"][2:]
-    image = Image.new("RGB", (int(x1 * scale + 2 * pad), int(y1 * scale + 2 * pad)), "white")
+    x0, y0, x1, y1 = scene["bounds_m"]
+    image = Image.new("RGB", (int((x1-x0) * scale + 2 * pad), int((y1-y0) * scale + 2 * pad)), "white")
     pen = ImageDraw.Draw(image)
     def xy(x, y):
-        return (pad + x * scale, pad + (y1 - y) * scale)
+        return (pad + (x-x0) * scale, pad + (y1-y) * scale)
     for space in scene["spaces"]:
         x0, y0, x2, y2 = space["bounds_m"]
         pen.rectangle((*xy(x0, y2), *xy(x2, y0)), fill="#e9f1f5" if space["semantic"] == "corridor" else "#f4f4ee")
@@ -37,7 +37,7 @@ def draw(scene_path: Path, out_path: Path) -> None:
         norm=math.hypot(tx-x,ty-y); q=(x+.4*(tx-x)/norm,y+.4*(ty-y)/norm)
         pen.ellipse((xy(x,y)[0]-4,xy(x,y)[1]-4,xy(x,y)[0]+4,xy(x,y)[1]+4), fill="#d13d30")
         pen.line((xy(x,y),xy(*q)),fill="#d13d30",width=3)
-    pen.text((pad,15),"SYNTHETIC | 12 x 9 x 2.7 m | 4 rooms + corridor | 16 cameras",fill="#111111")
+    pen.text((pad,15),f"{scene['provenance']['kind']} | {x1-x0:g} x {y1-y0:g} x {scene['height_m']:g} m | {len(scene['spaces'])} spaces | {len(scene['cameras'])} cameras",fill="#111111")
     out_path.parent.mkdir(parents=True,exist_ok=True)
     image.save(out_path)
 
